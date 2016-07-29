@@ -82,34 +82,28 @@ public class UserManagerBean implements UserManager, SessionBean {
 		this.ctx=arg0;
 	}
 
-	@Override
 	public EJBHome getEJBHome() throws RemoteException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
 	public Handle getHandle() throws RemoteException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
 	public Object getPrimaryKey() throws RemoteException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
 	public boolean isIdentical(EJBObject arg0) throws RemoteException {
 		// TODO Auto-generated method stub
 		return false;
 	}
 
-	@Override
 	public void remove() throws RemoteException, RemoveException {
 		// TODO Auto-generated method stub
 		
 	}
-
 }

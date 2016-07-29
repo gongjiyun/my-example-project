@@ -113,6 +113,10 @@
 			<taglib-location>/WEB-INF/tld/errors.tld</taglib-location>
 		</taglib>
 		<taglib>
+			<taglib-uri>/WEB-INF/tld/customer</taglib-uri>
+			<taglib-location>/WEB-INF/tld/customer.tld</taglib-location>
+		</taglib>
+		<taglib>
 			<taglib-uri>/WEB-INF/tld/security</taglib-uri>
 			<taglib-location>/WEB-INF/tld/security.tld</taglib-location>
 		</taglib>

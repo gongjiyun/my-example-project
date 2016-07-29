@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#jsf#myfaces.jsp" PATH="/jsf/myfaces.jsp"
+  SHAPE="32,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#jsf#myfaces.jsp:0" NAME="item"
+   PATH="/jsf/myfaces.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="success::#jsf#myfaces.jsp" NAME="output"
+    PATH="/jsf/myfaces.jsp" TARGET="rules:#jsf#myfaces.jsp"
+    TITLE="success" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="goodbye::#jsf#sample.jsp" NAME="output1"
+    PATH="/jsf/sample.jsp" TARGET="rules:#jsf#sample.jsp"
+    TITLE="goodbye" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#jsf#sample.jsp" PATH="/jsf/sample.jsp"
+  SHAPE="256,33,0,0" model-entity="JSFProcessGroup"/>
+</PROCESS>

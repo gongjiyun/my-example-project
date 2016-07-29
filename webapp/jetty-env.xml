@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Configure PUBLIC "-//Mort Bay Consulting//DTD Configure//EN" "http://www.eclipse.org/jetty/configure.dtd">
+<Configure id="digb" class="org.eclipse.jetty.webapp.WebAppContext">
+	<New id="dbdatasource" class="org.eclipse.jetty.plus.jndi.Resource">
+		<Arg>jdbc/poc</Arg>
+		<Arg>
+			<New class="org.apache.commons.dbcp.BasicDataSource">
+				<Set name="driverClassName">com.mysql.jdbc.Driver</Set>
+				<Set name="url">jdbc:mysql://localhost:3306/poc</Set>
+				<Set name="username">root</Set>
+				<Set name="password">root</Set>
+				<Set name="maxActive">10</Set>
+			</New>
+		</Arg>
+	</New>
+</Configure>
+

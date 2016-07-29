@@ -1,0 +1,24 @@
+.messages {
+	color: #7BFF00;
+	padding-left: 20px;
+	padding-top: 20px;
+	font-size: 12px;
+}
+
+.errors {
+	color: red;
+	padding-left: 20px;
+	padding-top: 20px;
+	font-size: 12px;
+}
+
+.content .subtitle {
+	font-size: 20px;
+	padding-left: 0px;
+}
+
+.mandatory {
+	font-size: 12px;
+	color: red;
+	display: inline;
+}

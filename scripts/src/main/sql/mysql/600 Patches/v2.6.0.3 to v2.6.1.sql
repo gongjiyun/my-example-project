@@ -1,0 +1,266 @@
+/* MySQL Patch Script for Upgrading from V2.6.0 to V2.6.1 */
+
+/* MOBILECONNECT-1532 - [Server] Remove Question Bank and Group Assignment */
+
+DELETE FROM TBL_CODE_INT WHERE CODETYPE_ID = 'EBOOK-CONTENT-TYPE' AND CODE_ID = 'GA';
+
+/* New Account Source for Windows 8 */
+
+INSERT INTO TBL_MC_ACCOUNT_SOURCE VALUES ('00-WIN-0001', 'Windows 8', 'Windows 8', 'A', 'DEF-user-superadmin', NOW(), 'DEF-user-superadmin', NOW(), 1);
+
+/* LearningConnect Integration */
+ALTER TABLE `TBL_MC_HOTSPOT_ESSAY_QUESTION` CHANGE COLUMN `ANSWER_TEXT` `ANSWER_TEXT` TEXT NOT NULL;
+
+/* Cleaning up of roles */
+DELETE FROM TBL_AA_RES2RES WHERE RESOURCES_ID IN (
+    'DEF-role-acm-common',
+    'DEF-role-contentcontributor',
+    'DEF-role-internetuser',
+    'DEF-role-intranetuser',
+    'DEF-role-partner1',
+    'DEF-role-partner2',
+    'DEF-role-portaladmin',
+    'DEF-role-roleadmin',
+    'DEF-role-siteadmin'
+) OR PARENT_RES_ID IN (
+    'DEF-role-acm-common',
+    'DEF-role-contentcontributor',
+    'DEF-role-internetuser',
+    'DEF-role-intranetuser',
+    'DEF-role-partner1',
+    'DEF-role-partner2',
+    'DEF-role-portaladmin',
+    'DEF-role-roleadmin',
+    'DEF-role-siteadmin'
+);
+
+DELETE FROM tbl_aa_subject2res WHERE RESOURCES_ID IN (
+    'DEF-role-acm-common',
+    'DEF-role-contentcontributor',
+    'DEF-role-internetuser',
+    'DEF-role-intranetuser',
+    'DEF-role-partner1',
+    'DEF-role-partner2',
+    'DEF-role-portaladmin',
+    'DEF-role-roleadmin',
+    'DEF-role-siteadmin'
+);
+DELETE FROM tbl_aa_group2res WHERE RESOURCES_ID IN (
+    'DEF-role-acm-common',
+    'DEF-role-contentcontributor',
+    'DEF-role-internetuser',
+    'DEF-role-intranetuser',
+    'DEF-role-partner1',
+    'DEF-role-partner2',
+    'DEF-role-portaladmin',
+    'DEF-role-roleadmin',
+    'DEF-role-siteadmin'
+);
+
+DELETE FROM TBL_AA_RESOURCES WHERE RESOURCES_ID IN (
+    'DEF-role-acm-common',
+    'DEF-role-contentcontributor',
+    'DEF-role-internetuser',
+    'DEF-role-intranetuser',
+    'DEF-role-partner1',
+    'DEF-role-partner2',
+    'DEF-role-portaladmin',
+    'DEF-role-roleadmin',
+    'DEF-role-siteadmin'
+);
+
+/* Audio Presentation */
+INSERT INTO TBL_CODE_INT VALUES ('EBOOK-CONTENT-TYPE', 'ABK', 'Audio Presentation', 5, 'A', NULL, NULL, NULL, NULL, 'en');
+
+/* Support attachment hotspot */
+INSERT INTO TBL_CODETYPE VALUES ('EBOOK-ATTACHMENT-TYPE', 'EBOOK-ATTACHMENT-TYPE', 'TBL_CODE_INT', 'Y', 'CODETYPE_ID', 'CODE_ID', 'CODE_DESC', 'CODE_SEQ', '', '', '', '', '', '', '', now(), 'LOCALE');
+INSERT INTO TBL_CODE_INT VALUES ('EBOOK-HOTSPOT-TYPE', '09', 'Html5', 9, 'A', NULL, NULL, NULL, NULL, 'en');
+INSERT INTO TBL_CODE_INT VALUES ('EBOOK-ATTACHMENT-TYPE', '01', 'HTML5', 1, 'A', NULL, NULL, NULL, NULL, 'en');
+INSERT INTO TBL_CODE_INT VALUES ('EBOOK-ATTACHMENT-TYPE', '02', 'Flash', 2, 'A', NULL, NULL, NULL, NULL, 'en');
+
+/*for notification module manager*/
+DELETE FROM TBL_CODE_INT WHERE CODETYPE_ID IN ('EBOOK-NOTIFICATION-LOG-STATUS', 'EBOOK-NOTIFICATION-MSG-TP');
+DELETE FROM TBL_CODETYPE WHERE CODETYPE_ID IN ('EBOOK-NOTIFICATION-LOG-STATUS', 'EBOOK-NOTIFICATION-MSG-TP');
+
+INSERT INTO TBL_CODETYPE(CODETYPE_ID,CODETYPE_DESC,CODETYPE_TABLE,READ_ONLY,COL_CODETYPE_ID,COL_CODE_ID,COL_CODE_DESC,COL_CODE_SEQ,COL_STATUS,COL_EFFECTIVE_DT,COL_EXPIRY_DT,EDIT_URL,ADD_URL,OWNER_GROUP,UPDATED_BY,UPDATED_DT,COL_CODE_LOCALE) VALUES('EBOOK-NOTIFICATION-LOG-STATUS','EBOOK-NOTIFICATION-LOG-STATUS','TBL_CODE_INT','N','CODETYPE_ID','CODE_ID','CODE_DESC','CODE_SEQ',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NOW(),'LOCALE');
+INSERT INTO TBL_CODE_INT(CODETYPE_ID,CODE_ID,CODE_DESC,CODE_SEQ,STATUS,EFFECTIVE_DT,EXPIRY_DT,UPDATED_BY,UPDATED_DT,LOCALE) VALUES('EBOOK-NOTIFICATION-LOG-STATUS','A','Pending','1','A',NULL,NULL,NULL,NULL,'en');
+INSERT INTO TBL_CODE_INT(CODETYPE_ID,CODE_ID,CODE_DESC,CODE_SEQ,STATUS,EFFECTIVE_DT,EXPIRY_DT,UPDATED_BY,UPDATED_DT,LOCALE) VALUES('EBOOK-NOTIFICATION-LOG-STATUS','D','Delivered','2','A',NULL,NULL,NULL,NULL,'en');
+INSERT INTO TBL_CODE_INT(CODETYPE_ID,CODE_ID,CODE_DESC,CODE_SEQ,STATUS,EFFECTIVE_DT,EXPIRY_DT,UPDATED_BY,UPDATED_DT,LOCALE) VALUES('EBOOK-NOTIFICATION-LOG-STATUS','F','Delivered','2','A',NULL,NULL,NULL,NULL,'en');
+
+INSERT INTO TBL_CODETYPE(CODETYPE_ID,CODETYPE_DESC,CODETYPE_TABLE,READ_ONLY,COL_CODETYPE_ID,COL_CODE_ID,COL_CODE_DESC,COL_CODE_SEQ,COL_STATUS,COL_EFFECTIVE_DT,COL_EXPIRY_DT,EDIT_URL,ADD_URL,OWNER_GROUP,UPDATED_BY,UPDATED_DT,COL_CODE_LOCALE) VALUES('EBOOK-NOTIFICATION-MSG-TP','EBOOK-NOTIFICATION-MSG-TP','TBL_CODE_INT','N','CODETYPE_ID','CODE_ID','CODE_DESC','CODE_SEQ',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NOW(),'LOCALE');
+INSERT INTO TBL_CODE_INT(CODETYPE_ID,CODE_ID,CODE_DESC,CODE_SEQ,STATUS,EFFECTIVE_DT,EXPIRY_DT,UPDATED_BY,UPDATED_DT,LOCALE) VALUES('EBOOK-NOTIFICATION-MSG-TP','01','Publication new','1','A',NULL,NULL,NULL,NULL,'en');
+INSERT INTO TBL_CODE_INT(CODETYPE_ID,CODE_ID,CODE_DESC,CODE_SEQ,STATUS,EFFECTIVE_DT,EXPIRY_DT,UPDATED_BY,UPDATED_DT,LOCALE) VALUES('EBOOK-NOTIFICATION-MSG-TP','02','Publication revision','2','A',NULL,NULL,NULL,NULL,'en');
+INSERT INTO TBL_CODE_INT(CODETYPE_ID,CODE_ID,CODE_DESC,CODE_SEQ,STATUS,EFFECTIVE_DT,EXPIRY_DT,UPDATED_BY,UPDATED_DT,LOCALE) VALUES('EBOOK-NOTIFICATION-MSG-TP','03','Schedule publication new','1','A',NULL,NULL,NULL,NULL,'en');
+INSERT INTO TBL_CODE_INT(CODETYPE_ID,CODE_ID,CODE_DESC,CODE_SEQ,STATUS,EFFECTIVE_DT,EXPIRY_DT,UPDATED_BY,UPDATED_DT,LOCALE) VALUES('EBOOK-NOTIFICATION-MSG-TP','04','Schedule publication revision','2','A',NULL,NULL,NULL,NULL,'en');
+
+INSERT INTO TBL_AA_RESOURCES(RESOURCES_ID,RESOURCE_NAME,RESOURCE_PATH,RESOURCE_TYPE,DOMAIN_NAME,EFFECTIVE_FROM,EFFECTIVE_TO,CREATED_DT,CREATED_BY,UPDATED_DT,UPDATED_BY,REQ_LOGIN_LEVEL,VERSION,BELONG_TO,LOG_ENABLED,LOG_TRANSACTION) VALUES('MCEBOOK-ADMIN-RES-REPORT-019','Search Notification Logs','/mc-ebook-server/mc-ebook-admin/searchNotificationLogs.do','URI','NA',NULL,NULL,now(),'DEF-user-useradmin',now(),'DEF-user-useradmin',1,1,'REQ-group-universal',1,1);
+INSERT INTO TBL_AA_RES2RES(RESOURCES_ID,PARENT_RES_ID,CREATE_ACCESS,READ_ACCESS,UPDATE_ACCESS,DELETE_ACCESS,EFFECTIVE_DT,EXPIRY_DT,CREATED_DT,CREATED_BY,UPDATED_DT,UPDATED_BY,VERSION,REF_GROUP_ID) VALUES('MCEBOOK-ADMIN-RES-REPORT-019','DEF-role-tenantadmina','1','1','1','1',NULL,NULL,now(),'DEF-user-superadmin',now(),'DEF-user-superadmin','1','REQ-group-universal');
+INSERT INTO TBL_AA_RES2RES(RESOURCES_ID,PARENT_RES_ID,CREATE_ACCESS,READ_ACCESS,UPDATE_ACCESS,DELETE_ACCESS,EFFECTIVE_DT,EXPIRY_DT,CREATED_DT,CREATED_BY,UPDATED_DT,UPDATED_BY,VERSION,REF_GROUP_ID) VALUES('MCEBOOK-ADMIN-RES-REPORT-019','DEF-role-tenantadminb','1','1','1','1',NULL,NULL,now(),'DEF-user-superadmin',now(),'DEF-user-superadmin','1','REQ-group-universal');
+INSERT INTO TBL_AA_RES2RES(RESOURCES_ID,PARENT_RES_ID,CREATE_ACCESS,READ_ACCESS,UPDATE_ACCESS,DELETE_ACCESS,EFFECTIVE_DT,EXPIRY_DT,CREATED_DT,CREATED_BY,UPDATED_DT,UPDATED_BY,VERSION,REF_GROUP_ID) VALUES('MCEBOOK-ADMIN-RES-REPORT-019','DEF-role-superadmin','1','1','1','1',NULL,NULL,now(),'DEF-user-superadmin',now(),'DEF-user-superadmin','1','REQ-group-universal');
+
+/*
+-----------------------------------------------
+-- Creation of TBL_MC_CONTENT_ATTACHMENT
+-----------------------------------------------
+*/
+DROP TABLE IF EXISTS TBL_MC_CONTENT_ATTACHMENT;
+CREATE TABLE TBL_MC_CONTENT_ATTACHMENT (
+    ATTACHMENT_ID                   VARCHAR(32)                 NOT NULL,
+    HOTSPOT_ID                      VARCHAR(32)                 NOT NULL,
+    CONTENT_ID                      VARCHAR(32)                 NOT NULL,
+    ATTACHMENT_NAME                 VARCHAR(255)                NOT NULL,
+    ATTACHMENT_TYPE                 CHAR(2)                     NOT NULL,
+    ATTACHMENT_REL_PATH             VARCHAR(255)                NOT NULL,
+    SYNOPSIS                        TEXT,
+    CREATED_BY                      VARCHAR(32)                 NOT NULL,
+    CREATED_DT                      DATETIME                    NOT NULL,
+    UPDATED_BY                      VARCHAR(32)                 NOT NULL,
+    UPDATED_DT                      DATETIME                    NOT NULL,
+    VERSION                         INTEGER                     NOT NULL,
+    PRIMARY KEY PK_MC_CONTENT_ATTACHMENT (ATTACHMENT_ID)
+) ENGINE=INNODB DEFAULT CHARSET=UTF8;
+
+ALTER TABLE tbl_aa_subject_login MODIFY LOGIN_NAME VARCHAR(100);
+
+/* Category subscriber start */
+DROP TABLE IF EXISTS TBL_MC_CATEGORY_SUBSCRIBERS;
+CREATE TABLE TBL_MC_CATEGORY_SUBSCRIBERS(
+SUBSCRIBERS_ID		VARCHAR(32)      NOT NULL,
+CATEGORY_ID		VARCHAR(32)      NOT NULL,
+USER_ID 		VARCHAR(32)      NOT NULL,
+SUB_START_DT		DATETIME        NULL,
+SUB_END_DT 		DATETIME	NULL,
+STATUS			CHAR(1)         NULL,
+CREATED_BY 		VARCHAR(32) 	NOT NULL,
+CREATED_DT 		DATETIME 	NOT NULL,
+UPDATED_BY		VARCHAR(32) 	NOT NULL,
+UPDATED_DT 		DATETIME 	NOT NULL
+);
+ALTER TABLE TBL_MC_CATEGORY_SUBSCRIBERS ADD CONSTRAINT PK_TBL_MC_CATEGORY_SUBSCRIBERS  PRIMARY KEY (SUBSCRIBERS_ID);
+/* Category subscriber end */
+
+/*for book store*/
+INSERT INTO TBL_CODETYPE(CODETYPE_ID,CODETYPE_DESC,CODETYPE_TABLE,READ_ONLY,COL_CODETYPE_ID,COL_CODE_ID,COL_CODE_DESC,COL_CODE_SEQ,COL_STATUS,COL_EFFECTIVE_DT,COL_EXPIRY_DT,EDIT_URL,ADD_URL,OWNER_GROUP,UPDATED_BY,UPDATED_DT,COL_CODE_LOCALE) VALUES('EBOOK-BOOKSTORE-STATUS','EBOOK-BOOKSTORE-STATUS','TBL_CODE_INT','N','CODETYPE_ID','CODE_ID','CODE_DESC','CODE_SEQ',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NOW(),'LOCALE');
+INSERT INTO TBL_CODE_INT(CODETYPE_ID,CODE_ID,CODE_DESC,CODE_SEQ,STATUS,EFFECTIVE_DT,EXPIRY_DT,UPDATED_BY,UPDATED_DT,LOCALE) VALUES('EBOOK-BOOKSTORE-STATUS','ALL','Any','1','A',NULL,NULL,NULL,NULL,'en');
+INSERT INTO TBL_CODE_INT(CODETYPE_ID,CODE_ID,CODE_DESC,CODE_SEQ,STATUS,EFFECTIVE_DT,EXPIRY_DT,UPDATED_BY,UPDATED_DT,LOCALE) VALUES('EBOOK-BOOKSTORE-STATUS','PA','Pending Remote Approval','2','A',NULL,NULL,NULL,NULL,'en');
+INSERT INTO TBL_CODE_INT(CODETYPE_ID,CODE_ID,CODE_DESC,CODE_SEQ,STATUS,EFFECTIVE_DT,EXPIRY_DT,UPDATED_BY,UPDATED_DT,LOCALE) VALUES('EBOOK-BOOKSTORE-STATUS','PC','Pending Home Confirmation','3','A',NULL,NULL,NULL,NULL,'en');
+INSERT INTO TBL_CODE_INT(CODETYPE_ID,CODE_ID,CODE_DESC,CODE_SEQ,STATUS,EFFECTIVE_DT,EXPIRY_DT,UPDATED_BY,UPDATED_DT,LOCALE) VALUES('EBOOK-BOOKSTORE-STATUS','ACT','Activated','4','A',NULL,NULL,NULL,NULL,'en');
+INSERT INTO TBL_CODE_INT(CODETYPE_ID,CODE_ID,CODE_DESC,CODE_SEQ,STATUS,EFFECTIVE_DT,EXPIRY_DT,UPDATED_BY,UPDATED_DT,LOCALE) VALUES('EBOOK-BOOKSTORE-STATUS','REJ','Rejected','5','A',NULL,NULL,NULL,NULL,'en');
+
+DROP TABLE IF EXISTS TBL_MC_BOOKSTORE_VIEW_CATEGORY;
+DROP TABLE IF EXISTS TBL_MC_BOOKSTORE_REMOTE;
+DROP TABLE IF EXISTS TBL_MC_BOOKSTORE_CONSUMER;
+DROP TABLE IF EXISTS TBL_MT_USER_NOTIFICATION_LOG;
+DROP TABLE IF EXISTS TBL_MT_USER_NOTIFICATION_PARAM;
+DROP TABLE IF EXISTS TBL_MT_USER_NOTIFICATION;
+DROP TABLE IF EXISTS TBL_MT_USER_DEVICE;
+CREATE TABLE TBL_MC_BOOKSTORE_REMOTE(
+    TENANT_ID                       VARCHAR(32)                 NOT NULL,
+    REMOTE_BOOKSTORE_NAME           VARCHAR(100)                NOT NULL,
+    REMOTE_BOOKSTORE_TYPE           VARCHAR(10)                 NOT NULL,
+    REMOTE_BOOKSTORE_SERVER_NAME    VARCHAR(255)                NOT NULL,
+    REMOTE_TENANT_ID                VARCHAR(32)                 NOT NULL,
+    REMOTE_TENANT_NAME              VARCHAR(255)                NULL,
+    STATUS                          VARCHAR(32)                 NOT NULL,
+    DELETE_FLAG                     CHAR(1)                     NULL,
+    CONSUMER_ID                     VARCHAR(32)                 NOT NULL,
+    CONSUMER_KEY                    VARCHAR(32)                 NULL,
+    PROVIDER_ID                     VARCHAR(32)                 NOT NULL,
+    PROVIDER_KEY                    VARCHAR(32)                 NULL,
+    REMARKS                         VARCHAR(32)                 NULL,
+    CREATED_BY                      VARCHAR(32)                 NOT NULL,
+    CREATED_DT                      DATETIME                    NOT NULL,
+    UPDATED_BY                      VARCHAR(32)                 NOT NULL,
+    UPDATED_DT                      DATETIME                    NOT NULL,
+    PRIMARY KEY (CONSUMER_ID)
+) ENGINE=INNODB DEFAULT CHARSET=UTF8;
+
+CREATE TABLE TBL_MC_BOOKSTORE_CONSUMER(
+    TENANT_ID                       VARCHAR(32)                 NOT NULL,
+    CONSUMER_NAME                   VARCHAR(255)                NOT NULL,
+    CONSUMER_SERVER_TYPE            VARCHAR(32)                 NOT NULL,
+    CONSUMER_SERVER_NAME            VARCHAR(255)                NOT NULL,
+    CONSUMER_TENANT_ID              VARCHAR(32)                 NOT NULL,
+    CONSUMER_TENANT_NAME            VARCHAR(255)                NULL,
+    CONSUMER_OU_ID                  VARCHAR(32)                 NULL,
+    STATUS                          VARCHAR(32)                 NULL,
+    CONSUMER_ID                     VARCHAR(32)                 NOT NULL,
+    DELETE_FLAG                     CHAR(1)                     NULL,
+    CONSUMER_KEY                    VARCHAR(32)                 NULL,
+    PROVIDER_ID                     VARCHAR(32)                 NOT NULL,
+    PROVIDER_KEY                    VARCHAR(32)                 NULL,
+    REMARKS                         VARCHAR(32)                 NULL,
+    CREATED_BY                      VARCHAR(32)                 NOT NULL,
+    CREATED_DT                      DATETIME                    NOT NULL,
+    UPDATED_BY                      VARCHAR(32)                 NOT NULL,
+    UPDATED_DT                      DATETIME                    NOT NULL,
+    PRIMARY KEY (PROVIDER_ID)
+) ENGINE=INNODB DEFAULT CHARSET=UTF8;
+
+CREATE TABLE TBL_MT_USER_DEVICE (
+    DEVICE_ID                       VARCHAR(32)                 NOT NULL,
+    USER_ID                         VARCHAR(32)                 NOT NULL,
+    DEVICE_TYPE                     CHAR(1)                     NOT NULL,
+    DEVICE_TOKEN                    VARCHAR(100)                NOT NULL,
+    TENANT_ID                       VARCHAR(32)                 NOT NULL,
+    REGISTER_DT                     DATETIME                    NOT NULL,
+    STATUS                          CHAR(1)                     NOT NULL,
+    CREATED_BY                      VARCHAR(32)                 NOT NULL,
+    CREATED_DT                      DATETIME                    NOT NULL,
+    UPDATED_BY                      VARCHAR(32)                 NOT NULL,
+    UPDATED_DT                      DATETIME                    NOT NULL,
+    VERSION                         INTEGER                     NOT NULL
+);
+ALTER TABLE TBL_MT_USER_DEVICE ADD CONSTRAINT PK_MT_USER_DEVICE  PRIMARY KEY (DEVICE_ID);
+
+CREATE TABLE TBL_MT_USER_NOTIFICATION (
+    NOTIFICATION_ID                 VARCHAR(32)                 NOT NULL,
+    USER_ID                         VARCHAR(32)                 NOT NULL,
+    DEVICE_ID                       VARCHAR(32)                 NULL,
+    MESSAGE_TYPE                    CHAR(4)                     NOT NULL,
+    MESSAGE_CODE                    VARCHAR(20)                 NULL,
+    MESSAGE_TITLE                   VARCHAR(100)                NULL,
+    MESSAGE_BODY                    VARCHAR(1000)               NULL,
+    STATUS                          CHAR(1)                     NULL,
+    DELETE_FLAG                     CHAR(1)                     NULL,
+    SENT_DT                         DATETIME                    NULL,
+    CREATED_BY                      VARCHAR(32)                 NOT NULL,
+    CREATED_DT                      DATETIME                    NOT NULL,
+    UPDATED_BY                      VARCHAR(32)                 NOT NULL,
+    UPDATED_DT                      DATETIME                    NOT NULL,
+    VERSION                         INTEGER                     NOT NULL
+);
+ALTER TABLE TBL_MT_USER_NOTIFICATION ADD CONSTRAINT PK_MT_USER_NOTIFICATION  PRIMARY KEY (NOTIFICATION_ID);
+
+CREATE TABLE TBL_MT_USER_NOTIFICATION_PARAM (
+    NOTIFICATION_ID                 VARCHAR(32)                 NOT NULL,
+    PARAM_KEY                       VARCHAR(50)                 NOT NULL,
+    PARAM_VALUE                     VARCHAR(100)                NOT NULL
+);
+ALTER TABLE TBL_MT_USER_NOTIFICATION_PARAM ADD CONSTRAINT PK_MT_USER_NOTIFICATION_PARAM  PRIMARY KEY (NOTIFICATION_ID, PARAM_KEY);
+
+CREATE TABLE TBL_MT_USER_NOTIFICATION_LOG (
+    LOG_ID                          VARCHAR(32)                 NOT NULL,
+    NOTIFICATION_ID                 VARCHAR(32)                 NOT NULL,
+    SEND_DT                         DATETIME                    NOT NULL,
+    STATUS                          CHAR(1)                     NOT NULL,
+    ERROR_CODE                      VARCHAR(32)                 NULL,
+    ERROR_MSG                       VARCHAR(255)                NULL
+);
+ALTER TABLE TBL_MT_USER_NOTIFICATION_LOG ADD CONSTRAINT PK_MT_USER_DEVICE_NOTIFICATION_LOG  PRIMARY KEY (LOG_ID);
+
+CREATE TABLE TBL_MC_BOOKSTORE_VIEW_CATEGORY(
+    CONSUMER_ID                     VARCHAR(32)                 NOT NULL,
+    CATEGORY_ID                     VARCHAR(32)                 NOT NULL,
+    STATUS                          CHAR(1)                     NULL,
+    CREATED_BY                      VARCHAR(32)                 NOT NULL,
+    CREATED_DT                      DATETIME                    NOT NULL,
+    UPDATED_BY                      VARCHAR(32)                 NOT NULL,
+    UPDATED_DT                      DATETIME                    NOT NULL,
+    PRIMARY KEY (CONSUMER_ID, CATEGORY_ID)
+) ENGINE=INNODB DEFAULT CHARSET=UTF8;
+
+ALTER TABLE TBL_MC_SETTING ADD(HIDE_DATE_OF_PUBLICATION VARCHAR(2) DEFAULT '0');
+ALTER TABLE TBL_MC_SETTING ADD(CHOICE_NUMBER int(2) DEFAULT 6);
+ALTER TABLE TBL_MC_SETTING ADD(HIDE_NOTIFICATION VARCHAR(2) DEFAULT '0');
+ALTER TABLE TBL_MC_SETTING ADD(HIDE_CATEGORY_SUBSCRIPTION VARCHAR(2) DEFAULT '0');

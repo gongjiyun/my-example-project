@@ -2,6 +2,7 @@ package mytest.activemq;
 
 import java.net.URISyntaxException;
 
+import javax.jms.Connection;
 import javax.jms.Destination;
 import javax.jms.MessageProducer;
 import javax.jms.Session;
@@ -20,15 +21,15 @@ public class TestActiveMQSend {
 	public static void main(String[] args) throws Exception {
 
 		ActiveMQConnectionFactory af = new ActiveMQConnectionFactory("tcp://localhost:61616");
-		af.setPassword("activemq");
-		af.setUserName("activemq");
+		af.setPassword("password");
+		af.setUserName("admin");
 		af.setAlwaysSyncSend(true);
 		af.setAlwaysSessionAsync(true);
-		//af.setCloseTimeout(1);
-		ActiveMQConnection con = (ActiveMQConnection) af.createConnection();
+		af.setCloseTimeout(1000);
+		Connection con = (ActiveMQConnection) af.createConnection();
 		con.start();
 		Session session = con.createSession(false, Session.AUTO_ACKNOWLEDGE);
-		Destination destination = session.createQueue("jms/tcpQueue");
+		Destination destination = session.createQueue("queue://example");
 		MessageProducer producer = session.createProducer(destination);
 		TextMessage message = session.createTextMessage("hello jms");
 		message.setStringProperty("headname", "remoteB");
@@ -36,7 +37,6 @@ public class TestActiveMQSend {
 		session.close();
 		con.stop();
 		con.close();
-		System.out.println("send success.");
 	}
 
 }

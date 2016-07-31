@@ -1,12 +1,17 @@
 package com.poc.spark.sample;
 
+import java.io.Serializable;
+
+import org.apache.hadoop.log.LogLevel;
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.api.java.function.Function;
 
-public class SimpleApp implements IConsoleExecutor{
-	
+public class SimpleApp implements IConsoleExecutor, Serializable{
+
+	private static final long serialVersionUID = 1L;
+
 	public void execute(String[] args) throws Exception{
 		String logFile = SPARK_HOME + "README.md"; // Should be some file on your system
 		SparkConf conf = new SparkConf();
@@ -15,6 +20,7 @@ public class SimpleApp implements IConsoleExecutor{
 		conf.setMaster(SPARK_MASTER);
 
 		JavaSparkContext sc = new JavaSparkContext(conf);
+		sc.setLogLevel("ALL");
 
 		JavaRDD<String> logData = sc.textFile(logFile).cache();
 
@@ -34,8 +40,8 @@ public class SimpleApp implements IConsoleExecutor{
 			}
 		}).count();
 
-		System.out.println("Lines with a: " + numAs + ", lines with b: "
-				+ numBs);
+		sc.close();
+		System.out.println("Lines with a: " + numAs + ", lines with b: " + numBs);
 	}
 	
 

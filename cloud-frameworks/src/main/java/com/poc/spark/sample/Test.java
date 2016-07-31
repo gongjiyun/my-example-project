@@ -7,7 +7,7 @@ public class Test {
 			System.out.println("Enter arg ... ");
 		}
 		
-		ConsoleExecutor exe = getExecutor(args[0].trim());
+		IConsoleExecutor exe = getExecutor(args[0].trim());
 		if(exe==null){
 			System.out.println("Class not found");
 		}
@@ -15,7 +15,7 @@ public class Test {
 		exe.execute(args);
 	}
 
-	private static ConsoleExecutor getExecutor(String name) {
+	private static IConsoleExecutor getExecutor(String name) {
 		if ("simple".equals(name)) {
 			return new SimpleApp();
 		}

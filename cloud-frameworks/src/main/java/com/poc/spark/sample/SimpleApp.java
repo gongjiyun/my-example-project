@@ -5,14 +5,14 @@ import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.api.java.function.Function;
 
-public class SimpleApp implements ConsoleExecutor{
+public class SimpleApp implements IConsoleExecutor{
 	
 	public void execute(String[] args) throws Exception{
 		String logFile = SPARK_HOME + "README.md"; // Should be some file on your system
 		SparkConf conf = new SparkConf();
 		conf.setAppName("Simple Application");
 		conf.setSparkHome(SPARK_HOME);
-		conf.setMaster("local");
+		conf.setMaster(SPARK_MASTER);
 
 		JavaSparkContext sc = new JavaSparkContext(conf);
 

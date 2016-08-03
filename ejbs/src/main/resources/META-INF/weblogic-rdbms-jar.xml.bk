@@ -1,0 +1,26 @@
+<weblogic-rdbms-jar xmlns="http://www.bea.com/ns/weblogic/90"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.bea.com/ns/weblogic/90 http://www.bea.com/ns/weblogic/910/weblogic-rdbms20-persistence.xsd">
+    <weblogic-rdbms-bean>
+        <ejb-name>PersonEntity</ejb-name>
+        <data-source-jndi-name>jdbc/poc</data-source-jndi-name>
+        <table-map>
+            <table-name>tb_persons</table-name>
+            <field-map>
+               <cmp-field>nric</cmp-field>
+               <dbms-column>nric</dbms-column>
+               <dbms-column-type>LongString</dbms-column-type>
+            </field-map>
+            <field-map>
+               <cmp-field>name</cmp-field>
+               <dbms-column>name</dbms-column>
+               <dbms-column-type>LongString</dbms-column-type>
+            </field-map>
+            <field-map>
+               <cmp-field>email</cmp-field>
+               <dbms-column>email</dbms-column>
+               <dbms-column-type>LongString</dbms-column-type>
+            </field-map>
+        </table-map>
+    </weblogic-rdbms-bean>
+</weblogic-rdbms-jar>

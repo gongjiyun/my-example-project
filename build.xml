@@ -5,14 +5,14 @@
 	<target name="deploy" depends="deploy-utils, deploy-hadoop">
 	</target>
 	<target name="deploy-utils">
-		<sshexec host="192.168.56.109" username="root" password="password1" trust="true" command="rm -rf /apps/common-utils-1.0-SNAPSHOT.jar">
+		<sshexec host="192.168.56.120" username="root" password="password1" trust="true" command="rm -rf /app/common-utils-1.0-SNAPSHOT.jar">
 		</sshexec>
-		<scp file="common-utils/target/common-utils-1.0-SNAPSHOT.jar" todir="root:password1@192.168.56.109:/apps/common-utils-1.0-SNAPSHOT.jar" trust="true" />
+		<scp file="common-utils/target/common-utils-1.0-SNAPSHOT.jar" todir="root:password1@192.168.56.120:/app/common-utils-1.0-SNAPSHOT.jar" trust="true" />
 	</target>
 
 	<target name="deploy-hadoop">
-		<sshexec host="192.168.56.109" username="root" password="password1" trust="true" command="rm -rf /apps/cloud-frameworks-1.0-SNAPSHOT.jar">
+		<sshexec host="192.168.56.120" username="root" password="password1" trust="true" command="rm -rf /app/cloud-frameworks-1.0-SNAPSHOT.jar">
 		</sshexec>
-		<scp file="hadoop/target/cloud-frameworks-1.0-SNAPSHOT.jar" todir="root:password1@192.168.56.109:/apps/cloud-frameworks-1.0-SNAPSHOT.jar" trust="true" />
+		<scp file="cloud-frameworks/target/cloud-frameworks-1.0-SNAPSHOT.jar" todir="root:password1@192.168.56.120:/app/cloud-frameworks-1.0-SNAPSHOT.jar" trust="true" />
 	</target>
 </project>

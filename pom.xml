@@ -312,7 +312,7 @@
 				<executions>
 					<execution>
 						<id>install</id>
-						<phase>site</phase>
+						<phase>pre-site</phase>
 						<configuration>
 							<target>
 								<property name="cd"

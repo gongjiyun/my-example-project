@@ -29,18 +29,15 @@ import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 import org.w3c.dom.Text;
 
-/**
- ** Digital Banking Trends �C Banks�� Goal and NCS Presence
- **/
 public class CodeGenerator {
 	
-	private final static String PROJECT_UTIL = "digital-banking-util";
-	private final static String PROJECT_SERVICE = "digital-banking-service";
+	private final static String PROJECT_UTIL = "asset-internal-util";
+	private final static String PROJECT_SERVICE = "asset-internal-services";
 	private final static String MAVEN_SRC = "src/main/java/";
-	private final static String SRC_ENTITY = MAVEN_SRC + "sg/ncs/digitalbanking/entity/";
-	private final static String SRC_CONSTANTS = MAVEN_SRC + "sg/ncs/digitalbanking/constants/";
-	private final static String SRC_DAO = MAVEN_SRC + "sg/ncs/digitalbanking/dao/";
-	private final static String SRC_DAO_IMPL = MAVEN_SRC + "sg/ncs/digitalbanking/dao/impl/";
+	private final static String SRC_ENTITY = MAVEN_SRC + "sg/ncs/asset/internal/entity/";
+	private final static String SRC_CONSTANTS = MAVEN_SRC + "sg/ncs/asset/internal/constants/";
+	private final static String SRC_DAO = MAVEN_SRC + "sg/ncs/asset/internal/dao/";
+	private final static String SRC_DAO_IMPL = MAVEN_SRC + "sg/ncs/asset/internal/dao/impl/";
 	private final static String SRC_SPRING_DAO_CONFIG = "src/main/resources/config/spring/spring-dao.xml";
 	
 	private static String rootPath = null;
@@ -49,6 +46,8 @@ public class CodeGenerator {
 	private static String pathDao = null;
 	private static String pathDaoImpl = null;
 	private static String pathSpringDaoConfig = null;
+	
+	private static String TABLE_PREFIX = "";
 	
 	static{
 		try {
@@ -80,7 +79,7 @@ public class CodeGenerator {
 				def.setUseExtends(true);
 				
 				EntityGenerator entityGen = gen.new EntityGenerator();
-				entityGen.generateEntity(def,true);
+				entityGen.generateEntity(def,false);
 				
 				
 				DaoGenerator daoGen = gen.new DaoGenerator();
@@ -147,7 +146,7 @@ public class CodeGenerator {
 		}
 		
 		private void insertPackage(PrintWriter print) throws FileNotFoundException{
-			print.append("package com.poc.utils.constants;\n");
+			print.append("package sg.ncs.asset.internal.constants;\n");
 		}
 		
 		private void insertMethods(PrintWriter print, ClassDef clazz) throws FileNotFoundException{
@@ -209,7 +208,7 @@ public class CodeGenerator {
 		}
 		
 		private void insertPackage(PrintWriter print, ClassDef clazz) throws FileNotFoundException{
-			print.append("package com.poc.utils.dao;\n");
+			print.append("package sg.ncs.asset.internal.dao;\n");
 		}
 		
 		private void insertImports(PrintWriter print, ClassDef clazz) throws FileNotFoundException{
@@ -217,11 +216,11 @@ public class CodeGenerator {
 	
 			print.append("import " + "java.util.List" + ";\n");
 			print.append("import " + "java.util.Map" + ";\n");
-			print.append("import " + "sg.ncs.digitalbanking.dao.IBaseDao" + ";\n");
+			print.append("import " + "sg.ncs.asset.internal.dao.IBaseDao" + ";\n");
 			print.append("import " + "org.hibernate.criterion.DetachedCriteria" + ";\n");
-			print.append("import " + "sg.ncs.digitalbanking.model.PageCriteria" + ";\n");
-			print.append("import " + "sg.ncs.digitalbanking.model.PageResult" + ";\n");
-			print.append("import " + "com.poc.common.entities." + clazz.getClassName() + ";\n");
+			print.append("import " + "sg.ncs.asset.internal.model.PageCriteria" + ";\n");
+			print.append("import " + "sg.ncs.asset.internal.model.PageResult" + ";\n");
+			print.append("import " + "sg.ncs.asset.internal.entity." + clazz.getClassName() + ";\n");
 		}
 		
 		private void insertMethods(PrintWriter print, ClassDef clazz) throws FileNotFoundException{
@@ -295,7 +294,7 @@ public class CodeGenerator {
 				print.append("\n");
 				insertDaoAnnotation(print, clazz);
 				
-				print.append("public class " + clazz.getClassName() + "DaoImpl extends AbstractBaseDao implements " + clazz.getClassName() + "Dao, IBaseDao" + "{");
+				print.append("public class " + clazz.getClassName() + "DaoImpl extends AbstractBaseDao implements " + clazz.getClassName() + "Dao" + "{");
 				print.append("\n");
 				
 				insertMethods(print, clazz);
@@ -309,7 +308,7 @@ public class CodeGenerator {
 		}
 		
 		private void insertPackage(PrintWriter print, ClassDef clazz) throws FileNotFoundException{
-			print.append("package com.poc.utils.dao.impl;\n");
+			print.append("package sg.ncs.asset.internal.dao.impl;\n");
 		}
 		
 		private void insertImports(PrintWriter print, ClassDef clazz) throws FileNotFoundException{
@@ -324,12 +323,12 @@ public class CodeGenerator {
 			print.append("import " + "org.hibernate.criterion.Restrictions" + ";\n");		
 			print.append("import " + "org.springframework.stereotype.Repository" + ";\n");
 			
-			print.append("import " + "sg.ncs.digitalbanking.model.PageCriteria" + ";\n");
-			print.append("import " + "sg.ncs.digitalbanking.model.PageResult" + ";\n");
-			print.append("import " + "sg.ncs.digitalbanking.dao.AbstractBaseDao" + ";\n");
-			print.append("import " + "sg.ncs.digitalbanking.dao." + clazz.getClassName() + "Dao" + ";\n");
-			print.append("import " + "com.poc.common.entities." + clazz.getClassName() + ";\n");
-			print.append("import " + "sg.ncs.digitalbanking.util.QueryUtil;\n");
+			print.append("import " + "sg.ncs.asset.internal.model.PageCriteria" + ";\n");
+			print.append("import " + "sg.ncs.asset.internal.model.PageResult" + ";\n");
+			print.append("import " + "sg.ncs.asset.internal.dao.AbstractBaseDao" + ";\n");
+			print.append("import " + "sg.ncs.asset.internal.dao." + clazz.getClassName() + "Dao" + ";\n");
+			print.append("import " + "sg.ncs.asset.internal.entity." + clazz.getClassName() + ";\n");
+			print.append("import " + "sg.ncs.asset.internal.util.QueryUtil;\n");
 		}
 		
 		private void insertDaoAnnotation(PrintWriter print, ClassDef clazz) throws FileNotFoundException{
@@ -542,6 +541,8 @@ public class CodeGenerator {
 				
 				insertFields(print, clazz);
 				print.append("\n");
+				insertEntityConstruct(print, clazz);
+				print.append("\n");
 				insertMethods(print, clazz);
 				
 				print.append("}");
@@ -553,8 +554,8 @@ public class CodeGenerator {
 		}
 		
 		private void insertPackage(PrintWriter print, ClassDef clazz) throws FileNotFoundException{
-			print.append("package com.poc.utils.entity;\n");
-			clazz.setClassFullName("com.poc.common.entities." + clazz.getClassName());
+			print.append("package sg.ncs.asset.internal.entity;\n");
+			clazz.setClassFullName("sg.ncs.asset.internal.entity." + clazz.getClassName());
 		}
 		private void insertImports(PrintWriter print, ClassDef clazz) throws FileNotFoundException{
 			System.out.println("insert imports classes for " + clazz.getClassName());		
@@ -600,7 +601,7 @@ public class CodeGenerator {
 			
 			if(types.contains(Date.class.getName())){
 				print.append("import " + "org.springframework.format.annotation.DateTimeFormat" + ";\n");
-				print.append("import " + "sg.ncs.digitalbanking.constants.PortalConstants" + ";\n");
+				print.append("import " + "sg.ncs.asset.internal.constants.PortalConstants" + ";\n");
 			}
 			
 		}
@@ -658,7 +659,7 @@ public class CodeGenerator {
 						String incrmentid = fd.getFieldName().toLowerCase() + "_gen";				
 						print.append("\t" + "@Id" + "\n");
 						String genStrage = "@GeneratedValue(strategy = GenerationType.TABLE,generator=\"" + incrmentid + "\")";
-						String gener = "@TableGenerator(name=\""+ incrmentid +"\",table=\"PB_Classes_\",pkColumnName=\"className\",initialValue=1, valueColumnName=\"currentId\",pkColumnValue=\"" + clazz.getClassFullName() + "\",allocationSize=1)";
+						String gener = "@TableGenerator(name=\""+ incrmentid +"\",table=\"Classes_\",pkColumnName=\"className\",initialValue=1, valueColumnName=\"currentId\",pkColumnValue=\"" + clazz.getClassFullName() + "\",allocationSize=1)";
 						
 
 						print.append("\t" + genStrage + "\n"); 
@@ -708,6 +709,36 @@ public class CodeGenerator {
 			}
 		}
 		
+		private void insertEntityConstruct(PrintWriter print, ClassDef clazz) throws FileNotFoundException{
+			System.out.println("Insert construct for " + clazz.getClassName());
+			if(clazz.getFields()==null || clazz.getFields().size()==0){
+				System.out.println("No properties found for " + clazz.getClassName());
+				return;
+			}
+			
+			print.append("\n");
+			print.append("\t" + "public " + clazz.getClassName() + "() {");
+			print.append("\t" + "}");
+			print.append("\n");
+			
+			StringBuffer constructParams = new StringBuffer();
+			for(FieldDef fd : clazz.getFields()){
+				constructParams.append(", ");
+				constructParams.append(fd.getFieldType() + " " + fd.getFieldName());
+			}
+			
+			print.append("\n");
+			print.append("\t" + "public " + clazz.getClassName() + "(" + constructParams.substring(2)+ ") {");
+			
+			for(FieldDef fd : clazz.getFields()){
+				print.append("\n");
+				print.append("\t\t" + "this." + fd.getFieldName() + " = " + fd.getFieldName() + ";");
+			}
+			print.append("\n");
+			print.append("\t" + "}");
+			print.append("\n");
+		}
+		
 		private void insertMethods(PrintWriter print, ClassDef clazz) throws FileNotFoundException{
 			System.out.println("Insert methods for " + clazz.getClassName());
 			if(clazz.getFields()==null || clazz.getFields().size()==0){
@@ -752,13 +783,18 @@ public class CodeGenerator {
 				System.out.println("Updating dao config for " + clazz.getClassName());
 				String className = clazz.getClassName();
 				String entityName=	className.substring(0,1).toLowerCase() + className.substring(1) + "Dao";
-				String daoImpl = "sg.ncs.digitalbanking.dao.impl." + className + "DaoImpl";
+				String daoImpl = "sg.ncs.asset.internal.dao.impl." + className + "DaoImpl";
 				String parent = "baseDao";
 				
 				String filePath = pathSpringDaoConfig;
+				File daoConfigFile = new File(filePath);
+				if(!daoConfigFile.exists()){
+					daoConfigFile.createNewFile();
+				}
+				
 				DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 				DocumentBuilder builder = factory.newDocumentBuilder();    
-				FileInputStream fin = new FileInputStream(new File(filePath));
+				FileInputStream fin = new FileInputStream(filePath);
 				Document document = builder.parse(fin);      
 				Element element = document.getDocumentElement();
 				
@@ -821,7 +857,7 @@ public class CodeGenerator {
 			List<ClassDef> result = new ArrayList<CodeGenerator.ClassDef>();
 			List<SheetVO> sheetList = new ArrayList<CodeGenerator.SheetVO>();
 			
-			Workbook book = Workbook.getWorkbook(CodeGenerator.class.getResourceAsStream("/PB design.xls"));
+			Workbook book = Workbook.getWorkbook(CodeGenerator.class.getResourceAsStream("/Table design.xls"));
 			Sheet sheet = book.getSheet(0);
 			int rowsLength = sheet.getRows();
 			String lastClassName = "";
@@ -910,7 +946,7 @@ public class CodeGenerator {
 
 					CodeGenerator.ClassDef classdef = codeg.new ClassDef();
 					classdef.setClassName(className.substring(0,1).toUpperCase() + className.substring(1));
-					classdef.setTableName("PB_" + classdef.getClassName());
+					classdef.setTableName(TABLE_PREFIX + classdef.getClassName());
 					if(superClass!=null && !"".equals(superClass.trim())){
 						classdef.setParentClassName(superClass.substring(0,1).toUpperCase() + superClass.substring(1));
 					}

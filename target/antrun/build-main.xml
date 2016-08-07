@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <property name="cd" value="D:\Projects\my-example-project\target/poc-1.0-SNAPSHOT"/>
+  <ant antfile="D:\Projects\my-example-project/build.xml">
+    <target name="deploy"/>
+  </ant>
+</target>
+</project>

@@ -77,8 +77,6 @@
 	</bean>
 	<!-- bean id="transactionManager" class="org.springframework.transaction.jta.JtaTransactionManager" -->
 	
-	<bean id="testService" class="mytest.service.TestServiceImpl"/>
-
 	<tx:advice id="baseAdvice" transaction-manager="transactionManager">
 		<tx:attributes>
 			<tx:method name="insert*" propagation="REQUIRED" />

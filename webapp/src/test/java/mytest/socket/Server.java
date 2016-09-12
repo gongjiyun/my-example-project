@@ -53,9 +53,9 @@ public class Server {
 					
 				} catch (Exception e) {
 					e.printStackTrace();
+				} finally {
+					socket.close();
 				}
-				socket.close();
-				System.out.println("\n");
 				System.out.println("finish read & write");
 			}
 		} catch (Exception e) {

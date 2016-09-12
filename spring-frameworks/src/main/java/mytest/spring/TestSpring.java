@@ -1,6 +1,7 @@
 package mytest.spring;
 
 import mytest.service.TestService;
+import mytest.service.TestServiceImpl;
 
 import org.junit.Test;
 import org.springframework.transaction.PlatformTransactionManager;

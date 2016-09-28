@@ -1,7 +1,6 @@
 package mytest.spring;
 
 import mytest.service.TestService;
-import mytest.service.TestServiceImpl;
 
 import org.junit.Test;
 import org.springframework.transaction.PlatformTransactionManager;
@@ -14,7 +13,7 @@ public class TestSpring {
 	
 	public static void main(String[] args) throws Exception{
 		TestSpring test = new TestSpring();
-		test.prepareTestData();
+		test.testSpring();
 	}
 	
 	

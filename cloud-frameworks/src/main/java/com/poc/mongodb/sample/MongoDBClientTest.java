@@ -55,12 +55,12 @@ public class MongoDBClientTest {
 		System.out.println("------------find collections all---------------");
 		FindIterable<Document> its = collections.find().sort(new Document());
 		
-		/*its.forEach(new Block<Document>() {
+		its.forEach(new Block<Document>() {
 			@Override
 			public void apply(Document document) {
 				System.out.println(document);
 			}
-		});*/
+		});
 		
 		
 		System.out.println("------------find collections by condition---------------");
@@ -76,11 +76,12 @@ public class MongoDBClientTest {
 	}
 
 
-	public void testAggregation() throws Exception {
+
+	/*public void testAggregation() throws Exception {
 		MongoDatabase db = mongoclient.getDatabase(database);
 		MongoCollection<Document> collections = db.getCollection("restaurants");
 		AggregateIterable<Document> its = collections.aggregate(Arrays.asList(
-				new Document("$match", new Document("_id", "1")), 
+				new Document("$match", new Document("_id", "1")),
 				new Document("$match", new Document("_id", "2"))
 			)
 		);
@@ -91,7 +92,7 @@ public class MongoDBClientTest {
 			}
 		});
 		
-	}
+	}*/
 	
 	public void testMapReduce() throws Exception {
 		MongoDatabase db = mongoclient.getDatabase(database);

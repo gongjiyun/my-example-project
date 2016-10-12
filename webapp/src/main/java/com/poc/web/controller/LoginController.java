@@ -57,7 +57,7 @@ public class LoginController extends AbstractPortalController{
 	public String admin(HttpServletRequest request, HttpServletResponse response, Model model) {
 		try {
 			Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-			String username = "";
+			String username;
 			if (principal instanceof AuthUserDetails) {
 				username = ((UserDetails)principal).getUsername();
 			} else if(principal instanceof UserDetails) {

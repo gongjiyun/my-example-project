@@ -26,6 +26,7 @@
 		<module>cloud-frameworks</module>
 		<module>webapp</module>
 		<module>spring-frameworks</module>
+		<module>test</module>
 	</modules>
 
 	<dependencies>

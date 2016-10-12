@@ -1,5 +1,6 @@
 package mytest;
 
+import mytest.hibernate.HibernateInterceptor;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -7,7 +8,6 @@ import org.hibernate.cfg.Configuration;
 
 import com.poc.common.entities.UserProfile;
 import com.poc.utils.util.DateUtil;
-import com.poc.web.interceptor.HibernateInterceptor;
 
 /**
  * Target : Created By : jiyun Createzd Date : 2011-5-6 Version : Remarks :

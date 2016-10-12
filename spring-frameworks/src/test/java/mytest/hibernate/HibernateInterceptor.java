@@ -1,7 +1,7 @@
 /**
 This class add by jiyun
  */
-package com.poc.web.interceptor;
+package mytest.hibernate;
 
 import java.io.Serializable;
 import java.util.Iterator;

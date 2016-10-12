@@ -89,8 +89,7 @@ public class SystemInitializer implements ApplicationContextAware {
 			}
 			
 			String[][] portalroles = new String[][]{
-					new String[]{RoleConstants.ROLE_PB_ADMIN, "Admin", "1"}, 
-					new String[]{RoleConstants.ROLE_PB_USER, "User" ,"2"}
+					new String[]{RoleConstants.ROLE_ADMIN, "Admin", "1"}
 					};
 			for(String[] rolename : portalroles){
 				try {
@@ -126,21 +125,6 @@ public class SystemInitializer implements ApplicationContextAware {
 			} catch (Exception e) {
 				System.out.println("Error : initial pb admin user. " + StringUtil.getExceptionTrace(e, 500));
 			}
-			
-			try {
-				Role r1 = roleService.findRoleByName(RoleConstants.ROLE_PB_ADMIN);
-				User user = userService.findUserByName("pbadmin");
-				if(user==null){
-					user = new User();
-					user.setUsername("pbadmin");
-					user.setPassword(passwordEncoder.encode("password"));
-					user.setStatus(PortalConstants.DATA_STATUS_ACTIVE);
-					userService.createUser(user, new long[]{r1.getRoleId()}, null, new PortalContext());
-				}
-			} catch (Exception e) {
-				System.out.println("Error : initial pb admin user. " + StringUtil.getExceptionTrace(e, 500));
-			}
-			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

@@ -61,7 +61,7 @@
     	<security:access-denied-handler error-page="/500.jsp"/>
     </security:http>
 	
-	<security:authentication-manager>
+	<security:authentication-manager alias="">
 		<security:authentication-provider user-service-ref="userService">
 			<security:password-encoder ref="passwordEncoder" />
 			<!-- <security:user-service> <security:user name="Administrator" password="" authorities="ROLE_Administrator" locked="false"/> </security:user-service> -->

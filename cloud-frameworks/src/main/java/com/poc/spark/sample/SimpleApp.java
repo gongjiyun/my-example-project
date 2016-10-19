@@ -12,7 +12,8 @@ public class SimpleApp implements IConsoleExecutor, Serializable{
 	private static final long serialVersionUID = 1L;
 
 	public void execute(String[] args) throws Exception{
-		String logFile = "file://" + SPARK_HOME + "README.md"; // Should be some file on your system
+		//String logFile = "file://" + SPARK_HOME + "README.md"; // Should be some file on your system
+		String logFile = "file://" + args[0];
 		SparkConf conf = new SparkConf();
 		conf.setAppName("Simple Application");
 		conf.setSparkHome(SPARK_HOME);

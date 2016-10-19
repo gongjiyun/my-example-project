@@ -32,10 +32,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="cloud-frameworks" target="1.7" />
+      <module name="cloud-frameworks" target="1.8" />
       <module name="common-utils" target="1.7" />
       <module name="ejbs" target="1.5" />
-      <module name="my-example-project" target="1.7" />
       <module name="poc" target="1.7" />
       <module name="service" target="1.7" />
       <module name="spring-frameworks" target="1.7" />

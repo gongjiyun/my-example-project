@@ -5,7 +5,7 @@ import java.nio.channels.Channels;
 import java.nio.channels.FileChannel;
 import java.nio.channels.WritableByteChannel;
 
-public class ChannelTransfer {
+public class ChannelTransferTest {
 	public static void main(String[] argv) throws Exception {
 		catFiles(Channels.newChannel(System.out), new String[]{"D:/primer-dataset.json"});
 	}

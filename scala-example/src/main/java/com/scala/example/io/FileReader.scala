@@ -5,7 +5,7 @@ import scala.io.Source;
 /**
   * Created by Administrator on 2017-1-12.
   */
-class FileOperator {
+class FileReader {
 
   def readFile(args: Array[String]): Unit = {
     val buffer: scala.io.BufferedSource = Source.fromFile("/usr/logs/poc-log.log")(scala.io.Codec.fallbackSystemCodec);

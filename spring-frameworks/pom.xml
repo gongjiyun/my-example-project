@@ -45,12 +45,8 @@
 			<version>1.10.2.RELEASE</version>
 			<scope>provided</scope>
 		</dependency>
-		<!-- <dependency>
-			<groupId>org.springframework.data</groupId>
-			<artifactId>spring-data-redis</artifactId>
-			<version>1.9.2.RELEASE</version>
-			<scope>provided</scope>
-		</dependency> -->
+		<!-- <dependency> <groupId>org.springframework.data</groupId> <artifactId>spring-data-redis</artifactId> 
+			<version>1.9.2.RELEASE</version> <scope>provided</scope> </dependency> -->
 		<dependency>
 			<groupId>redis.clients</groupId>
 			<artifactId>jedis</artifactId>
@@ -62,17 +58,21 @@
 			<version>3.2.2</version>
 			<scope>provided</scope>
 		</dependency>
-
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis</artifactId>
+			<version>3.4.1</version>
+		</dependency>
 	</dependencies>
 
 	<!-- Package as an executable jar -->
-	<build>
+	<!-- <build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-	</build>
+	</build> -->
 
 </project>

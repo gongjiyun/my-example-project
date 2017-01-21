@@ -25,21 +25,27 @@
         <module name="cloud-frameworks" />
         <module name="common-utils" />
         <module name="ejbs" />
+        <module name="example" />
+        <module name="scala-example" />
+        <module name="script" />
         <module name="service" />
         <module name="spring-frameworks" />
-        <module name="test" />
         <module name="webapp" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="cloud-frameworks" target="1.8" />
-      <module name="common-utils" target="1.7" />
+      <module name="common-utils" target="1.8" />
       <module name="ejbs" target="1.5" />
-      <module name="poc" target="1.7" />
-      <module name="service" target="1.7" />
-      <module name="spring-frameworks" target="1.7" />
-      <module name="test" target="1.7" />
-      <module name="webapp" target="1.7" />
+      <module name="example" target="1.8" />
+      <module name="poc" target="1.8" />
+      <module name="scala-example" target="1.5" />
+      <module name="scala-script" target="1.8" />
+      <module name="script" target="1.8" />
+      <module name="service" target="1.8" />
+      <module name="spring-frameworks" target="1.8" />
+      <module name="test" target="1.8" />
+      <module name="webapp" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

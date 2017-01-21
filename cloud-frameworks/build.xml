@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<project name="webapp" default="deploy" basedir=".">
+
+	<property environment="env" />
+	<target name="deploy" depends="deploy-hadoop">
+	</target>
+	<target name="deploy-hadoop">
+		<sshexec host="192.168.56.120" username="root" password="password1" trust="true" command="rm -rf /app/cloud-frameworks-1.0-SNAPSHOT.jar">
+		</sshexec>
+		<scp file="target/cloud-frameworks-1.0-SNAPSHOT.jar" todir="root:password1@192.168.56.120:/app/jars/cloud-frameworks-1.0-SNAPSHOT.jar" trust="true" />
+	</target>
+</project>

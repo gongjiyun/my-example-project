@@ -24,5 +24,4 @@ public class LambdaTest {
         test2.ifPresent(System.out::println);
         System.out.println(test2.get());
     }
-
 }

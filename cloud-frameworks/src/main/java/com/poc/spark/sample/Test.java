@@ -17,6 +17,7 @@ public class Test {
 
 		exe.execute(arrayArgs);
 	}
+	
 
 	private static IConsoleExecutor getExecutor(String name) {
 		if ("simple".equals(name)) {
@@ -24,6 +25,9 @@ public class Test {
 		}
 		if ("wordcount".equals(name)) {
 			return new WordCount();
+		}
+		if ("ipcount".equals(name)) {
+			return new IpCount();
 		}
 		
 		return null;

@@ -20,7 +20,9 @@ public class FsOperation {
 	
 	private static Configuration conf = ConfigurationClass.getCongfiguration();
 
-	public static void main(String[] args) throws Exception {        
+	public static void main(String[] args) throws Exception {
+		FsOperation fsop = new FsOperation();
+		fsop.listFileStatus();
 	}
 	
 	@Test
@@ -28,7 +30,6 @@ public class FsOperation {
         Path path = new Path("/usr/example/input");
         FileSystem fs = FileSystem.newInstance(conf);
         System.out.println(FileSystem.getDefaultUri(conf));
-        System.out.println(fs.getDefaultBlockSize(path));
         
         /*RemoteIterator<LocatedFileStatus> itfs = fs.listFiles(path, true);
         while(itfs.hasNext()){

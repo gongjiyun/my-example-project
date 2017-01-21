@@ -5,10 +5,13 @@
       <module fileurl="file://$PROJECT_DIR$/cloud-frameworks/cloud-frameworks.iml" filepath="$PROJECT_DIR$/cloud-frameworks/cloud-frameworks.iml" />
       <module fileurl="file://$PROJECT_DIR$/common-utils/common-utils.iml" filepath="$PROJECT_DIR$/common-utils/common-utils.iml" />
       <module fileurl="file://$PROJECT_DIR$/ejbs/ejbs.iml" filepath="$PROJECT_DIR$/ejbs/ejbs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example/example.iml" filepath="$PROJECT_DIR$/example/example.iml" />
       <module fileurl="file://$PROJECT_DIR$/poc.iml" filepath="$PROJECT_DIR$/poc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scala-example/scala-example.iml" filepath="$PROJECT_DIR$/scala-example/scala-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scala-scripts/scala-scripts.iml" filepath="$PROJECT_DIR$/scala-scripts/scala-scripts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scala-scripts/script.iml" filepath="$PROJECT_DIR$/scala-scripts/script.iml" />
       <module fileurl="file://$PROJECT_DIR$/service/service.iml" filepath="$PROJECT_DIR$/service/service.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-frameworks/spring-frameworks.iml" filepath="$PROJECT_DIR$/spring-frameworks/spring-frameworks.iml" />
-      <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
       <module fileurl="file://$PROJECT_DIR$/webapp/webapp.iml" filepath="$PROJECT_DIR$/webapp/webapp.iml" />
     </modules>
   </component>

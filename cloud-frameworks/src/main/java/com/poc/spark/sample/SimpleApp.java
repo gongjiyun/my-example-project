@@ -7,17 +7,19 @@ import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.api.java.function.Function;
 
+import com.poc.framework.constants.ServerConstants;
+
 public class SimpleApp implements IConsoleExecutor, Serializable{
 
 	private static final long serialVersionUID = 1L;
 
 	public void execute(String[] args) throws Exception{
-		//String logFile = "file://" + SPARK_HOME + "README.md"; // Should be some file on your system
-		String logFile = "file://" + args[0];
+		String logFile = args[0];
 		SparkConf conf = new SparkConf();
 		conf.setAppName("Simple Application");
 		conf.setSparkHome(SPARK_HOME);
 		conf.setMaster(SPARK_MASTER);
+		conf.setJars(new String[]{"/app/jars/cloud-frameworks-1.0-SNAPSHOT.jar", "/app/jars/common-utils-1.0-SNAPSHOT.jar"});
 
 		JavaSparkContext sc = new JavaSparkContext(conf);
 		sc.setLogLevel("ALL");
@@ -44,5 +46,10 @@ public class SimpleApp implements IConsoleExecutor, Serializable{
 		System.out.println("Lines with a: " + numAs + ", lines with b: " + numBs);
 	}
 	
+	@org.junit.Test
+	public void test() throws Exception{
+		SimpleApp app = new SimpleApp();
+		app.execute(new String[]{"hdfs://" + ServerConstants.SERVER_HOST + ":9000" + "/usr/access_2013_05_31.log"});
+	}
 
 }

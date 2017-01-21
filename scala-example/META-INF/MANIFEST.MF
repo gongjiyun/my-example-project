@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: scala-example
+Bundle-SymbolicName: scala-example
+Bundle-Version: 1.0.0.qualifier
+Export-Package: com.scala.example,
+ com.scala.example.ch4,
+ com.scala.example.io,
+ com.scala.example.obj
+Require-Bundle: org.scala-lang.scala-library

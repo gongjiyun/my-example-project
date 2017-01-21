@@ -11,6 +11,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: redis.clients:jedis:2.8.0" level="project" />
     <orderEntry type="module" module-name="common-utils" />
     <orderEntry type="library" name="Maven: net.sourceforge.jexcelapi:jxl:2.6.12" level="project" />
     <orderEntry type="library" name="Maven: org.apache.pdfbox:pdfbox:1.8.10" level="project" />
@@ -119,8 +120,8 @@
     <orderEntry type="library" name="Maven: org.scalatest:scalatest_2.11:2.2.6" level="project" />
     <orderEntry type="library" name="Maven: org.scala-lang.modules:scala-xml_2.11:1.0.2" level="project" />
     <orderEntry type="library" name="Maven: org.spark-project.spark:unused:1.0.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.spark:spark-streaming_2.11:2.0.1" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.spark:spark-yarn_2.11:2.0.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.spark:spark-streaming_2.11:2.0.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.spark:spark-yarn_2.11:2.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-yarn-common:2.2.0" level="project" />
     <orderEntry type="library" name="Maven: com.google.inject.extensions:guice-servlet:3.0" level="project" />
     <orderEntry type="library" name="Maven: com.google.inject:guice:3.0" level="project" />
@@ -128,10 +129,10 @@
     <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-yarn-server-web-proxy:2.2.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-yarn-server-common:2.2.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-yarn-client:2.2.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.spark:spark-sql_2.11:2.0.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.spark:spark-sql_2.11:2.0.0" level="project" />
     <orderEntry type="library" name="Maven: com.univocity:univocity-parsers:2.1.1" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.spark:spark-sketch_2.11:2.0.1" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.spark:spark-catalyst_2.11:2.0.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.spark:spark-sketch_2.11:2.0.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.spark:spark-catalyst_2.11:2.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.janino:janino:2.7.8" level="project" />
     <orderEntry type="library" name="Maven: org.antlr:antlr4-runtime:4.5.3" level="project" />
     <orderEntry type="library" name="Maven: org.apache.parquet:parquet-column:1.7.0" level="project" />
@@ -141,7 +142,7 @@
     <orderEntry type="library" name="Maven: org.apache.parquet:parquet-hadoop:1.7.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.parquet:parquet-format:2.3.0-incubating" level="project" />
     <orderEntry type="library" name="Maven: org.apache.parquet:parquet-jackson:1.7.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.spark:spark-hive_2.11:2.0.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.spark:spark-hive_2.11:2.0.0" level="project" />
     <orderEntry type="library" name="Maven: com.twitter:parquet-hadoop-bundle:1.6.0" level="project" />
     <orderEntry type="library" name="Maven: org.spark-project.hive:hive-exec:1.2.1.spark2" level="project" />
     <orderEntry type="library" name="Maven: javolution:javolution:5.5.1" level="project" />
@@ -154,6 +155,7 @@
     <orderEntry type="library" name="Maven: org.json:json:20090211" level="project" />
     <orderEntry type="library" name="Maven: stax:stax-api:1.0.1" level="project" />
     <orderEntry type="library" name="Maven: net.sf.opencsv:opencsv:2.3" level="project" />
+    <orderEntry type="library" name="Maven: jline:jline:2.12" level="project" />
     <orderEntry type="library" name="Maven: org.spark-project.hive:hive-metastore:1.2.1.spark2" level="project" />
     <orderEntry type="library" name="Maven: com.jolbox:bonecp:0.8.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.apache.derby:derby:10.10.2.0" level="project" />
@@ -183,11 +185,11 @@
     <orderEntry type="library" name="Maven: com.yammer.metrics:metrics-core:2.2.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.kafka:kafka-clients:0.8.2.1" level="project" />
     <orderEntry type="library" name="Maven: com.101tec:zkclient:0.3" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.spark:spark-mllib_2.11:2.0.1" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.spark:spark-graphx_2.11:2.0.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.spark:spark-mllib_2.11:2.0.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.spark:spark-graphx_2.11:2.0.0" level="project" />
     <orderEntry type="library" name="Maven: com.github.fommil.netlib:core:1.1.2" level="project" />
     <orderEntry type="library" name="Maven: net.sourceforge.f2j:arpack_combined_all:0.1" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.spark:spark-mllib-local_2.11:2.0.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.spark:spark-mllib-local_2.11:2.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.scalanlp:breeze_2.11:0.11.2" level="project" />
     <orderEntry type="library" name="Maven: org.scalanlp:breeze-macros_2.11:0.11.2" level="project" />
     <orderEntry type="library" name="Maven: com.github.rwl:jtransforms:2.4.0" level="project" />

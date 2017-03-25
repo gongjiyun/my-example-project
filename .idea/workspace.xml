@@ -2,206 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a33c8030-5b8d-4e69-9505-d8fc0364d9fd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_library_2_11_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/example-info.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/jdk8/LambdaTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/jdk8/OptionalTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/netty/DiscardServer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/netty/DiscardServerHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/netty/TimeServerHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/AppConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/RadomCharAPI.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/TestHibernate.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/TestJasperreport.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/TestStatic.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/TestThread.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/activemq/Listener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/activemq/Publisher.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/activemq/TestActiveMQReceive.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/activemq/TestActiveMQSend.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/activemq/TestMessageConverter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/activemq/TestMessageListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/algorithm/BubbleSort.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/algorithm/InsertSort.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/algorithm/MergeSort.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/algorithm/Sort.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/algorithm/TestSort.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/annotation/Key.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/annotation/TestKey.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/basic/Byte2Generate.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/basic/Example2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/basic/Finally.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/basic/GetImages.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/basic/GodDecideUs.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/basic/MyVO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/basic/NewBornBaby.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/basic/NewParent.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/basic/Test.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/basic/TestDecimalFormat.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/basic/TestFinal.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/basic/TestInnerClass.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/basic/TestReference.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/basic/TestTheads.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/basic/TestZip.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/basic/p1/PackageClass1.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/basic/p2/PackageClass2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/hibernate/HibernateInterceptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/jaas/MyAWTPermision.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/jaas/PasswordEncryptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/jdk8/lambda/TestLambda.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/nio/BufferTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/nio/ByteBufferTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/nio/ChannelTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/nio/ChannelTransfer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/nio/CharBufferTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/nio/ConnectAsync.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/nio/FileChannelTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/nio/PipesTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/nio/SelectSockets.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/nio/SelectSocketsThreadPool.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/nio/SocketServerChannel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/redis/RedisResource.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/redis/TestRedis.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/redis/TestRedisSubscribe.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/socket/Server.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/xml/TestStringReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/xml/TestXML.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/xml/TestXML.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/xml/TestXMLSchema.xsd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/test/java/mytest/xml/TestXSDValidate.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scala-example/scala-example.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scala-example/src/main/java/com/scala/example/Tester.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scala-example/src/main/java/com/scala/example/ch4/Rational.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scala-example/src/main/java/com/scala/example/ch4/Summer.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scala-example/src/main/java/com/scala/example/io/FileReader.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scala-example/src/main/java/com/scala/example/io/FileTest.scala" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_jms_jms_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_activemq_all_5_4_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_catalyst_2_11_2_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_graphx_2_11_2_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_hive_2_11_2_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_mllib_2_11_2_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_mllib_local_2_11_2_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_sketch_2_11_2_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_sql_2_11_2_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_streaming_2_11_2_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_yarn_2_11_2_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_8_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloud-frameworks/.settings/org.eclipse.m2e.core.prefs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloud-frameworks/.settings/org.hibernate.eclipse.console.prefs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/AppConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/RadomCharAPI.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/TestHibernate.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/TestJasperreport.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/TestStatic.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/TestThread.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/activemq/Listener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/activemq/Publisher.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/activemq/TestActiveMQReceive.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/activemq/TestActiveMQSend.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/activemq/TestMessageConverter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/activemq/TestMessageListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/algorithm/BubbleSort.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/algorithm/InsertSort.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/algorithm/MergeSort.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/algorithm/Sort.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/algorithm/TestSort.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/annotation/Key.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/annotation/TestKey.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/basic/Byte2Generate.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/basic/Example2.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/basic/Finally.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/basic/GetImages.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/basic/GodDecideUs.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/basic/MyVO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/basic/NewBornBaby.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/basic/NewParent.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/basic/Test.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/basic/TestDecimalFormat.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/basic/TestFinal.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/basic/TestInnerClass.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/basic/TestReference.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/basic/TestTheads.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/basic/TestZip.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/basic/p1/PackageClass1.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/basic/p2/PackageClass2.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/hibernate/HibernateInterceptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/jaas/MyAWTPermision.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/jaas/PasswordEncryptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/jdk8/lambda/TestLambda.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/nio/BufferTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/nio/ByteBufferTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/nio/ChannelTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/nio/ChannelTransfer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/nio/CharBufferTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/nio/ConnectAsync.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/nio/FileChannelTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/nio/PipesTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/nio/SelectSockets.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/nio/SelectSocketsThreadPool.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/nio/SocketServerChannel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/redis/RedisResource.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/redis/TestRedis.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/redis/TestRedisSubscribe.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/socket/Server.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/xml/TestStringReader.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/xml/TestXML.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/xml/TestXML.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/xml/TestXMLSchema.xsd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/src/test/java/mytest/xml/TestXSDValidate.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/test.iml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/client.ks" afterPath="$PROJECT_DIR$/example/client.ks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud-frameworks/.classpath" afterPath="$PROJECT_DIR$/cloud-frameworks/.classpath" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud-frameworks/.project" afterPath="$PROJECT_DIR$/cloud-frameworks/.project" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud-frameworks/.settings/org.eclipse.jdt.core.prefs" afterPath="$PROJECT_DIR$/cloud-frameworks/.settings/org.eclipse.jdt.core.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud-frameworks/cloud-frameworks.iml" afterPath="$PROJECT_DIR$/cloud-frameworks/cloud-frameworks.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud-frameworks/pom.xml" afterPath="$PROJECT_DIR$/cloud-frameworks/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/com/poc/framework/constants/ServerConstants.java" afterPath="$PROJECT_DIR$/cloud-frameworks/src/main/java/com/poc/framework/constants/ServerConstants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/com/poc/hadoop/fs/FsOperation.java" afterPath="$PROJECT_DIR$/cloud-frameworks/src/main/java/com/poc/hadoop/fs/FsOperation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/com/poc/spark/sample/IConsoleExecutor.java" afterPath="$PROJECT_DIR$/cloud-frameworks/src/main/java/com/poc/spark/sample/IConsoleExecutor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/com/poc/spark/sample/SimpleApp.java" afterPath="$PROJECT_DIR$/cloud-frameworks/src/main/java/com/poc/spark/sample/SimpleApp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/com/poc/spark/sample/Test.java" afterPath="$PROJECT_DIR$/cloud-frameworks/src/main/java/com/poc/spark/sample/Test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/com/poc/spark/sample/WordCount.java" afterPath="$PROJECT_DIR$/cloud-frameworks/src/main/java/com/poc/spark/sample/WordCount.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common-utils/.classpath" afterPath="$PROJECT_DIR$/common-utils/.classpath" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common-utils/.project" afterPath="$PROJECT_DIR$/common-utils/.project" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common-utils/.settings/org.eclipse.jdt.core.prefs" afterPath="$PROJECT_DIR$/common-utils/.settings/org.eclipse.jdt.core.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common-utils/.settings/org.eclipse.wst.common.project.facet.core.xml" afterPath="$PROJECT_DIR$/common-utils/.settings/org.eclipse.wst.common.project.facet.core.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common-utils/common-utils.iml" afterPath="$PROJECT_DIR$/common-utils/common-utils.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common-utils/pom.xml" afterPath="$PROJECT_DIR$/common-utils/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ejbs/.classpath" afterPath="$PROJECT_DIR$/ejbs/.classpath" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ejbs/.project" afterPath="$PROJECT_DIR$/ejbs/.project" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/.classpath" afterPath="$PROJECT_DIR$/example/.classpath" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/.settings/org.eclipse.jdt.core.prefs" afterPath="$PROJECT_DIR$/example/.settings/org.eclipse.jdt.core.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/client.ts" afterPath="$PROJECT_DIR$/example/client.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/example.iml" afterPath="$PROJECT_DIR$/example/example.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/pom.xml" afterPath="$PROJECT_DIR$/example/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/poc.iml" afterPath="$PROJECT_DIR$/poc.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/.classpath" afterPath="$PROJECT_DIR$/service/.classpath" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/.project" afterPath="$PROJECT_DIR$/service/.project" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/.settings/org.eclipse.jdt.core.prefs" afterPath="$PROJECT_DIR$/service/.settings/org.eclipse.jdt.core.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/.settings/org.eclipse.wst.common.project.facet.core.xml" afterPath="$PROJECT_DIR$/service/.settings/org.eclipse.wst.common.project.facet.core.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/service.iml" afterPath="$PROJECT_DIR$/service/service.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-frameworks/.classpath" afterPath="$PROJECT_DIR$/spring-frameworks/.classpath" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-frameworks/.project" afterPath="$PROJECT_DIR$/spring-frameworks/.project" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-frameworks/.settings/org.eclipse.jdt.core.prefs" afterPath="$PROJECT_DIR$/spring-frameworks/.settings/org.eclipse.jdt.core.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-frameworks/pom.xml" afterPath="$PROJECT_DIR$/spring-frameworks/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-frameworks/spring-frameworks.iml" afterPath="$PROJECT_DIR$/spring-frameworks/spring-frameworks.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/.classpath" afterPath="$PROJECT_DIR$/webapp/.classpath" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/.project" afterPath="$PROJECT_DIR$/webapp/.project" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/.settings/org.eclipse.jdt.core.prefs" afterPath="$PROJECT_DIR$/webapp/.settings/org.eclipse.jdt.core.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/.settings/org.eclipse.wst.common.project.facet.core.xml" afterPath="$PROJECT_DIR$/webapp/.settings/org.eclipse.wst.common.project.facet.core.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/webapp.iml" afterPath="$PROJECT_DIR$/webapp/webapp.iml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scala-example/.cache-main" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scala-example/src/main/java/com/scala/example/Tester.scala" afterPath="$PROJECT_DIR$/scala-example/src/main/java/com/scala/example/Tester.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scala-example/src/main/java/com/scala/example/io/FileTest.scala" afterPath="$PROJECT_DIR$/scala-example/src/main/java/com/scala/example/io/FileTest.scala" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/scala-example/src/main/java/com/scala/example/io/FileReader.scala" afterPath="$PROJECT_DIR$/scala-example/src/main/java/com/scala/example/io/FileOperator.scala" />
     </list>
     <ignored path="poc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -240,7 +44,7 @@
       <file leaf-file-name="LambdaTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/example/src/main/java/com/jiyun/example/jdk8/LambdaTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
+            <state relative-caret-position="418">
               <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
               <folding />
             </state>
@@ -270,18 +74,8 @@
       <file leaf-file-name="Tester.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scala-example/src/main/java/com/scala/example/Tester.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileReader.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scala-example/src/main/java/com/scala/example/io/FileReader.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+            <state relative-caret-position="798">
+              <caret line="42" column="27" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -290,8 +84,8 @@
       <file leaf-file-name="FileTest.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scala-example/src/main/java/com/scala/example/io/FileTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+            <state relative-caret-position="152">
+              <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -446,8 +240,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -754,6 +546,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1435,6 +1229,7 @@
       <workItem from="1484703146263" duration="3728000" />
       <workItem from="1484790573207" duration="2722000" />
       <workItem from="1484876192018" duration="6113000" />
+      <workItem from="1485308437748" duration="371000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1476892635739</created>
@@ -1468,7 +1263,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36092000" />
+    <option name="totallyTimeSpent" value="36463000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -1490,11 +1285,11 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32503888" sideWeight="0.4941435" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24524158" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24524158" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="EJB" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
@@ -1762,7 +1557,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
           <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1777,7 +1571,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1785,22 +1578,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scala-example/src/main/java/com/scala/example/package.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/scala-example/src/main/java/com/scala/example/package.scala" />
     <entry file="file://$PROJECT_DIR$/scala-example/src/main/java/com/scala/example/io/FileTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        <state relative-caret-position="152">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -1817,7 +1602,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/example/src/main/java/com/jiyun/example/jdk8/LambdaTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
+        <state relative-caret-position="418">
           <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
           <folding />
         </state>
@@ -1825,8 +1610,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scala-example/src/main/java/com/scala/example/Tester.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        <state relative-caret-position="798">
+          <caret line="42" column="27" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -1835,13 +1620,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scala-example/src/main/java/com/scala/example/io/FileReader.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
+        <state relative-caret-position="133">
           <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
           <folding />
         </state>

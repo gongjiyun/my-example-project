@@ -1,4 +1,4 @@
-package com.scala.example.ch4
+package com.scala.example.practice
 
 /**
   * Created by Administrator on 2017-1-20.

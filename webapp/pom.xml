@@ -220,6 +220,7 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.3</version>
 				<configuration>
+					<encoding>UTF-8</encoding>
 					<excludes>
 						<exclude>src/test/**</exclude>
 					</excludes>
@@ -255,6 +256,8 @@
 					<webAppSourceDirectory>src/main/webapp</webAppSourceDirectory>
 					<scanIntervalSeconds>3</scanIntervalSeconds>
 					<scanIntervalSeconds>10</scanIntervalSeconds>
+					<stopPort>8999</stopPort>
+					<stopKey>stop</stopKey>
 					<webAppConfig>
 						<contextPath>/poc</contextPath>
 						<!-- <defaultsDescriptor>src/main/resources/webdefault.xml</defaultsDescriptor> -->

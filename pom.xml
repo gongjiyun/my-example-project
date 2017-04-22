@@ -12,6 +12,7 @@
 	<properties>
 		<context.path>/poc</context.path>
 		<spring-version>4.2.0.RELEASE</spring-version>
+		<spring-websocket-version>4.2.0.RELEASE</spring-websocket-version>
 		<spring-security-version>4.0.2.RELEASE</spring-security-version>
 		<spring.framework.version>${spring-version}</spring.framework.version>
 		<spring.data.version>1.10.1.RELEASE</spring.data.version>
@@ -280,6 +281,24 @@
 			<artifactId>junit</artifactId>
 			<version>4.11</version>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/javax.websocket/javax.websocket-api -->
+		<dependency>
+			<groupId>javax.websocket</groupId>
+			<artifactId>javax.websocket-api</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/javax.websocket/javax.websocket-client-api -->
+		<dependency>
+			<groupId>javax.websocket</groupId>
+			<artifactId>javax.websocket-client-api</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-websocket</artifactId>
+			<version>${spring-websocket-version}</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
@@ -293,18 +312,7 @@
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
-					<executions>
-						<execution>
-							<id>default-testCompile</id>
-							<phase>test-compile</phase>
-							<goals>
-								<goal>testCompile</goal>
-							</goals>
-							<configuration>
-								<skip>true</skip>
-							</configuration>
-						</execution>
-					</executions>
+					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
 			<plugin>

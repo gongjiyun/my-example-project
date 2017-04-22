@@ -12,7 +12,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: redis.clients:Jedis:2.8.0" level="project" />
-    <orderEntry type="library" name="Maven: redis.clients:jedis:2.8.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-core:4.2.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:4.2.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:4.2.0.RELEASE" level="project" />
@@ -89,6 +88,9 @@
     <orderEntry type="library" name="Maven: commons-beanutils:commons-beanutils:1.8.0" level="project" />
     <orderEntry type="library" name="Maven: commons-collections:commons-collections:3.2.1" level="project" />
     <orderEntry type="library" name="Maven: net.sf.ezmorph:ezmorph:1.0.6" level="project" />
+    <orderEntry type="library" name="Maven: javax.websocket:javax.websocket-api:1.0" level="project" />
+    <orderEntry type="library" name="Maven: javax.websocket:javax.websocket-client-api:1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-websocket:4.2.0.RELEASE" level="project" />
     <orderEntry type="module" module-name="service" />
     <orderEntry type="library" name="Maven: com.rabbitmq:amqp-client:3.6.2" level="project" />
     <orderEntry type="library" name="Maven: redis.clients:jedis:2.8.0" level="project" />

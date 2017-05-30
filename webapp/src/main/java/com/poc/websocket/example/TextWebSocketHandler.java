@@ -20,7 +20,9 @@ public class TextWebSocketHandler extends org.springframework.web.socket.handler
     @Override
     protected void handleTextMessage(WebSocketSession session, TextMessage message) throws Exception {
         chatTextMessageHandler(message.getPayload());
-        super.handleTextMessage(session, message);
+        logger.debug(session.getAttributes().toString());
+        session.sendMessage(new TextMessage("hello"));
+        //super.handleTextMessage(session, message);
     }
     private void chatTextMessageHandler(String payload) {
         logger.info(payload);

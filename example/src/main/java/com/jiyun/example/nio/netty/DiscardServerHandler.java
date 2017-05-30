@@ -1,4 +1,4 @@
-package com.jiyun.example.netty;
+package com.jiyun.example.nio.netty;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;

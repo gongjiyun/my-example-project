@@ -19,9 +19,8 @@ import org.springframework.web.socket.server.HandshakeInterceptor;
 public class WebSocketConfig extends WebMvcConfigurerAdapter implements WebSocketConfigurer{
     @Override
     public void registerWebSocketHandlers(WebSocketHandlerRegistry registry) {
-        String[] allowIPS = new String[]{"*"};
-        registry.addHandler(textWebSocketHandler(), "/websocket/chatExample").setAllowedOrigins(allowIPS).addInterceptors(interceptor());
-        registry.addHandler(textWebSocketHandler(), "/sockjs/websocket/chatExample").setAllowedOrigins(allowIPS).addInterceptors(interceptor()).withSockJS();
+        registry.addHandler(textWebSocketHandler(), "/websocket/chatExample").setAllowedOrigins("*").addInterceptors(interceptor());
+        registry.addHandler(textWebSocketHandler(), "/sockjs/websocket/chatExample").setAllowedOrigins("*").addInterceptors(interceptor()).withSockJS();
     }
 
     @Bean

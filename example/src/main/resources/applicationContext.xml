@@ -84,7 +84,7 @@
 		</property>
 		<property name="packagesToScan">
 			<list>
-                <value>com.jiyun.example.entity</value>
+                <value>com.example.entity</value>
             </list>
 		</property>
 		<!--

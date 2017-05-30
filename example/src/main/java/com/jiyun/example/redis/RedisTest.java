@@ -20,7 +20,7 @@ public class RedisTest {
 	
 	public static void main(String[] args) throws Exception{
 		Jedis redis = new Jedis(Constants.LINUX_HOST, PORT);
-		System.out.println("全部主键：" + redis.keys("*"));
+		System.out.println("keys -> " + redis.keys("*"));
 		redis.close();
 	}
 	

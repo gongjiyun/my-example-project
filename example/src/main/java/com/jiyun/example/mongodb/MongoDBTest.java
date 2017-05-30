@@ -64,8 +64,7 @@ public class MongoDBTest {
 		System.out.println(db.getName());
 
 		Document result = db.runCommand(new Bson() {
-			
-			@Override
+
 			public <TDocument> BsonDocument toBsonDocument(Class<TDocument> arg0, CodecRegistry arg1) {
 				return new BsonDocument("distinct", new BsonString("restaurants")).append("key", new BsonString("grades.grade"));
 			}
@@ -79,6 +78,7 @@ public class MongoDBTest {
 
 	public void testSearch() {
 		ServerAddress addr = new ServerAddress(Constants.LINUX_HOST, 27017);
+		
 		MongoClient client = new MongoClient(addr);
 		MongoDatabase db = client.getDatabase("test");
 

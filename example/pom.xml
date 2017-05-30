@@ -1,21 +1,32 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.poc</groupId>
+	<groupId>com.jiyun</groupId>
 	<artifactId>example</artifactId>
-	<version>1.0-SNAPSHOT</version>
-	<packaging>jar</packaging>
-	<name>poc-example Maven Webapp</name>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+
+	<name>test</name>
+	<url>http://maven.apache.org</url>
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<spring-version>4.2.0.RELEASE</spring-version>
 		<spring-security-version>4.0.2.RELEASE</spring-security-version>
 		<spring.framework.version>${spring-version}</spring.framework.version>
 		<spring.security.version>${spring-security-version}</spring.security.version>
+		<spring.boot.version>1.3.5.RELEASE</spring.boot.version>
+		<spring.maven.artifact.version>4.2.6.RELEASE</spring.maven.artifact.version>
+		<spring.batch.version>3.0.7.RELEASE</spring.batch.version>
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
@@ -106,6 +117,11 @@
 			<version>${spring.security.version}</version>
 			<scope>compile</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.batch</groupId>
+			<artifactId>spring-batch-core</artifactId>
+			<version>>${spring.batch.version}</version>
+		</dependency>		
 		<!-- hibernate -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
@@ -190,20 +206,26 @@
 			<version>1.4.7</version>
 		</dependency>
 		<dependency>
+			<groupId>redis.clients</groupId>
+			<artifactId>Jedis</artifactId>
+			<version>2.8.0</version>
+		</dependency>
+		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.8.2</version>
 		</dependency>
 		<dependency>
 			<groupId>javax.jms</groupId>
-			<artifactId>jms-api</artifactId>
-			<version>1.1-rev-1</version>
+			<artifactId>jms</artifactId>
+			<version>1.1</version>
 		</dependency>
 		<dependency>
 			<groupId>javax.jms</groupId>
 			<artifactId>jms-api</artifactId>
 			<version>1.1-rev-1</version>
 		</dependency>
+
 		<dependency>
 			<groupId>org.apache.activemq</groupId>
 			<artifactId>activemq-all</artifactId>
@@ -214,31 +236,11 @@
 			<artifactId>xbean-spring</artifactId>
 			<version>3.7</version>
 		</dependency>
+
 		<dependency>
-			<groupId>com.poc</groupId>
-			<artifactId>common-utils</artifactId>
-			<version>1.0-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>com.poc</groupId>
-			<artifactId>service</artifactId>
-			<version>1.0-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.activemq</groupId>
-			<artifactId>activemq-all</artifactId>
-			<version>5.4.1</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.rabbitmq</groupId>
-			<artifactId>amqp-client</artifactId>
-			<version>3.6.2</version>
-		</dependency>
-		<dependency>
-			<groupId>redis.clients</groupId>
-			<artifactId>jedis</artifactId>
-			<version>2.8.0</version>
+			<groupId>org.xsocket</groupId>
+			<artifactId>xSocket-multiplexed</artifactId>
+			<version>2.1.7</version>
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -246,23 +248,72 @@
 			<version>1.2</version>
 		</dependency>
 		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.3.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpmime</artifactId>
+			<version>4.3.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis</artifactId>
+			<version>3.4.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.zookeeper</groupId>
+			<artifactId>zookeeper</artifactId>
+			<version>3.4.6</version>
+		</dependency>
+		<dependency>
 			<groupId>io.netty</groupId>
 			<artifactId>netty-all</artifactId>
 			<version>4.1.9.Final</version>
 		</dependency>
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>dubbo</artifactId>
+			<version>2.5.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.batch</groupId>
+			<artifactId>spring-batch-core</artifactId>
+			<version>3.0.7.RELEASE</version>
+		</dependency>
 	</dependencies>
+
 	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.3</version>
+					<configuration>
+						<source>1.8</source>
+						<target>1.8</target>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
 		<plugins>
-			<!-- Ensure build using JDK 1.8 -->
-			<!-- ======================================== -->
-			<!-- Configure Compilation Plugin -->
-			<!-- ======================================== -->
 			<plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.3</version>
+				<groupId>org.mortbay.jetty</groupId>
+				<artifactId>jetty-maven-plugin</artifactId>
+				<version>8.1.16.v20140903</version>
 				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
+					<jvmArgs>-Xmx1024m -Xms512m -XX:PermSize=128m -XX:MaxPermSize=1024m</jvmArgs>
+					<webAppSourceDirectory>src/main/webapp</webAppSourceDirectory>
+					<httpConnector>
+						<port>8080</port>
+					</httpConnector>
+					<scanIntervalSeconds>3</scanIntervalSeconds>
+					<scanIntervalSeconds>10</scanIntervalSeconds>
+					<webAppConfig>
+						<contextPath>/</contextPath>
+					</webAppConfig>
 				</configuration>
 			</plugin>
 		</plugins>

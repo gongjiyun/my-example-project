@@ -76,7 +76,7 @@ public class Listener2 {
 				if (msg instanceof TextMessage) {
 					String body = ((TextMessage) msg).getText();
 					if (0 == msg.getIntProperty("flag")) {
-						System.exit(1);
+						System.exit(0);
 					} else if (1 == msg.getIntProperty("flag")) {
 						MessageProducer product = session.createProducer(msg.getJMSReplyTo());
 
@@ -86,7 +86,7 @@ public class Listener2 {
 
 			            product.send(response);*/
 					}else{
-
+						System.out.println("do nothing");
 					}
 				}
 			} catch (Exception e) {

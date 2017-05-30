@@ -36,10 +36,10 @@
     <bytecodeTargetLevel>
       <module name="cloud-frameworks" target="1.8" />
       <module name="common-utils" target="1.8" />
-      <module name="ejbs" target="1.5" />
+      <module name="ejbs" target="1.7" />
       <module name="example" target="1.8" />
       <module name="poc" target="1.8" />
-      <module name="scala-example" target="1.5" />
+      <module name="scala-example" target="1.7" />
       <module name="scala-script" target="1.8" />
       <module name="script" target="1.8" />
       <module name="service" target="1.8" />

@@ -82,7 +82,7 @@ public class Publisher2 {
         producer.send(replyTestMsg);
 
         TextMessage shutdownCommand = session.createTextMessage("SHUTDOWN");
-        shutdownCommand.setIntProperty("flag", 2);        
+        shutdownCommand.setIntProperty("flag", 0);        
         producer.send(shutdownCommand);
         
         Thread.sleep(1000 * 3); //important for reply message from destination.

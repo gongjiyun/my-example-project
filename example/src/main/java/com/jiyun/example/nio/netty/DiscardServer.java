@@ -1,4 +1,4 @@
-package com.jiyun.example.netty;
+package com.jiyun.example.nio.netty;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;

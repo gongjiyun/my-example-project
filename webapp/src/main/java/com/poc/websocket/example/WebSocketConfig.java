@@ -29,6 +29,7 @@ public class WebSocketConfig extends WebMvcConfigurerAdapter implements WebSocke
         return new TextWebSocketHandler();
     }
 
+    @Bean
     public HandshakeInterceptor interceptor(){
         return new WebSocketHandshakeInterceptor();
     }

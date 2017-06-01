@@ -3,16 +3,13 @@ package com.example.jms.amq;
 import javax.jms.ConnectionFactory;
 import javax.jms.JMSException;
 
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.jms.DefaultJmsListenerContainerFactoryConfigurer;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.jms.annotation.EnableJms;
 import org.springframework.jms.config.DefaultJmsListenerContainerFactory;
 
-@Configuration
-@EnableJms
-@EnableAutoConfiguration
+//@Configuration
+//@EnableJms
+//@EnableAutoConfiguration
 public class JmsConfiguration {
 
 	@Bean

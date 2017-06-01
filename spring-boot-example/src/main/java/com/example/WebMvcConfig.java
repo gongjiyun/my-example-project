@@ -38,6 +38,7 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
     public InternalResourceViewResolver internalResourceViewResolver() {
         InternalResourceViewResolver internalResourceViewResolver = new InternalResourceViewResolver();
         internalResourceViewResolver.setSuffix(".html");
+        internalResourceViewResolver.setPrefix("/views/");
         return internalResourceViewResolver;
     }
 
@@ -50,6 +51,7 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
 
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
+    	registry.addViewController("/error").setViewName("error.html"); 
         registry.addViewController("/").setViewName("forward:index.html");
     }
 

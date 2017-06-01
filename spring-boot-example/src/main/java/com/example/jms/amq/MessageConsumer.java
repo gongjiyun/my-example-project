@@ -1,9 +1,8 @@
 package com.example.jms.amq;
 
 import org.springframework.jms.annotation.JmsListener;
-import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class MessageConsumer{
 
 	@JmsListener(destination="queue://event", containerFactory="myFactory")

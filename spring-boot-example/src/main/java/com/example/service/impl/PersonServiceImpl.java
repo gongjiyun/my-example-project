@@ -4,9 +4,9 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.example.module.ConnectionSettings;
 import com.example.module.User;
 import com.example.service.PersonService;
-import com.example.vo.ConnectionSettings;
 
 @Service
 public class PersonServiceImpl implements PersonService {

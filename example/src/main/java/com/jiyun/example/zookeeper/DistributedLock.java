@@ -24,7 +24,7 @@ public class DistributedLock implements Watcher {
     private static final int SESSION_TIMEOUT = 10000;
     private static final String GROUP_PATH = "/disLocks";
     private static final String SUB_PATH = "/disLocks/sub";
-    private static final String CONNECTION_STRING = "192.168.56.110:2181";
+    private static final String CONNECTION_STRING = "192.168.56.120" + ":2181";
     
     private static final int THREAD_NUM = 10; 
     //确保连接zk成功；

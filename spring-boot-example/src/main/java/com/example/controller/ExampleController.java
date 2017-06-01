@@ -19,9 +19,9 @@ public class ExampleController {
 	@Autowired
 	private PersonService personService;
 
-	@RequestMapping(path="/example/hello", method={RequestMethod.GET, RequestMethod.POST})
+	@RequestMapping(path="/person/list", method={RequestMethod.GET, RequestMethod.POST})
 	@ResponseBody
-	public User hello(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception{	
+	public User hello(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception{
 		return personService.findUserByUid("");
 	}
 	

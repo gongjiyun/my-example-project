@@ -9,10 +9,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-public class HomeController {
-
-	@RequestMapping(path="/welcome", method={RequestMethod.GET, RequestMethod.POST})
-	public String welcome(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception{
-		return "welcome";
+public class ErrorController {
+	
+	@RequestMapping(path="/error", method={RequestMethod.GET, RequestMethod.POST})
+	public String error(HttpServletRequest request, HttpServletResponse response, Model model){
+		return "error";
 	}
+
 }

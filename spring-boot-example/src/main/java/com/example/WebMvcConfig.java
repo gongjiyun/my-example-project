@@ -35,10 +35,11 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
         "classpath:/static/", "classpath:/public/" };
 
     @Bean
-    public InternalResourceViewResolver internalResourceViewResolver() {
+    public InternalResourceViewResolver internalResourceViewResolver1() {
         InternalResourceViewResolver internalResourceViewResolver = new InternalResourceViewResolver();
         internalResourceViewResolver.setSuffix(".html");
         internalResourceViewResolver.setPrefix("/views/");
+        internalResourceViewResolver.setOrder(1);
         return internalResourceViewResolver;
     }
 

@@ -1,5 +1,7 @@
 package com.example.controller;
 
+import java.util.List;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -10,19 +12,42 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.example.module.User;
-import com.example.service.PersonService;
+import com.example.entity.User;
+import com.example.service.UserService;
 
 @Controller
-public class ExampleController {
+public class UserController {
 	
 	@Autowired
-	private PersonService personService;
+	private UserService userService;
+	
 
-	@RequestMapping(path="/person/list", method={RequestMethod.GET, RequestMethod.POST})
+	public UserService getUserService() {
+		return userService;
+	}
+
+	public void setUserService(UserService userService) {
+		this.userService = userService;
+	}
+
+	@RequestMapping(path="/user/list", method={RequestMethod.GET, RequestMethod.POST})
 	@ResponseBody
-	public User hello(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception{
-		return personService.findUserByUid("");
+	public List<User> listUsers(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception{
+		return userService.findAll();
+	}
+	
+	@RequestMapping(path="/user/create", method={RequestMethod.GET, RequestMethod.POST})
+	@ResponseBody
+	public String createUser(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception{
+		User user = new User();
+		user.setUid(1l);
+		user.setUsername("test");
+		user.setType("");
+		user.setEmail("test@cn.cm");
+		
+		User exist = userService.create(user);
+		
+		return exist.getUsername();
 	}
 	
 }

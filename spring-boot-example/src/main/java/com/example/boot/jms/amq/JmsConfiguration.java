@@ -1,4 +1,4 @@
-package com.example.jms.amq;
+package com.example.boot.jms.amq;
 
 import javax.jms.ConnectionFactory;
 import javax.jms.JMSException;

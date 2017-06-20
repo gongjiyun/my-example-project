@@ -1,7 +1,16 @@
 package com.example.service;
 
-import com.example.module.User;
+import java.util.List;
 
-public interface PersonService {
-	public User findUserByUid(String uid) throws Exception;
+import com.example.entity.User;
+
+public interface UserService {
+	
+	public User findByUid(Long uid) throws Exception;
+	
+	public List<User> findAll() throws Exception;
+	
+	public User create(User user) throws Exception;
+	
+	public void delete(Long uid) throws Exception;
 }

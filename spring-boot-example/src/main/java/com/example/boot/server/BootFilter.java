@@ -13,10 +13,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.log4j.Logger;
-import org.springframework.boot.web.servlet.ServletComponentScan;
 
-@ServletComponentScan
-@WebFilter
+@WebFilter(description="", filterName="common filter", urlPatterns="/*")
 public class BootFilter implements Filter {
 	private static final Logger _logger = Logger.getLogger(BootFilter.class);
 	
@@ -29,8 +27,8 @@ public class BootFilter implements Filter {
 	public void doFilter(ServletRequest arg0, ServletResponse arg1, FilterChain arg2)
 			throws IOException, ServletException {
 		try {
-			HttpServletRequest request = (HttpServletRequest) arg1;
-			HttpServletResponse response = (HttpServletResponse) arg2;
+			HttpServletRequest request = (HttpServletRequest) arg0;
+			HttpServletResponse response = (HttpServletResponse) arg1;
 			_logger.debug("IP = " + request.getRemoteAddr());
 			_logger.debug("URL = " + request.getRequestURL());
 		}catch (Exception e) {

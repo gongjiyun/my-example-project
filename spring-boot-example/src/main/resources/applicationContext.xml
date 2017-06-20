@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
 	xmlns:context="http://www.springframework.org/schema/context"
-	xmlns:jee="http://www.springframework.org/schema/jee" 
-	xmlns:p="http://www.springframework.org/schema/p"
-	xmlns:tx="http://www.springframework.org/schema/tx" 
-	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:jee="http://www.springframework.org/schema/jee" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:mvc="http://www.springframework.org/schema/mvc"
 	xmlns:security="http://www.springframework.org/schema/security"
+	xmlns:jpa="http://www.springframework.org/schema/data/jpa"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans 
 		http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context 
@@ -22,29 +20,33 @@
         http://www.springframework.org/schema/aop 
         http://www.springframework.org/schema/aop/spring-aop.xsd
         http://www.springframework.org/schema/security
-		http://www.springframework.org/schema/security/spring-security.xsd">
-	
+		http://www.springframework.org/schema/security/spring-security.xsd
+		http://www.springframework.org/schema/data/jpa
+		http://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
+
 	<context:component-scan base-package="com.example" />
 	<context:annotation-config />
 
-    <tx:advice id="txAdvice" transaction-manager="transactionManager">
-        <tx:attributes>
-        	<tx:method name="save*" propagation="REQUIRED" rollback-for="Throwable"/>
-            <tx:method name="add*" propagation="REQUIRED" rollback-for="Throwable"/>
-            <tx:method name="insert*" propagation="REQUIRED" rollback-for="Throwable"/>
-            <tx:method name="create*" propagation="REQUIRED" rollback-for="Throwable"/>
-            <tx:method name="update*" propagation="REQUIRED" rollback-for="Throwable"/>
-            <tx:method name="edit*" propagation="REQUIRED" rollback-for="Throwable"/>
-            <tx:method name="modify*" propagation="REQUIRED" rollback-for="Throwable"/>
-			<tx:method name="get*" read-only="true"/>
-			<tx:method name="find*" read-only="true"/>
-			<tx:method name="search*" read-only="true"/>
-            <tx:method name="*"/>
-        </tx:attributes>
-    </tx:advice>
-    
-    <aop:config expose-proxy="true">
-        <aop:pointcut id="txPointcut" expression="execution(* com.example.service..*.*(..))" />
-        <aop:advisor pointcut-ref="txPointcut" advice-ref="txAdvice"/>
-    </aop:config>
+	<jpa:repositories base-package="com.example.repositories"></jpa:repositories>
+	
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+		<tx:attributes>
+			<tx:method name="save*" propagation="REQUIRED" rollback-for="Throwable" />
+			<tx:method name="add*" propagation="REQUIRED" rollback-for="Throwable" />
+			<tx:method name="insert*" propagation="REQUIRED" rollback-for="Throwable" />
+			<tx:method name="create*" propagation="REQUIRED" rollback-for="Throwable" />
+			<tx:method name="update*" propagation="REQUIRED" rollback-for="Throwable" />
+			<tx:method name="edit*" propagation="REQUIRED" rollback-for="Throwable" />
+			<tx:method name="modify*" propagation="REQUIRED" rollback-for="Throwable" />
+			<tx:method name="get*" read-only="true" />
+			<tx:method name="find*" read-only="true" />
+			<tx:method name="search*" read-only="true" />
+			<tx:method name="*" />
+		</tx:attributes>
+	</tx:advice>
+
+	<aop:config expose-proxy="true">
+		<aop:pointcut id="txPointcut" expression="execution(* com.example.service..*.*(..))" />
+		<aop:advisor pointcut-ref="txPointcut" advice-ref="txAdvice" />
+	</aop:config>
 </beans>

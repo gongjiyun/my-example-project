@@ -29,7 +29,7 @@ public class ZkDemoClient {
 		
 		System.out.println(new String(zk.getData("/zkdemo",false,null))); 
 		
-		//zk.delete("/zkdemo", -1);
+		zk.delete("/zkdemo", -1);
 		
 		zk.close();
 	}

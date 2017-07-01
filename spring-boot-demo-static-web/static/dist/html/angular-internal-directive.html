@@ -1,0 +1,19 @@
+<!doctype html>
+<html ng-app>
+<head>
+<script src="../js/angular.js"></script>
+</head>
+<body>
+	<label>someProperty = {{someProperty}}</label>
+	<input type="checkbox" ng-checked="someProperty"
+		ng-init="someProperty = true" ng-model="someProperty">
+	<br />
+	<label>Select Two Fish:</label>
+	<input type="checkbox" ng-model="isTwoFish">
+	<br />
+	<select>
+		<option>One Fish</option>
+		<option ng-selected="isTwoFish">Two Fish</option>
+	</select>
+</body>
+</html>

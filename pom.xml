@@ -29,6 +29,7 @@
 		<module>spring-frameworks</module>
 		<module>example</module>
 		<module>scala-example</module>
+		<module>spring-boot-demo-static-web</module>		
 	</modules>
 
 	<dependencies>

@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/poc.iml" filepath="$PROJECT_DIR$/poc.iml" />
       <module fileurl="file://$PROJECT_DIR$/scala-example/scala-example.iml" filepath="$PROJECT_DIR$/scala-example/scala-example.iml" />
       <module fileurl="file://$PROJECT_DIR$/service/service.iml" filepath="$PROJECT_DIR$/service/service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-demo-static-web/spring-boot-demo-static-web.iml" filepath="$PROJECT_DIR$/spring-boot-demo-static-web/spring-boot-demo-static-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-frameworks/spring-frameworks.iml" filepath="$PROJECT_DIR$/spring-frameworks/spring-frameworks.iml" />
       <module fileurl="file://$PROJECT_DIR$/webapp/webapp.iml" filepath="$PROJECT_DIR$/webapp/webapp.iml" />
     </modules>

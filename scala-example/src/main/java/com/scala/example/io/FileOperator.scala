@@ -12,7 +12,7 @@ import scala.reflect.io.File
 class FileOperator {
 
   def readFile(args: Array[String]): Unit = {
-    val buffer: scala.io.BufferedSource = Source.fromFile("/usr/logs/poc-log.log")(scala.io.Codec.fallbackSystemCodec);
+    val buffer: scala.io.BufferedSource = Source.fromFile("/usr/logs/xxooframe-log.log")(scala.io.Codec.fallbackSystemCodec);
     //buffer.getLines().foreach((line: String) => println(line));
     
     def widthOfLength(s: String) = s.length;

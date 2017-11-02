@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 4.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-5.0.dtd">
+<hibernate-mapping>
+    <class name="com.xxooframe.common.entities.PersonProfile" table="TB_PERSONS" lazy="false" mutable="true">
+        <id name="id" column="ID">
+            <generator class="assigned"/>
+        </id>
+        <property name="name" column="NAME"/>
+        <property name="gender" column="GENDER"/>
+        <property name="birthDate" column="BIRTH_DT"/>
+        <property name="email" column="EMAIL"/>
+        <property name="tel" column="TEL"/>
+    </class>
+</hibernate-mapping>

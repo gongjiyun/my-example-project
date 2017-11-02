@@ -2,7 +2,7 @@ package mytest.dao;
 
 import java.util.List;
 
-import com.poc.common.entities.AuditLog;
+import com.xxooframe.common.entities.AuditLog;
 
 public interface TestDao {
 	

@@ -1,4 +1,4 @@
-package com.poc.spark.sample;
+package com.xxooframe.spark.sample;
 
 import java.io.Serializable;
 

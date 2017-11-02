@@ -1,4 +1,4 @@
-package com.poc.spark.sample;
+package com.xxooframe.spark.sample;
 
 import java.io.Serializable;
 
@@ -7,7 +7,7 @@ import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.api.java.function.Function;
 
-import com.poc.framework.constants.ServerConstants;
+import com.xxooframe.framework.constants.ServerConstants;
 
 public class SimpleApp implements IConsoleExecutor, Serializable{
 

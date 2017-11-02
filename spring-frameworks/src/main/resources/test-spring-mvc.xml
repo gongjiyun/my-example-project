@@ -41,7 +41,7 @@
 		</bean> -->
 	<bean
 		class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping" />
-	<bean id="userController" class="com.poc.web.controller.SimpleUserController">
+	<bean id="userController" class="com.xxooframe.web.controller.SimpleUserController">
 		<constructor-arg name="userService" ref="userService" />
 		<property name="methodNameResolver" ref="paramMethodResolver" />
 	</bean>

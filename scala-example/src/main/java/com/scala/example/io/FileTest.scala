@@ -10,7 +10,7 @@ object FileTest {
 
   def main(args: Array[String]): Unit = {
     var fileReader = new FileOperator();
-    fileReader.withPrintWriter(new File("/usr/logs/poc-log.log"))(writer => writer.println("new line"));
+    fileReader.withPrintWriter(new File("/usr/logs/xxooframe-log.log"))(writer => writer.println("new line"));
     fileReader.readFile(null);
     fileReader.listFile(".");
 

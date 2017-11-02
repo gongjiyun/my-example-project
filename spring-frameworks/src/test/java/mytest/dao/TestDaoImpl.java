@@ -5,7 +5,7 @@ import java.util.List;
 import org.hibernate.criterion.DetachedCriteria;
 import org.springframework.stereotype.Repository;
 
-import com.poc.common.entities.AuditLog;
+import com.xxooframe.common.entities.AuditLog;
 
 @Repository("testDao")
 public class TestDaoImpl extends BaseDao implements TestDao {

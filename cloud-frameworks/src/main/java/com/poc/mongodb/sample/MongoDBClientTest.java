@@ -1,4 +1,4 @@
-package com.poc.mongodb.sample;
+package com.xxooframe.mongodb.sample;
 
 import java.util.Arrays;
 
@@ -15,8 +15,8 @@ import com.mongodb.client.MongoCursor;
 import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.MongoIterable;
 import com.mongodb.client.result.UpdateResult;
-import com.poc.utils.constants.ServerConstants;
-import com.poc.utils.util.DateUtil;
+import com.xxooframe.utils.constants.ServerConstants;
+import com.xxooframe.utils.util.DateUtil;
 
 public class MongoDBClientTest {
 

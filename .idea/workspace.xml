@@ -154,7 +154,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common-utils/common-utils.iml" afterPath="$PROJECT_DIR$/common-utils/common-utils.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ejbs/ejbs.iml" afterPath="$PROJECT_DIR$/ejbs/ejbs.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/example.iml" afterPath="$PROJECT_DIR$/example/example.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/poc.iml" afterPath="$PROJECT_DIR$/poc.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xxooframe.iml" afterPath="$PROJECT_DIR$/xxooframe.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scala-example/scala-example.iml" afterPath="$PROJECT_DIR$/scala-example/scala-example.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/service.iml" afterPath="$PROJECT_DIR$/service/service.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/.externalToolBuilders/Maven_Ant_Builder.launch" afterPath="$PROJECT_DIR$/spring-boot-demo-static-web/.externalToolBuilders/Maven_Ant_Builder.launch" />
@@ -245,29 +245,29 @@
         <subPane>
           <expand>
             <path>
-              <item name="poc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xxooframe" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-example-project" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="poc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xxooframe" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-example-project" type="462c0819:PsiDirectoryNode" />
               <item name="scala-example" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="poc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xxooframe" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-example-project" type="462c0819:PsiDirectoryNode" />
               <item name="scala-example" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="poc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xxooframe" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-example-project" type="462c0819:PsiDirectoryNode" />
               <item name="scala-example" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="poc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xxooframe" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-example-project" type="462c0819:PsiDirectoryNode" />
               <item name="scala-example" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
@@ -275,7 +275,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="poc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xxooframe" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-example-project" type="462c0819:PsiDirectoryNode" />
               <item name="scala-example" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />

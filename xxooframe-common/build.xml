@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<project name="webapp" default="deploy" basedir=".">
+
+	<property environment="env" />
+	<target name="deploy" depends="deploy-utils">
+	</target>
+	<target name="deploy-utils">
+		<sshexec host="192.168.56.120" username="root" password="password1" trust="true" command="rm -rf /app/jars/common-utils-1.0-SNAPSHOT.jar">
+		</sshexec>
+		<scp file="target/common-utils-1.0-SNAPSHOT.jar" todir="root:password1@192.168.56.120:/app/jars/common-utils-1.0-SNAPSHOT.jar" trust="true" />
+	</target>
+</project>

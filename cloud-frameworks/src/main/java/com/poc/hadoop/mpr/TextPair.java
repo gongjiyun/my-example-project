@@ -1,4 +1,4 @@
-package com.poc.hadoop.mpr;
+package com.xxooframe.hadoop.mpr;
 
 import java.io.DataInput;
 import java.io.DataOutput;

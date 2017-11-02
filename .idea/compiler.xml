@@ -22,7 +22,7 @@
       <module name="common-utils" target="1.8" />
       <module name="ejbs" target="1.8" />
       <module name="example" target="1.8" />
-      <module name="poc" target="1.8" />
+      <module name="xxooframe" target="1.8" />
       <module name="scala-example" target="1.8" />
       <module name="service" target="1.8" />
       <module name="spring-boot-demo-static-web" target="1.8" />

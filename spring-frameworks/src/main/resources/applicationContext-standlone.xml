@@ -63,7 +63,7 @@
 		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
 		<property name="configLocation" value="classpath:hibernate.cfg.xml" />
-		<!-- <property name="packagesToScan" value="com.poc.common.entities" /> -->
+		<!-- <property name="packagesToScan" value="com.xxooframe.common.entities" /> -->
 	</bean>
 	
 	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate5.HibernateTemplate">

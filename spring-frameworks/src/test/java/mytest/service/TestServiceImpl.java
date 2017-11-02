@@ -13,8 +13,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.poc.common.entities.AuditLog;
-import com.poc.utils.util.DateUtil;
+import com.xxooframe.common.entities.AuditLog;
+import com.xxooframe.utils.util.DateUtil;
 
 @Component
 @Transactional

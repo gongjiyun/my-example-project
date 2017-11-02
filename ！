@@ -76,7 +76,7 @@ fdoo
 #	deleted:    example/src/test/java/mytest/xml/TestXML.xml
 #	deleted:    example/src/test/java/mytest/xml/TestXMLSchema.xsd
 #	deleted:    example/src/test/java/mytest/xml/TestXSDValidate.java
-#	modified:   webapp/src/main/java/com/poc/websocket/example/WebSocketConfig.java
+#	modified:   webapp/src/main/java/com/xxooframe/websocket/example/WebSocketConfig.java
 #	modified:   webapp/src/main/resources/log4j.properties
 #
 # Changes not staged for commit:
@@ -118,8 +118,8 @@ fdoo
 #	modified:   webapp/.project
 #	modified:   webapp/.settings/org.eclipse.jdt.core.prefs
 #	modified:   webapp/.settings/org.eclipse.wst.common.component
-#	modified:   webapp/src/main/java/com/poc/websocket/example/TextWebSocketHandler.java
-#	modified:   webapp/src/main/java/com/poc/websocket/example/WebSocketConfig.java
+#	modified:   webapp/src/main/java/com/xxooframe/websocket/example/TextWebSocketHandler.java
+#	modified:   webapp/src/main/java/com/xxooframe/websocket/example/WebSocketConfig.java
 #
 # Untracked files:
 #	example/src/main/java/com/jiyun/example/ExecutorServiceTest.java

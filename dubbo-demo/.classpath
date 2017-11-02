@@ -13,7 +13,7 @@
   <classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-log4j12/1.7.21/slf4j-log4j12-1.7.21.jar"/>
   <classpathentry kind="var" path="M2_REPO/log4j/log4j/1.2.17/log4j-1.2.17.jar"/>
-  <classpathentry kind="var" path="M2_REPO/com/poc/common-utils/1.0-SNAPSHOT/common-utils-1.0-SNAPSHOT.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/xxooframe/common-utils/1.0-SNAPSHOT/common-utils-1.0-SNAPSHOT.jar"/>
   <classpathentry kind="var" path="M2_REPO/net/sourceforge/jexcelapi/jxl/2.6.12/jxl-2.6.12.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/apache/pdfbox/pdfbox/1.8.10/pdfbox-1.8.10.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/apache/pdfbox/fontbox/1.8.10/fontbox-1.8.10.jar"/>

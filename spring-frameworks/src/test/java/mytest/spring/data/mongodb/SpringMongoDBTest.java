@@ -21,7 +21,7 @@ import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 
 import com.mongodb.MongoClient;
-import com.poc.utils.constants.ServerConstants;
+import com.xxooframe.utils.constants.ServerConstants;
 
 public class SpringMongoDBTest {
 	

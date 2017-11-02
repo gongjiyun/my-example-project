@@ -1,4 +1,4 @@
-package com.poc.hadoop.trace;
+package com.xxooframe.hadoop.trace;
 
 
 public class MyLocalFileSpanReceiver /*extends LocalFileSpanReceiver implements SpanReceiver*/ {

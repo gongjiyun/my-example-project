@@ -1,4 +1,4 @@
-package com.xxooframe.spark.sample;
+package com.xcloud.spark.sample;
 
 
 import java.io.Serializable;

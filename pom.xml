@@ -27,8 +27,8 @@
 		<module>cloud-frameworks</module>		
 		<module>spring-frameworks</module>
 		<module>example</module>
-		<module>scala-example</module>
 		<module>spring-boot-demo-static-web</module>
+		<module>dubbo-demo</module>
 	</modules>
 
 	<dependencies>

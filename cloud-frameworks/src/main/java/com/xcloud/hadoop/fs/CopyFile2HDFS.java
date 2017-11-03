@@ -1,4 +1,4 @@
-package com.xxooframe.hadoop.fs;
+package com.xcloud.hadoop.fs;
 
 import java.io.InputStream;
 import java.net.URI;
@@ -9,8 +9,8 @@ import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IOUtils;
 
-import com.xxooframe.framework.constants.ServerConstants;
-import com.xxooframe.hadoop.util.ConfigurationClass;
+import com.xcloud.framework.constants.ServerConstants;
+import com.xcloud.hadoop.util.ConfigurationClass;
 
 public class CopyFile2HDFS {
 	

@@ -1,4 +1,4 @@
-package com.xxooframe.hadoop.fs;
+package com.xcloud.hadoop.fs;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileContext;
@@ -11,8 +11,8 @@ import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
 
-import com.xxooframe.framework.constants.ServerConstants;
-import com.xxooframe.hadoop.util.ConfigurationClass;
+import com.xcloud.framework.constants.ServerConstants;
+import com.xcloud.hadoop.util.ConfigurationClass;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class SequenceFileWriteDemo {

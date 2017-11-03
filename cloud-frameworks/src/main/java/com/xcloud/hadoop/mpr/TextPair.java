@@ -1,4 +1,4 @@
-package com.xxooframe.hadoop.mpr;
+package com.xcloud.hadoop.mpr;
 
 import java.io.DataInput;
 import java.io.DataOutput;

@@ -1,4 +1,4 @@
-package com.xxooframe.hadoop.util;
+package com.xcloud.hadoop.util;
 
 import org.apache.hadoop.conf.Configuration;
 

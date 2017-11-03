@@ -1,4 +1,4 @@
-package com.xxooframe.hadoop.mpr;
+package com.xcloud.hadoop.mpr;
 
 import org.apache.hadoop.conf.Configured;
 import org.apache.hadoop.util.Tool;

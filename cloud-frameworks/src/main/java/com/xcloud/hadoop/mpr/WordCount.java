@@ -1,4 +1,4 @@
-package com.xxooframe.hadoop.mpr;
+package com.xcloud.hadoop.mpr;
 
 import java.io.IOException;
 import java.net.URI;
@@ -13,8 +13,8 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.util.GenericOptionsParser;
 
-import com.xxooframe.framework.constants.ServerConstants;
-import com.xxooframe.hadoop.util.ConfigurationClass;
+import com.xcloud.framework.constants.ServerConstants;
+import com.xcloud.hadoop.util.ConfigurationClass;
 
 public class WordCount {
 	public static class TokenizerMapper extends org.apache.hadoop.mapreduce.Mapper<Object, Text, Text, IntWritable> {

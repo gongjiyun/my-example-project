@@ -1,4 +1,4 @@
-package com.xxooframe.mongodb.sample;
+package com.xcloud.mongodb.sample;
 
 import java.util.Arrays;
 

@@ -9,7 +9,7 @@ import javax.servlet.jsp.tagext.TagSupport;
 import org.springframework.context.ApplicationContext;
 import org.springframework.web.context.support.WebApplicationContextUtils;
 
-import com.xxooframe.common.model.WebMessage;import com.xxooframe.common.model.WebMessxxooframes;
+import com.xxooframe.common.model.WebMessage;import com.xxooframe.common.model.WebMessages;
 import com.xxooframe.utils.constants.PortalConstants;
 
 /**

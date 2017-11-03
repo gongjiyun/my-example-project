@@ -1,4 +1,4 @@
-package com.xxooframe.hadoop.fs;
+package com.xcloud.hadoop.fs;
 
 import java.io.FileOutputStream;
 import java.io.InputStream;
@@ -13,8 +13,8 @@ import org.apache.hadoop.fs.PathFilter;
 import org.apache.hadoop.io.IOUtils;
 import org.junit.Test;
 
-import com.xxooframe.framework.constants.ServerConstants;
-import com.xxooframe.hadoop.util.ConfigurationClass;
+import com.xcloud.framework.constants.ServerConstants;
+import com.xcloud.hadoop.util.ConfigurationClass;
 
 public class FsOperation {
 	

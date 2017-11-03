@@ -1,4 +1,4 @@
-package com.xxooframe.hadoop.mpr;
+package com.xcloud.hadoop.mpr;
 
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.io.WritableComparator;

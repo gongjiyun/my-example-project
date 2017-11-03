@@ -3,7 +3,7 @@ package com.xxooframe.web.util;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.xxooframe.service.CodeService;import com.xxooframe.service.RoleSerxxooframee;
+import com.xxooframe.service.CodeService;import com.xxooframe.service.RoleService;
 import com.xxooframe.service.UserService;
 
 public class ServiceGateUtil {

@@ -1,2 +1,5 @@
 /target
 .settting
+.classpath
+.project
+*.class

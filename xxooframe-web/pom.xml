@@ -230,7 +230,7 @@
 					<username>admin</username>
 					<password>admin</password>
 					<server>tomcat</server>
-					<xxooframeh>/xxooframe</path>
+					<path>/xxooframe</path>
 				</configuration>
 				<executions>
 					<execution>
@@ -254,7 +254,7 @@
 					<stopPort>8999</stopPort>
 					<stopKey>stop</stopKey>
 					<webAppConfig>
-						<cxxooframeextPath>/xxooframe</contextPath>
+						<contextPath>/xxooframe</contextPath>
 						<!-- <defaultsDescriptor>src/main/resources/webdefault.xml</defaultsDescriptor> -->
 					</webAppConfig>
 				</configuration>

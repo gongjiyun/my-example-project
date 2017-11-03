@@ -5,7 +5,7 @@ import java.util.Map;
 
 import org.hibernate.criterion.DetachedCriteria;
 
-import com.xxooframe.common.entities.Role;xxooframeport com.xxooframe.common.model.PageCrixxooframeia;
+import com.xxooframe.common.entities.Role;import com.xxooframe.common.model.PageCriteria;
 import com.xxooframe.common.model.PageResult;
 
 

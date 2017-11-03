@@ -16,7 +16,7 @@ import org.hibernate.SessionFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Service;
 
-import com.xxooframe.common.model.TableVO;xxooframeport com.xxooframe.service.DBMSSerxxooframee;
+import com.xxooframe.common.model.TableVO;import com.xxooframe.service.DBMSService;
 import com.xxooframe.utils.util.SpringAppContextHolder;
 
 @Service("dbmsService")

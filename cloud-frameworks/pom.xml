@@ -10,7 +10,7 @@
     <dependencies>
         <dependency>
             <groupId>com.xxooframe</groupId>
-            <artifactId>common-utils</artifactId>
+            <artifactId>xxooframe-common</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>

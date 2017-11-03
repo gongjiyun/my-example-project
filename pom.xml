@@ -23,8 +23,8 @@
 	<modules>
 		<module>xxooframe-common</module>
 		<module>xxooframe-service</module>
-		<module>cloud-frameworks</module>
 		<module>xxooframe-web</module>
+		<module>cloud-frameworks</module>		
 		<module>spring-frameworks</module>
 		<module>example</module>
 		<module>scala-example</module>

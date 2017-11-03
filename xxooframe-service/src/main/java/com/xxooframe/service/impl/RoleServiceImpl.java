@@ -10,11 +10,12 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.xxooframe.common.entities.Role;xxooframeport com.xxooframe.dao.Rolxxooframeo;
-import com.xxooframe.service.RxxooframeService;
-import com.xxooframe.utils.constantsxxooframeatusConstants;
-import com.xxooframe.utils.constxxooframes.TableDefConstants;
-import com.xxooframe.utixxooframeexception.SystemException;
+import com.xxooframe.common.entities.Role;
+import com.xxooframe.dao.RoleDao;
+import com.xxooframe.service.RoleService;
+import com.xxooframe.utils.constants.StatusConstants;
+import com.xxooframe.utils.constants.TableDefConstants;
+import com.xxooframe.utils.exception.SystemException;
 import com.xxooframe.utils.util.QueryUtil;
 
 @Service("roleService")

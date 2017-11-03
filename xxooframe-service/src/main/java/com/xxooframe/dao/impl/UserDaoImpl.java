@@ -12,11 +12,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
 
-import com.xxooframe.common.entities.Role;xxooframeport com.xxooframe.common.entities.xxooframer;
-import com.xxooframe.common.entitiexxooframeserRole;
-import com.xxooframe.daoxxooframestractBaseDao;
-import comxxooframeooframe.dao.UserDao;
-import com.xxooframe.utilsxxooframenstants.TableDefConstants;
+import com.xxooframe.common.entities.Role;
+import com.xxooframe.common.entities.User;
+import com.xxooframe.common.entities.UserRole;
+import com.xxooframe.dao.AbstractBaseDao;
+import com.xxooframe.dao.UserDao;
+import com.xxooframe.utils.constants.TableDefConstants;
 import com.xxooframe.utils.util.QueryUtil;
 
 @Repository("userDao")

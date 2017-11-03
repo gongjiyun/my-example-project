@@ -2,7 +2,7 @@ package com.xxooframe.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.xxooframe.common.entities.Classes;xxooframeport com.xxooframe.dao.Classexxooframeo;
+import com.xxooframe.common.entities.Classes;import com.xxooframe.dao.ClassesDao;
 import com.xxooframe.utils.exception.SystemException;
 
 public abstract class AbstractBaseService implements IBaseService{

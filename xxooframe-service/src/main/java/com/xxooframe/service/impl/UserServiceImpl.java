@@ -2,10 +2,7 @@ package com.xxooframe.service.impl;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Date;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import org.hibernate.criterion.DetachedCriteria;
 import org.hibernate.criterion.Restrictions;
@@ -18,27 +15,29 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import com.xxooframe.common.entities.MailQueue;xxooframeport com.xxooframe.common.entities.xxooframee;
-import com.xxooframe.common.entxxooframees.User;
-import com.xxooframe.common.entixxooframes.UserProfile;
-import com.xxooframe.coxxooframen.entities.UserRole;
-import com.xxooframe.xxooframemon.model.AuthUserDetails;
-import com.xxooframexxooframemmon.model.GrantedAuthorityImpl;
-importxxooframem.xxooframe.common.model.PxxooframeCriteria;
-import com.xxooxxooframeme.dao.RoleDao;
-import com.xxoofxxooframee.dao.UserDao;
-import com.xxoxxooframeame.dao.UserProfileDao;
-import com.xxoofrxxooframe.dao.UserRoleDao;
-import com.xxooxxooframeme.service.AbstractBaseService;
-ixxooframert com.xxooframe.service.RoleService;
-import comxxooframeooframe.service.UserService;
-import com.xxoofxxooframee.utils.constants.ErrorCodeConstants;
-import coxxooframexooframe.utils.constants.StatusConstants;
-impxxooframe com.xxooframe.utils.constants.TableDefxxooframestants;
-import com.xxooframe.utilsxxooframeception.SystemException;
+import com.xxooframe.common.entities.Role;
+import com.xxooframe.common.entities.User;
+import com.xxooframe.common.entities.UserProfile;
+import com.xxooframe.common.entities.UserRole;
+import com.xxooframe.common.model.AuthUserDetails;
+import com.xxooframe.common.model.GrantedAuthorityImpl;
+import com.xxooframe.common.model.PageCriteria;
+import com.xxooframe.dao.RoleDao;
+import com.xxooframe.dao.UserDao;
+import com.xxooframe.dao.UserProfileDao;
+import com.xxooframe.dao.UserRoleDao;
+import com.xxooframe.service.AbstractBaseService;
+import com.xxooframe.service.RoleService;
+import com.xxooframe.service.UserService;
+import com.xxooframe.utils.constants.ErrorCodeConstants;
+import com.xxooframe.utils.constants.StatusConstants;
+import com.xxooframe.utils.constants.TableDefConstants;
+import com.xxooframe.utils.exception.SystemException;
 import com.xxooframe.utils.util.PortalContext;
 import com.xxooframe.utils.util.QueryUtil;
 import com.xxooframe.utils.util.StringUtil;
+
+
 @Service("userService")
 public class UserServiceImpl extends AbstractBaseService implements UserService, UserDetailsService {
 	private final static Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);

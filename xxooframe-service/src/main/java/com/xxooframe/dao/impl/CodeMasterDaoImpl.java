@@ -10,10 +10,11 @@ import org.hibernate.criterion.DetachedCriteria;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.stereotype.Repository;
 
-import com.xxooframe.common.entities.CodeMaster;xxooframeport com.xxooframe.common.model.PageCrixxooframeia;
-import com.xxooframe.common.modelxxooframegeResult;
-import com.xxooframe.daxxooframebstractBaseDao;
-import com.xxooxxooframeme.dao.CodeMasterDao;
+import com.xxooframe.common.entities.CodeMaster;
+import com.xxooframe.common.model.PageCriteria;
+import com.xxooframe.common.model.PageResult;
+import com.xxooframe.dao.AbstractBaseDao;
+import com.xxooframe.dao.CodeMasterDao;
 import com.xxooframe.utils.util.QueryUtil;
 
 

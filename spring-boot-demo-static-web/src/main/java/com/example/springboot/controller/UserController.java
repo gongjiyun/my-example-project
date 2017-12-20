@@ -40,7 +40,7 @@ public class UserController extends BaseController {
 
 	@RequestMapping(path = "/user/create", method = { RequestMethod.GET, RequestMethod.POST })
 	@ResponseBody
-	public String createUser(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception {
+	public User createUser(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception {
 		User user = new User();
 		user.setUid(1l);
 		user.setUsername("test");
@@ -48,7 +48,7 @@ public class UserController extends BaseController {
 
 		User exist = userService.create(user);
 
-		return exist.getUsername();
+		return exist;
 	}
 
 	@RequestMapping(value = "/api/listAllUsers", method = { RequestMethod.GET, RequestMethod.POST })
@@ -66,6 +66,7 @@ public class UserController extends BaseController {
 			u.setUsername(user.getUsername());
 			u.setEmail(user.getEmail());
 			userlist.add(u);
+			
 		});
 
 		return userlist;

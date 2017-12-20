@@ -17,7 +17,7 @@ import com.example.springboot.service.UserService;
 import com.example.springboot.vo.User;
 
 @Controller
-public class AngularController extends BaseController{
+public class TestAngularController extends BaseController{
 	
 	@Autowired
 	private UserService userService;

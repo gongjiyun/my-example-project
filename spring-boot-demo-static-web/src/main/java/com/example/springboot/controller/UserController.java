@@ -17,7 +17,7 @@ import com.example.springboot.service.UserService;
 
 
 @Controller
-public class UserController {
+public class UserController extends BaseController{
 	
 	@Autowired
 	private UserService userService;

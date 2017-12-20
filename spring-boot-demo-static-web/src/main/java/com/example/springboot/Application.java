@@ -28,7 +28,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EnableAutoConfiguration
 @ComponentScan
 @SpringBootConfiguration
-@EnableJpaRepositories(basePackages={"com.example.springboot.repositories.jpa"})
+@EnableJpaRepositories(basePackages = { "com.example.springboot.repositories.jpa" })
 public class Application extends org.springframework.boot.web.servlet.support.SpringBootServletInitializer {
 
 	public static void main(String[] args) throws Exception {
@@ -40,4 +40,5 @@ public class Application extends org.springframework.boot.web.servlet.support.Sp
 		return application.sources(Application.class);
 	}
 
+	
 }

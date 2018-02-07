@@ -1,0 +1,6 @@
+connection:
+  username: root
+  password: password1
+spring:
+  datasource:
+    url: nul

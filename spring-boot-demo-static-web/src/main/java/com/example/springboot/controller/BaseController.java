@@ -1,8 +1,5 @@
 package com.example.springboot.controller;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import org.springframework.core.annotation.AnnotationUtils;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -10,10 +7,15 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 @ControllerAdvice
 public class BaseController {
-	
-	@ExceptionHandler(Exception.class)
+
+    private static final String SESSION_KEY_USER_ID = "session.user.id";
+
+    @ExceptionHandler(Exception.class)
 	public ModelAndView exceptionHandler(final HttpServletRequest request, final HttpServletResponse response,
 			final Exception ex) {
 
@@ -34,5 +36,9 @@ public class BaseController {
 
         mav.addObject("content", request.getRequestURL());
         return mav;
+    }
+
+    public String getCurrentUserId(final HttpServletRequest request){
+	    return (String) request.getAttribute(SESSION_KEY_USER_ID);
     }
 }

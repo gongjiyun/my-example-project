@@ -3,4 +3,21 @@ connection:
   password: password1
 spring:
   datasource:
-    url: nul
+    url: nulconnection:
+              username: root
+              password: password1
+            spring:
+              datasource:
+                        spring:
+                          datasource:
+                            url: nulconnection:
+                                      username: root
+                                      password: password1
+                                    spring:
+                                      datasource:
+                                        url: nulconnection:
+                                                  username: root
+                                                  password: password1
+                                                spring:
+                                                  datasource:
+                                                    url: nul

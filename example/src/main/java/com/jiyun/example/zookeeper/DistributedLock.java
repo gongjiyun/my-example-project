@@ -27,14 +27,14 @@ public class DistributedLock implements Watcher {
     private static final String CONNECTION_STRING = "192.168.56.120" + ":2181";
     
     private static final int THREAD_NUM = 10; 
-    //È·±£Á¬½Ózk³É¹¦£»
+
     private CountDownLatch connectedSemaphore = new CountDownLatch(1);
-    //È·±£ËùÓÐÏß³ÌÔËÐÐ½áÊø£»
+
     private static final CountDownLatch threadSemaphore = new CountDownLatch(THREAD_NUM);
     private static final Logger LOG = LoggerFactory.getLogger(DistributedLock.class);
     public DistributedLock(int id) {
         this.threadId = id;
-        LOG_PREFIX_OF_THREAD = "¡¾µÚ"+threadId+"¸öÏß³Ì¡¿";
+        LOG_PREFIX_OF_THREAD = "ï¿½ï¿½ï¿½ï¿½"+threadId+"ï¿½ï¿½ï¿½ß³Ì¡ï¿½";
     }
 	
     public static void main(String[] args) {
@@ -46,13 +46,13 @@ public class DistributedLock implements Watcher {
                     try{
                         DistributedLock dc = new DistributedLock(threadId);
                         dc.createConnection(CONNECTION_STRING, SESSION_TIMEOUT);
-                        //GROUP_PATH²»´æÔÚµÄ»°£¬ÓÉÒ»¸öÏß³Ì´´½¨¼´¿É£»
+                        //GROUP_PATH
                         synchronized (threadSemaphore){
-                            dc.createPath(GROUP_PATH, "¸Ã½ÚµãÓÉÏß³Ì" + threadId + "´´½¨", true);
+                            dc.createPath(GROUP_PATH, "ï¿½Ã½Úµï¿½ï¿½ï¿½ï¿½ß³ï¿½" + threadId + "ï¿½ï¿½ï¿½ï¿½", true);
                         }
                         dc.getLock();
                     } catch (Exception e){
-                        LOG.error("¡¾µÚ"+threadId+"¸öÏß³Ì¡¿ Å×³öµÄÒì³££º");
+                        LOG.error("ï¿½ï¿½ï¿½ï¿½"+threadId+"ï¿½ï¿½ï¿½ß³Ì¡ï¿½ ï¿½×³ï¿½ï¿½ï¿½ï¿½ì³£ï¿½ï¿½");
                         e.printStackTrace();
                     }
                 }
@@ -60,31 +60,31 @@ public class DistributedLock implements Watcher {
         }
         try {
             threadSemaphore.await();
-            LOG.info("ËùÓÐÏß³ÌÔËÐÐ½áÊø!");
+            LOG.info("ï¿½ï¿½ï¿½ï¿½ï¿½ß³ï¿½ï¿½ï¿½ï¿½Ð½ï¿½ï¿½ï¿½!");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
     /**
-     * »ñÈ¡Ëø
+     * ï¿½ï¿½È¡ï¿½ï¿½
      * @return
      */
     private void getLock() throws KeeperException, InterruptedException {
         selfPath = zk.create(SUB_PATH,null, ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.EPHEMERAL_SEQUENTIAL);
-        LOG.info(LOG_PREFIX_OF_THREAD+"´´½¨ËøÂ·¾¶:"+selfPath);
+        LOG.info(LOG_PREFIX_OF_THREAD+"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½:"+selfPath);
         if(checkMinPath()){
             getLockSuccess();
         }
     }
     /**
-     * ´´½¨½Úµã
-     * @param path ½Úµãpath
-     * @param data ³õÊ¼Êý¾ÝÄÚÈÝ
+     * ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½
+     * @param path ï¿½Úµï¿½path
+     * @param data ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      * @return
      */
     public boolean createPath( String path, String data, boolean needWatch) throws KeeperException, InterruptedException {
         if(zk.exists(path, needWatch)==null){
-            LOG.info( LOG_PREFIX_OF_THREAD + "½Úµã´´½¨³É¹¦, Path: "
+            LOG.info( LOG_PREFIX_OF_THREAD + "ï¿½Úµã´´ï¿½ï¿½ï¿½É¹ï¿½, Path: "
                     + this.zk.create( path,
                     data.getBytes(),
                     ZooDefs.Ids.OPEN_ACL_UNSAFE,
@@ -94,31 +94,31 @@ public class DistributedLock implements Watcher {
         return true;
     }
     /**
-     * ´´½¨ZKÁ¬½Ó
-     * @param connectString	 ZK·þÎñÆ÷µØÖ·ÁÐ±í
-     * @param sessionTimeout Session³¬Ê±Ê±¼ä
+     * ï¿½ï¿½ï¿½ï¿½ZKï¿½ï¿½ï¿½ï¿½
+     * @param connectString	 ZKï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½Ð±ï¿½
+     * @param sessionTimeout Sessionï¿½ï¿½Ê±Ê±ï¿½ï¿½
      */
     public void createConnection( String connectString, int sessionTimeout ) throws IOException, InterruptedException {
             zk = new ZooKeeper( connectString, sessionTimeout, this);
             connectedSemaphore.await();
     }
     /**
-     * »ñÈ¡Ëø³É¹¦
+     * ï¿½ï¿½È¡ï¿½ï¿½ï¿½É¹ï¿½
     */
     public void getLockSuccess() throws KeeperException, InterruptedException {
         if(zk.exists(this.selfPath,false) == null){
-            LOG.error(LOG_PREFIX_OF_THREAD+"±¾½ÚµãÒÑ²»ÔÚÁË...");
+            LOG.error(LOG_PREFIX_OF_THREAD+"ï¿½ï¿½ï¿½Úµï¿½ï¿½Ñ²ï¿½ï¿½ï¿½ï¿½ï¿½...");
             return;
         }
-        LOG.info(LOG_PREFIX_OF_THREAD + "»ñÈ¡Ëø³É¹¦£¬¸Ï½ô¸É»î£¡");
+        LOG.info(LOG_PREFIX_OF_THREAD + "ï¿½ï¿½È¡ï¿½ï¿½ï¿½É¹ï¿½ï¿½ï¿½ï¿½Ï½ï¿½ï¿½É»î£¡");
         Thread.sleep(2000);
-        LOG.info(LOG_PREFIX_OF_THREAD + "É¾³ý±¾½Úµã£º"+selfPath);
+        LOG.info(LOG_PREFIX_OF_THREAD + "É¾ï¿½ï¿½ï¿½ï¿½ï¿½Úµã£º"+selfPath);
         zk.delete(this.selfPath, -1);
         releaseConnection();
         threadSemaphore.countDown();
     }
     /**
-     * ¹Ø±ÕZKÁ¬½Ó
+     * ï¿½Ø±ï¿½ZKï¿½ï¿½ï¿½ï¿½
      */
     public void releaseConnection() {
         if ( this.zk !=null ) {
@@ -126,10 +126,10 @@ public class DistributedLock implements Watcher {
                 this.zk.close();
             } catch ( InterruptedException e ) {}
         }
-        LOG.info(LOG_PREFIX_OF_THREAD + "ÊÍ·ÅÁ¬½Ó");
+        LOG.info(LOG_PREFIX_OF_THREAD + "ï¿½Í·ï¿½ï¿½ï¿½ï¿½ï¿½");
     }
     /**
-     * ¼ì²é×Ô¼ºÊÇ²»ÊÇ×îÐ¡µÄ½Úµã
+     * ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½Ç²ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½Ä½Úµï¿½
      * @return
      */
     public boolean checkMinPath() throws KeeperException, InterruptedException {
@@ -138,22 +138,22 @@ public class DistributedLock implements Watcher {
          int index = subNodes.indexOf( selfPath.substring(GROUP_PATH.length()+1));
          switch (index){
              case -1:{
-                 LOG.error(LOG_PREFIX_OF_THREAD+"±¾½ÚµãÒÑ²»ÔÚÁË..."+selfPath);
+                 LOG.error(LOG_PREFIX_OF_THREAD+"ï¿½ï¿½ï¿½Úµï¿½ï¿½Ñ²ï¿½ï¿½ï¿½ï¿½ï¿½..."+selfPath);
                  return false;
              }
              case 0:{
-                 LOG.info(LOG_PREFIX_OF_THREAD+"×Ó½ÚµãÖÐ£¬ÎÒ¹ûÈ»ÊÇÀÏ´ó"+selfPath);
+                 LOG.info(LOG_PREFIX_OF_THREAD+"ï¿½Ó½Úµï¿½ï¿½Ð£ï¿½ï¿½Ò¹ï¿½È»ï¿½ï¿½ï¿½Ï´ï¿½"+selfPath);
                  return true;
              }
              default:{
                  this.waitPath = GROUP_PATH +"/"+ subNodes.get(index - 1);
-                 LOG.info(LOG_PREFIX_OF_THREAD+"»ñÈ¡×Ó½ÚµãÖÐ£¬ÅÅÔÚÎÒÇ°ÃæµÄ"+waitPath);
+                 LOG.info(LOG_PREFIX_OF_THREAD+"ï¿½ï¿½È¡ï¿½Ó½Úµï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½"+waitPath);
                  try{
                      zk.getData(waitPath, true, new Stat());
                      return false;
                  }catch(KeeperException e){
                      if(zk.exists(waitPath,false) == null){
-                         LOG.info(LOG_PREFIX_OF_THREAD+"×Ó½ÚµãÖÐ£¬ÅÅÔÚÎÒÇ°ÃæµÄ"+waitPath+"ÒÑÊ§×Ù£¬ÐÒ¸£À´µÃÌ«Í»È»?");
+                         LOG.info(LOG_PREFIX_OF_THREAD+"ï¿½Ó½Úµï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½"+waitPath+"ï¿½ï¿½Ê§ï¿½Ù£ï¿½ï¿½Ò¸ï¿½ï¿½ï¿½ï¿½ï¿½Ì«Í»È»?");
                          return checkMinPath();
                      }else{
                          throw e;
@@ -174,10 +174,10 @@ public class DistributedLock implements Watcher {
         Event.EventType eventType = event.getType();
         if ( Event.KeeperState.SyncConnected == keeperState) {
             if ( Event.EventType.None == eventType ) {
-                LOG.info( LOG_PREFIX_OF_THREAD + "³É¹¦Á¬½ÓÉÏZK·þÎñÆ÷" );
+                LOG.info( LOG_PREFIX_OF_THREAD + "ï¿½É¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ZKï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" );
                 connectedSemaphore.countDown();
             }else if (event.getType() == Event.EventType.NodeDeleted && event.getPath().equals(waitPath)) {
-                LOG.info(LOG_PREFIX_OF_THREAD + "ÊÕµ½Çé±¨£¬ÅÅÎÒÇ°ÃæµÄ¼Ò»ïÒÑ¹Ò£¬ÎÒÊÇ²»ÊÇ¿ÉÒÔ³öÉ½ÁË£¿");
+                LOG.info(LOG_PREFIX_OF_THREAD + "ï¿½Õµï¿½ï¿½é±¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½Ä¼Ò»ï¿½ï¿½Ñ¹Ò£ï¿½ï¿½ï¿½ï¿½Ç²ï¿½ï¿½Ç¿ï¿½ï¿½Ô³ï¿½É½ï¿½Ë£ï¿½");
                 try {
                     if(checkMinPath()){
                         getLockSuccess();
@@ -189,11 +189,11 @@ public class DistributedLock implements Watcher {
                 }
             }
         }else if ( Event.KeeperState.Disconnected == keeperState ) {
-            LOG.info( LOG_PREFIX_OF_THREAD + "ÓëZK·þÎñÆ÷¶Ï¿ªÁ¬½Ó" );
+            LOG.info( LOG_PREFIX_OF_THREAD + "ï¿½ï¿½ZKï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ï¿½ï¿½" );
         } else if ( Event.KeeperState.AuthFailed == keeperState ) {
-            LOG.info( LOG_PREFIX_OF_THREAD + "È¨ÏÞ¼ì²éÊ§°Ü" );
+            LOG.info( LOG_PREFIX_OF_THREAD + "È¨ï¿½Þ¼ï¿½ï¿½Ê§ï¿½ï¿½" );
         } else if ( Event.KeeperState.Expired == keeperState ) {
-            LOG.info( LOG_PREFIX_OF_THREAD + "»á»°Ê§Ð§" );
+            LOG.info( LOG_PREFIX_OF_THREAD + "ï¿½á»°Ê§Ð§" );
         }
 	}
 

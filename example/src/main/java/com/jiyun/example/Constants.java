@@ -32,6 +32,6 @@ public class Constants {
 	
 	public enum PERSONAL_DOC_TYPE{ PROPOSAL, CONTRACT }
 	
-	public static final String LINUX_HOST = "192.168.56.110";
+	public static final String LINUX_HOST = "192.168.56.120";
 	
 }

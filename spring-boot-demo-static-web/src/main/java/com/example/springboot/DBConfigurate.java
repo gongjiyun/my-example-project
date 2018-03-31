@@ -19,11 +19,11 @@ public class DBConfigurate {
 	 * dataSourceLookup.getDataSource("java:comp/env/jdbc/YourDS"); }
 	 */
 
-	@Bean
+	/*@Bean
 	public DataSource dataSource() {
 		return DataSourceBuilder.create().driverClassName("com.mysql.jdbc.Driver").password("root").username("root")
 				.url("jdbc:mysql://192.168.56.120:3306/test").build();
-	}
+	}*/
 	
 
 }

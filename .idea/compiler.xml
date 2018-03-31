@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cloud-frameworks" />
+        <module name="dubbo-demo" />
+        <module name="example" />
+        <module name="spring-boot-demo-static-web" />
+        <module name="spring-frameworks" />
+        <module name="xxooframe-common" />
+        <module name="xxooframe-service" />
+        <module name="xxooframe-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud-frameworks" target="1.8" />
+      <module name="dubbo-demo" target="1.7" />
+      <module name="example" target="1.8" />
+      <module name="spring-boot-demo-static-web" target="1.8" />
+      <module name="spring-frameworks" target="1.8" />
+      <module name="xxooframe" target="1.8" />
+      <module name="xxooframe-common" target="1.8" />
+      <module name="xxooframe-service" target="1.8" />
+      <module name="xxooframe-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

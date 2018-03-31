@@ -33,7 +33,7 @@
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.21" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-log4j12:1.7.21" level="project" />
     <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
-    <orderEntry type="library" name="Maven: com.xxooframe:xxooframe-common:1.0-SNAPSHOT" level="project" />
+    <orderEntry type="module" module-name="xxooframe-common" />
     <orderEntry type="library" name="Maven: net.sourceforge.jexcelapi:jxl:2.6.12" level="project" />
     <orderEntry type="library" name="Maven: org.apache.pdfbox:pdfbox:1.8.10" level="project" />
     <orderEntry type="library" name="Maven: org.apache.pdfbox:fontbox:1.8.10" level="project" />

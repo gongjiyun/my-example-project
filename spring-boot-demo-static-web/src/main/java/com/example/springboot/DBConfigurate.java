@@ -2,7 +2,7 @@ package com.example.springboot;
 
 import javax.sql.DataSource;
 
-import org.springframework.boot.autoconfigure.jdbc.DataSourceBuilder;
+import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -19,7 +19,7 @@ public class DBConfigurate {
 	 * dataSourceLookup.getDataSource("java:comp/env/jdbc/YourDS"); }
 	 */
 
-	/*@Bean
+/*	@Bean
 	public DataSource dataSource() {
 		return DataSourceBuilder.create().driverClassName("com.mysql.jdbc.Driver").password("root").username("root")
 				.url("jdbc:mysql://192.168.56.120:3306/test").build();

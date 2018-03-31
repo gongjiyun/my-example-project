@@ -116,7 +116,7 @@
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-config:5.0.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-core:5.0.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-web:5.0.3.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.yaml:snakeyaml:1.19" level="project" />
+    <orderEntry type="library" name="Maven: org.yaml:snakeyaml:1.13" level="project" />
     <orderEntry type="library" name="Maven: org.webjars:bootstrap:3.0.3" level="project" />
     <orderEntry type="library" name="Maven: org.webjars:jquery:2.0.3-1" level="project" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.6" level="project" />

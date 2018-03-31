@@ -28,3 +28,4 @@ server:
 security:
   basic:
     enabled: false
+

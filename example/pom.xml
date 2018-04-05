@@ -157,7 +157,7 @@
 		<dependency>
 			<groupId>org.mongodb</groupId>
 			<artifactId>mongodb-driver-core</artifactId>
-			<version>3.2.2</version>
+			<version>3.6.3</version>
 		</dependency>
 		<dependency>
 			<groupId>org.mongodb</groupId>
@@ -306,9 +306,6 @@
 				<configuration>
 					<jvmArgs>-Xmx1024m -Xms512m -XX:PermSize=128m -XX:MaxPermSize=1024m</jvmArgs>
 					<webAppSourceDirectory>src/main/webapp</webAppSourceDirectory>
-					<httpConnector>
-						<port>8080</port>
-					</httpConnector>
 					<scanIntervalSeconds>3</scanIntervalSeconds>
 					<scanIntervalSeconds>10</scanIntervalSeconds>
 					<webAppConfig>

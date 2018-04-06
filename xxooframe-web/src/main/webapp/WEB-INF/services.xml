@@ -9,8 +9,8 @@
 	    <name>userWSService</name>
 	    <namespace>http://xfire.codehaus.org/Echo</namespace>
 	    <style>wrapped</style>
-	    <serviceClass>com.xxooframe.web.service.UserService</serviceClass>
-	    <implementationClass>com.xxooframe.web.service.imp.UserServiceImp</implementationClass>
+	    <serviceClass>com.learning.webapp.web.service.UserService</serviceClass>
+	    <implementationClass>com.learning.webapp.web.service.imp.UserServiceImp</implementationClass>
 	    <serviceFactory>jsr181</serviceFactory>
 	</service>
 </beans>

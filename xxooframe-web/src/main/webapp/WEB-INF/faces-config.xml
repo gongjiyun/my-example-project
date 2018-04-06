@@ -6,7 +6,7 @@
 	version="1.2">
 	<managed-bean>
 		<managed-bean-name>helloBean</managed-bean-name>
-		<managed-bean-class>com.xxooframe.web.jsf.bean.HelloFacesBean</managed-bean-class>
+		<managed-bean-class>com.learning.webapp.web.jsf.bean.HelloFacesBean</managed-bean-class>
 		<managed-bean-scope>session</managed-bean-scope>
 		<managed-property>
 			<property-name>personService</property-name>

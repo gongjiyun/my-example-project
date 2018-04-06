@@ -14,7 +14,7 @@
 		<description>Custom UID taglib
     </description>
 		<name>username</name>
-		<tag-class>com.xxooframe.web.taglibs.UIDTag</tag-class>
+		<tag-class>com.learning.webapp.web.taglibs.UIDTag</tag-class>
 		<body-content>JSP</body-content>
 		<attribute>
 			<description>

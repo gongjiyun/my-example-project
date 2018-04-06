@@ -5,7 +5,7 @@
 <struts>
     <package name="default" extends="tiles-default">
         <interceptors>
-            <interceptor name="authority" class="com.xxooframe.web.interceptor.AuthorityInterceptor"/>
+            <interceptor name="authority" class="com.learning.webapp.web.interceptor.AuthorityInterceptor"/>
             <interceptor-stack name="defaultStack">
                 <interceptor-ref name="fileUpload"/>
                 <interceptor-ref name="basicStack"/>

@@ -35,7 +35,7 @@
     <mvc:resources mapping="/images/**" location="/images/"/>
     <mvc:default-servlet-handler/>
     <mvc:interceptors>
-    	<bean class="com.xxooframe.web.interceptor.PortalInterceptor"/>
+    	<bean class="com.learning.webapp.web.interceptor.PortalInterceptor"/>
     </mvc:interceptors>
     
 	<security:http pattern="/css/**" security="none"/>

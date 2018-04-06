@@ -13,7 +13,7 @@
 	    <property name="serviceFactory" ref="xfire.serviceFactory"/>
 	    <property name="xfire" ref="xfire"/>
     </bean>
-    <bean id="flexInvokeHandler" class="com.xxooframe.web.http.xxooframeWSInvokeHandler"/>
+    <bean id="flexInvokeHandler" class="com.learning.webapp.web.http.xxooframeWSInvokeHandler"/>
 	<bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
 	    <property name="urlMap">
 	        <map>
@@ -25,7 +25,7 @@
 	</bean>
     <bean id="userWSService" parent="baseWebService">
         <property name="serviceBean" ref="userService"/>
-        <property name="serviceClass" value="com.xxooframe.web.service.UserService"/>
+        <property name="serviceClass" value="com.learning.webapp.web.service.UserService"/>
 	    <property name="inHandlers">
 		    <list>
 		        <ref bean="flexInvokeHandler"/>

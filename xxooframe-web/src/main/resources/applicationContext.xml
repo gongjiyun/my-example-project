@@ -25,9 +25,9 @@
 		http://www.springframework.org/schema/security/spring-security.xsd">
 		
 	<context:annotation-config />
-	<context:component-scan base-package="com.xxooframe" />
+	<context:component-scan base-package="com.learning" />
 
-	<bean class="com.xxooframe.web.util.SpringContextHolder"/>
+	<bean class="com.learning.webapp.web.util.SpringContextHolder"/>
 
 	<tx:annotation-driven transaction-manager="transactionManager"/>
 	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
@@ -93,7 +93,7 @@
 		</property>
 		<property name="packagesToScan">
 			<list>
-                <value>com.xxooframe.common.entities</value>
+                <value>com.learning.common.entities</value>
             </list>
 		</property>		
 		<!-- <property name="mappingResources">
@@ -132,7 +132,7 @@
     </tx:advice>
     
     <aop:config expose-proxy="true">
-        <aop:pointcut id="txPointcut" expression="execution(* com.xxooframe.service..*.*(..))" />
+        <aop:pointcut id="txPointcut" expression="execution(* com.learning.service..*.*(..))" />
         <aop:advisor pointcut-ref="txPointcut" advice-ref="txAdvice"/>
     </aop:config>
 

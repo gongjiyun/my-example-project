@@ -3,7 +3,7 @@
     "-//Hibernate/Hibernate Mapping DTD 4.0//EN"
     "http://hibernate.sourceforge.net/hibernate-mapping-5.0.dtd">
 <hibernate-mapping>
-    <class name="com.xxooframe.common.entities.User" table="TB_USERS" lazy="false" mutable="true">
+    <class name="com.learning.common.entities.User" table="TB_USERS" lazy="false" mutable="true">
         <id name="uid" column="ID">
             <generator class="assigned"/>
         </id>   

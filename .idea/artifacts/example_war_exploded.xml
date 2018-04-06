@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="example:war exploded">
-    <output-path>$PROJECT_DIR$/example/target/example-0.0.1-SNAPSHOT</output-path>
+    <output-path>$PROJECT_DIR$/learning-example/target/learning-example-0.0.1-SNAPSHOT</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -54,9 +54,10 @@
           <element id="library" level="project" name="Maven: com.fasterxml:classmate:0.8.0" />
           <element id="library" level="project" name="Maven: net.sf.ehcache:ehcache:2.10.0" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.6" />
+          <element id="library" level="project" name="Maven: org.mongodb:mongodb-driver:3.2.2" />
           <element id="library" level="project" name="Maven: org.mongodb:mongodb-driver-core:3.2.2" />
           <element id="library" level="project" name="Maven: org.mongodb:bson:3.2.2" />
-          <element id="library" level="project" name="Maven: org.mongodb:mongodb-driver:3.2.2" />
+          <element id="library" level="project" name="Maven: org.mongodb:mongo-java-driver:3.6.3" />
           <element id="library" level="project" name="Maven: commons-lang:commons-lang:2.4" />
           <element id="library" level="project" name="Maven: commons-io:commons-io:2.4" />
           <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.1.1" />
@@ -90,7 +91,7 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/example/target/example-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/learning-example/target/learning-example-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="example/web/Web" />
     </root>

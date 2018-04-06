@@ -3,6 +3,8 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/dubbo-demo" />
     <file type="web" url="file://$PROJECT_DIR$/example" />
+    <file type="web" url="file://$PROJECT_DIR$/learning-dubbo" />
+    <file type="web" url="file://$PROJECT_DIR$/learning-example" />
     <file type="web" url="file://$PROJECT_DIR$/xxooframe-web" />
   </component>
   <component name="MavenProjectsManager">

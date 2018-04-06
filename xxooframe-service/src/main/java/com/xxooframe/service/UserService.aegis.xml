@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mappings>
-    <mapping xmlns:us="http://us.org.codehaus.xfire.com">
-        <method name="getUserById">
-	        <parameter index="0" componentType="java.lang.String"/>
-        </method>
-    </mapping>
-</mappings>
-

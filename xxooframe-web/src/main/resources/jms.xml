@@ -46,7 +46,7 @@
     </bean> -->
     
 	<bean id="messageListener" class="org.springframework.jms.listener.adapter.MessageListenerAdapter">
-		<constructor-arg><bean class="com.xxooframe.jms.activemq.TestMessageListener"></bean>
+		<constructor-arg><bean class="com.learning.jms.activemq.TestMessageListener"></bean>
 		</constructor-arg>
 		<property name="messageConverter" ref="messageConverter" />
 		<property name="defaultListenerMethod" value="onMessage" />
@@ -57,7 +57,7 @@
 		<property name="messageListener" ref="messageListener" />
 	</bean>
 	
-	<bean id="messageConverter" class="com.xxooframe.jms.activemq.TestMessageConverter" />
+	<bean id="messageConverter" class="com.learning.jms.activemq.TestMessageConverter" />
 	<bean id="ampPooledConnectionFactory" class="org.apache.activemq.pool.PooledConnectionFactory" destroy-method="stop">
 		<property name="connectionFactory"> 
 		     <bean class="org.apache.activemq.ActiveMQConnectionFactory">

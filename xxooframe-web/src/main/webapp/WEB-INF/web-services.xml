@@ -3,7 +3,7 @@
 	<web-service protocol="http" name="Simple" uri="/Simple"
 		targetNamespace="http://www.oreilly.com/webservices/Simple" style="rpc">
 		<components>
-			<java-class name="jcComp0" class-name="com.xxooframe.web.ws.impl.PersonServiceImpl"></java-class>
+			<java-class name="jcComp0" class-name="com.learning.webapp.web.ws.impl.PersonServiceImpl"></java-class>
 		</components>
 		<operations>
 			<operation method="getPersonNameById(java.lang.String)" component="jcComp0"

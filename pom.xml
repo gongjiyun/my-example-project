@@ -308,11 +308,6 @@
             <artifactId>javax.websocket-client-api</artifactId>
             <version>1.0</version>
         </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-websocket</artifactId>
-            <version>${spring-websocket-version}</version>
-        </dependency>
     </dependencies>
     <build>
         <plugins>

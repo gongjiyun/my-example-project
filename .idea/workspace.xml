@@ -1,1214 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2f6a9643-7d33-440e-a663-dc1381bf52fe" name="Default" comment="refator codes">
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/learning/dao/AbstractBaseDao.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/learning/dao/ClassesDao.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/learning/dao/IBaseDao.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/learning/dao/UserDao.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/learning/dao/impl/ClassesDaoImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/learning/dao/impl/UserDaoImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/learning/service/AssetEntryService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/learning/service/CodeService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/learning/service/DBMSService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/learning/service/IBaseService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/learning/service/RoleService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/learning/service/UserService.aegis.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/learning/service/UserService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/learning/service/impl/AssetEntryServiceImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/learning/service/impl/CodeServiceImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/learning/service/impl/RoleServiceImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/learning/service/impl/UserServiceImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/learning/webapp/applet/Test.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/learning/webapp/bootstart/SystemInitializer.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/learning/webapp/jms/activemq/ActiveMQServlet.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/learning/webapp/web/auth/SampleCallbackHandler.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/learning/webapp/web/auth/SampleLoginModule.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/learning/webapp/web/auth/SamplePrincipal.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/learning/webapp/web/constant/IConstant.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/learning/webapp/web/controller/AbstractPortalController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/learning/webapp/web/controller/LoginController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/learning/webapp/web/controller/PasswordController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/learning/webapp/web/controller/UserManageController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/learning/webapp/web/filter/SecurityFilter.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/learning/webapp/web/interceptor/AnnotationAspectTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/learning/webapp/web/interceptor/BeforeUploadAdvisor.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/learning/webapp/web/interceptor/PortalInterceptor.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/learning/webapp/web/interceptor/TestAopAdvice.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/learning/webapp/web/interceptor/TestAopAspect.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/learning/webapp/web/interceptor/UploadInterceptor.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/learning/webapp/web/servlet/TestServlet30.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/learning/webapp/web/taglibs/CustomErrorsTag.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/learning/webapp/web/taglibs/UIDTag.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/learning/webapp/web/util/PublishExtUtil.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/learning/webapp/web/util/ServiceGateUtil.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/learning/webapp/web/util/SpringContextHolder.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/learning/webapp/websocket/example/TextWebSocketHandler.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/learning/webapp/websocket/example/WebSocketConfig.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/learning/webapp/websocket/example/WebSocketHandshakeInterceptor.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/dubbo_demo_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/dubbo_demo_war.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/dubbo_demo_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/dubbo_demo_war_exploded.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/example_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/example_war.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/example_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/example_war_exploded.xml" />
+    <list default="true" id="2f6a9643-7d33-440e-a663-dc1381bf52fe" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/learning_dubbo_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/learning_dubbo_war_exploded.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/learning_example_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/learning_example_war_exploded.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/xxooframe_web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/xxooframe_web_war_exploded.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_7.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_7.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_101tec_zkclient_0_3.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_clearspring_analytics_stream_2_7_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_esotericsoftware_kryo_shaded_3_0_3.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_esotericsoftware_minlog_1_3_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_0_8_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_6_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_7_8.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_6_5.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_6_7.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_6_5.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_6_7.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_paranamer_2_6_5.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_scala_2_11_2_6_5.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_woodstox_woodstox_core_5_0_3.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_fommil_netlib_core_1_1_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_rwl_jtransforms_2_4_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_sgroschupf_zkclient_0_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_stephenc_jcip_jcip_annotations_1_0_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_2_4.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_11_0_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_extensions_guice_servlet_3_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_guice_3_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_5_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_re2j_re2j_1_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_javaewah_JavaEWAH_0_3_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_ibm_jbatch_com_ibm_jbatch_tck_spi_1_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jolbox_bonecp_0_8_0_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_nimbusds_nimbus_jose_jwt_4_41_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_ning_compress_lzf_1_0_3.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp_okhttp_2_4_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_1_4_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_servlet_1_19.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_paranamer_paranamer_2_3.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_xstream_xstream_1_4_7.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_twitter_chill_2_11_0_8_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_twitter_chill_java_0_8_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_twitter_parquet_hadoop_bundle_1_6_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_univocity_univocity_parsers_2_1_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_yammer_metrics_metrics_core_2_2_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_1_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_4.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_httpclient_commons_httpclient_3_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_net_commons_net_2_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_pool_commons_pool_1_5_4.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_dropwizard_metrics_metrics_core_3_1_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_dropwizard_metrics_metrics_graphite_3_1_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_dropwizard_metrics_metrics_json_3_1_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_dropwizard_metrics_metrics_jvm_3_1_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_8_0_Final.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_0_29_Final.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_batch_javax_batch_api_1_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_jdo_jdo_api_3_0_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_jms_javax_jms_api_2_0_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_jta_1_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_javax_ws_rs_api_2_0_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_2_11.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javolution_javolution_5_5_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_2_12.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_9_3.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_8_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_apache_log4j_extras_1_2_17.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_hydromatic_eigenbase_properties_1_1_5.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jets3t_jets3t_0_7_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_jpountz_lz4_lz4_1_3_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_razorvine_pyrolite_4_9.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ehcache_ehcache_2_10_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ehcache_ehcache_core_2_4_3.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_opencsv_opencsv_2_3.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_py4j_py4j_0_10_3.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_f2j_arpack_combined_all_0_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_ST4_4_0_4.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_5_3.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr_runtime_3_4.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_stringtemplate_3_2_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_avro_avro_1_7_7.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_avro_avro_ipc_1_7_7.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_avro_avro_ipc_tests_1_7_7.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_avro_avro_mapred_hadoop2_1_7_7.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_calcite_calcite_avatica_1_2_0_incubating.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_calcite_calcite_core_1_2_0_incubating.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_calcite_calcite_linq4j_1_2_0_incubating.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_4_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_configuration2_2_1_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_3_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_math3_3_4_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_client_2_12_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_framework_2_4_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_recipes_2_4_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_derby_derby_10_10_2_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_j2ee_management_1_1_spec_1_0_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_annotations_3_0_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_auth_3_0_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_client_3_0_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_common_3_0_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_hdfs_client_3_0_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_common_3_0_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_core_3_0_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_jobclient_3_0_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_api_3_0_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_client_3_0_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_common_2_2_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_server_common_2_2_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_server_web_proxy_2_2_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_htrace_htrace_core4_4_1_0_incubating.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ivy_ivy_2_4_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_2_10_0_8_2_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_clients_0_8_2_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerb_admin_1_0_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerb_client_1_0_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerb_common_1_0_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerb_core_1_0_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerb_crypto_1_0_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerb_identity_1_0_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerb_server_1_0_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerb_simplekdc_1_0_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerb_util_1_0_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerby_asn1_1_0_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerby_config_1_0_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerby_pkix_1_0_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerby_util_1_0_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerby_xdr_1_0_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_token_provider_1_0_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_mesos_mesos_shaded_protobuf_0_21_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_parquet_parquet_column_1_7_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_parquet_parquet_common_1_7_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_parquet_parquet_encoding_1_7_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_parquet_parquet_format_2_3_0_incubating.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_parquet_parquet_generator_1_7_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_parquet_parquet_hadoop_1_7_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_parquet_parquet_jackson_1_7_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_catalyst_2_11_2_0_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_core_2_11_2_0_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_graphx_2_11_2_0_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_hive_2_11_2_0_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_launcher_2_11_2_0_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_mllib_2_11_2_0_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_mllib_local_2_11_2_0_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_network_common_2_11_2_0_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_network_shuffle_2_11_2_0_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_sketch_2_11_2_0_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_sql_2_11_2_0_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_streaming_2_11_2_0_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_streaming_kafka_2_10_1_6_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_tags_2_11_2_0_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_unsafe_2_11_2_0_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_yarn_2_11_2_0_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_thrift_libfb303_0_9_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_thrift_libthrift_0_9_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_0_36.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_0_36.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_logging_juli_8_0_36.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_0_36.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xbean_xbean_asm5_shaded_4_4.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_5.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_8.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_13.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_13.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_janino_commons_compiler_2_7_6.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_janino_janino_2_7_8.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jettison_jettison_1_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_woodstox_stax2_api_3_1_4.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_datanucleus_datanucleus_api_jdo_3_2_6.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_datanucleus_datanucleus_core_3_2_10.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_datanucleus_datanucleus_rdbms_3_2_9.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_security_9_3_19_v20170502.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_servlet_9_3_19_v20170502.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_webapp_9_3_19_v20170502.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_xml_9_3_19_v20170502.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_fusesource_hawtbuf_hawtbuf_1_11.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_fusesource_leveldbjni_leveldbjni_all_1_8.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_external_aopalliance_repackaged_2_4_0_b34.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_external_javax_inject_2_4_0_b34.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_api_2_4_0_b34.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_locator_2_4_0_b34.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_utils_2_4_0_b34.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_osgi_resource_locator_1_0_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_bundles_repackaged_jersey_guava_2_22_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_containers_jersey_container_servlet_2_22_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_containers_jersey_container_servlet_core_2_22_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_client_2_22_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_common_2_22_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_server_2_22_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_media_jersey_media_jaxb_2_22_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_4_0_1_Final.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_4_2_0_Final.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_ehcache_4_2_0_Final.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_4_2_0_Final.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_0_1_Final.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_0_api_1_0_1_Final.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_iq80_snappy_snappy_0_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_3_Final.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_0_GA.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_1_spec_1_0_0_Final.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jodd_jodd_core_3_5_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jpmml_pmml_model_1_2_15.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jpmml_pmml_schema_1_2_15.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_json4s_json4s_ast_2_11_3_2_11.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_json4s_json4s_core_2_11_3_2_11.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_json4s_json4s_jackson_2_11_3_2_11.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20090211.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_roaringbitmap_RoaringBitmap_0_5_11.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_modules_scala_parser_combinators_2_11_1_0_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_modules_scala_xml_2_11_1_0_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_compiler_2_11_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_library_2_11_8.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_reflect_2_11_7.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scalap_2_11_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scalanlp_breeze_2_11_0_11_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scalanlp_breeze_macros_2_11_0_11_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scalatest_scalatest_2_11_2_2_6.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_21.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_16.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_21.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_21.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_21.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_jdk14_1_6_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_6_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_21.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_spark_project_hive_hive_exec_1_2_1_spark2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_spark_project_hive_hive_metastore_1_2_1_spark2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_spark_project_spark_unused_1_0_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_spire_math_spire_2_11_0_7_4.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_spire_math_spire_macros_2_11_0_7_4.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_batch_spring_batch_core_3_0_7_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_batch_spring_batch_infrastructure_3_0_7_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_3_6_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_3_6_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_3_6_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_3_6_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_3_6_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_1_3_6_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_3_6_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_12_2_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_1_10_2_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_mongodb_1_9_2_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_retry_spring_retry_1_1_0_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_2_6_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_tukaani_xz_1_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_bootstrap_3_0_3.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_jquery_2_0_3_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_2_6.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_16.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__oro_oro_2_0_8.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xmlpull_xmlpull_1_1_3_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xpp3_xpp3_min_1_1_4c.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_websocket_4_2_0_RELEASE.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/activiti-demo/.gitignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/activiti-demo/activiti-demo.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/activiti-demo/pom.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/activiti-demo/src/main/resources/log4j.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/activiti-demo/src/main/webapp/WEB-INF/web.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/.gitignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/.project" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/.settings/org.eclipse.jdt.core.prefs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/.settings/org.eclipse.m2e.core.prefs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/build.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/cloud-frameworks.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/pom.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/com/xcloud/framework/constants/ServerConstants.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/com/xcloud/hadoop/fs/CopyFile2HDFS.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/com/xcloud/hadoop/fs/FsOperation.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/com/xcloud/hadoop/fs/SequenceFileWriteDemo.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/com/xcloud/hadoop/mpr/CountIP.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/com/xcloud/hadoop/mpr/RawTextPair.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/com/xcloud/hadoop/mpr/SampleMpr.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/com/xcloud/hadoop/mpr/TextPair.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/com/xcloud/hadoop/mpr/WordCount.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/com/xcloud/hadoop/trace/MyLocalFileSpanReceiver.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/com/xcloud/hadoop/util/ConfigurationClass.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/com/xcloud/mongodb/sample/MongoDBClientTest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/com/xcloud/spark/sample/IConsoleExecutor.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/com/xcloud/spark/sample/IpCount.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/com/xcloud/spark/sample/SimpleApp.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/com/xcloud/spark/sample/Test.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/com/xcloud/spark/sample/WordCount.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/JavaHdfsLR.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/JavaLogQuery.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/JavaPageRank.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/JavaSparkPi.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/JavaStatusTrackerDemo.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/JavaTC.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/JavaWordCount.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaAFTSurvivalRegressionExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaALSExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaBinarizerExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaBisectingKMeansExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaBucketizerExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaChiSqSelectorExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaCountVectorizerExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaDCTExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaDecisionTreeClassificationExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaDecisionTreeRegressionExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaDocument.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaElementwiseProductExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaEstimatorTransformerParamExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaGaussianMixtureExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaGeneralizedLinearRegressionExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaGradientBoostedTreeClassifierExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaGradientBoostedTreeRegressorExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaIndexToStringExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaIsotonicRegressionExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaKMeansExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaLDAExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaLabeledDocument.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaLinearRegressionWithElasticNetExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaLogisticRegressionSummaryExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaLogisticRegressionWithElasticNetExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaMaxAbsScalerExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaMinMaxScalerExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaModelSelectionViaCrossValidationExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaModelSelectionViaTrainValidationSplitExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaMultilayerPerceptronClassifierExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaNGramExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaNaiveBayesExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaNormalizerExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaOneHotEncoderExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaOneVsRestExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaPCAExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaPipelineExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaPolynomialExpansionExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaQuantileDiscretizerExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaRFormulaExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaRandomForestClassifierExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaRandomForestRegressorExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaSQLTransformerExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaSimpleParamsExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaStandardScalerExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaStopWordsRemoverExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaStringIndexerExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaTfIdfExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaTokenizerExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaVectorAssemblerExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaVectorIndexerExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaVectorSlicerExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/ml/JavaWord2VecExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/mllib/JavaALS.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/mllib/JavaAssociationRulesExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/mllib/JavaBinaryClassificationMetricsExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/mllib/JavaBisectingKMeansExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/mllib/JavaChiSqSelectorExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/mllib/JavaCorrelationsExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/mllib/JavaDecisionTreeClassificationExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/mllib/JavaDecisionTreeRegressionExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/mllib/JavaElementwiseProductExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/mllib/JavaGaussianMixtureExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/mllib/JavaGradientBoostingClassificationExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/mllib/JavaGradientBoostingRegressionExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/mllib/JavaHypothesisTestingExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/mllib/JavaHypothesisTestingKolmogorovSmirnovTestExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/mllib/JavaIsotonicRegressionExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/mllib/JavaKMeansExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/mllib/JavaKernelDensityEstimationExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/mllib/JavaLBFGSExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/mllib/JavaLatentDirichletAllocationExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/mllib/JavaLinearRegressionWithSGDExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/mllib/JavaLogisticRegressionWithLBFGSExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/mllib/JavaMultiLabelClassificationMetricsExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/mllib/JavaMulticlassClassificationMetricsExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/mllib/JavaNaiveBayesExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/mllib/JavaPCAExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/mllib/JavaPowerIterationClusteringExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/mllib/JavaPrefixSpanExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/mllib/JavaRandomForestClassificationExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/mllib/JavaRandomForestRegressionExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/mllib/JavaRankingMetricsExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/mllib/JavaRecommendationExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/mllib/JavaRegressionMetricsExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/mllib/JavaSVDExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/mllib/JavaSVMWithSGDExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/mllib/JavaSimpleFPGrowth.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/mllib/JavaStratifiedSamplingExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/mllib/JavaStreamingTestExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/mllib/JavaSummaryStatisticsExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/sql/JavaSQLDataSourceExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/sql/JavaSparkSQLExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/sql/hive/JavaSparkHiveExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/sql/streaming/JavaStructuredNetworkWordCount.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/sql/streaming/JavaStructuredNetworkWordCountWindowed.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/streaming/JavaCustomReceiver.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/streaming/JavaDirectKafkaWordCount.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/streaming/JavaKafkaWordCount.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/streaming/JavaNetworkWordCount.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/streaming/JavaQueueStream.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/streaming/JavaRecord.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/streaming/JavaRecoverableNetworkWordCount.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/streaming/JavaSqlNetworkWordCount.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/streaming/JavaStatefulNetworkWordCount.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/java/org/apache/spark/examples/streaming/StreamingExamples.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/als.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/avro_inputformat.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/kmeans.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/logistic_regression.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/aft_survival_regression.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/als_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/binarizer_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/bisecting_k_means_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/bucketizer_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/chisq_selector_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/count_vectorizer_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/cross_validator.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/dataframe_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/dct_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/decision_tree_classification_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/decision_tree_regression_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/elementwise_product_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/estimator_transformer_param_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/gaussian_mixture_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/generalized_linear_regression_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/gradient_boosted_tree_classifier_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/gradient_boosted_tree_regressor_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/index_to_string_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/isotonic_regression_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/kmeans_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/lda_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/linear_regression_with_elastic_net.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/logistic_regression_with_elastic_net.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/max_abs_scaler_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/min_max_scaler_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/multilayer_perceptron_classification.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/n_gram_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/naive_bayes_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/normalizer_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/one_vs_rest_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/onehot_encoder_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/pca_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/pipeline_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/polynomial_expansion_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/quantile_discretizer_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/random_forest_classifier_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/random_forest_regressor_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/rformula_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/simple_params_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/simple_text_classification_pipeline.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/sql_transformer.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/standard_scaler_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/stopwords_remover_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/string_indexer_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/tf_idf_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/tokenizer_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/train_validation_split.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/vector_assembler_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/vector_indexer_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/vector_slicer_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/ml/word2vec_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/binary_classification_metrics_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/bisecting_k_means_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/correlations.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/correlations_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/decision_tree_classification_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/decision_tree_regression_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/elementwise_product_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/fpgrowth_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/gaussian_mixture_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/gaussian_mixture_model.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/gradient_boosting_classification_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/gradient_boosting_regression_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/hypothesis_testing_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/hypothesis_testing_kolmogorov_smirnov_test_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/isotonic_regression_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/k_means_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/kernel_density_estimation_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/kmeans.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/latent_dirichlet_allocation_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/linear_regression_with_sgd_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/logistic_regression.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/logistic_regression_with_lbfgs_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/multi_class_metrics_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/multi_label_metrics_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/naive_bayes_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/normalizer_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/power_iteration_clustering_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/random_forest_classification_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/random_forest_regression_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/random_rdd_generation.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/ranking_metrics_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/recommendation_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/regression_metrics_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/sampled_rdds.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/standard_scaler_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/stratified_sampling_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/streaming_k_means_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/streaming_linear_regression_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/summary_statistics_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/svm_with_sgd_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/tf_idf_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/word2vec.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/mllib/word2vec_example.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/pagerank.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/parquet_inputformat.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/pi.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/sort.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/sql.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/sql/streaming/structured_network_wordcount.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/sql/streaming/structured_network_wordcount_windowed.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/status_api_demo.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/streaming/direct_kafka_wordcount.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/streaming/flume_wordcount.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/streaming/hdfs_wordcount.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/streaming/kafka_wordcount.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/streaming/network_wordcount.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/streaming/network_wordjoinsentiments.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/streaming/queue_stream.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/streaming/recoverable_network_wordcount.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/streaming/sql_network_wordcount.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/streaming/stateful_network_wordcount.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/transitive_closure.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/python/wordcount.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/r/RSparkSQLExample.R" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/r/data-manipulation.R" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/r/dataframe.R" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/r/ml.R" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/resources/etc/hadoop/capacity-scheduler.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/resources/etc/hadoop/configuration.xsl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/resources/etc/hadoop/container-executor.cfg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/resources/etc/hadoop/core-site.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/resources/etc/hadoop/hadoop-env.cmd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/resources/etc/hadoop/hadoop-env.sh" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/resources/etc/hadoop/hadoop-metrics.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/resources/etc/hadoop/hadoop-metrics2.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/resources/etc/hadoop/hadoop-policy.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/resources/etc/hadoop/hdfs-site.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/resources/etc/hadoop/httpfs-env.sh" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/resources/etc/hadoop/httpfs-log4j.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/resources/etc/hadoop/httpfs-signature.secret" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/resources/etc/hadoop/httpfs-site.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/resources/etc/hadoop/kms-acls.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/resources/etc/hadoop/kms-env.sh" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/resources/etc/hadoop/kms-log4j.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/resources/etc/hadoop/kms-site.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/resources/etc/hadoop/log4j.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/resources/etc/hadoop/mapred-env.cmd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/resources/etc/hadoop/mapred-env.sh" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/resources/etc/hadoop/mapred-queues.xml.template" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/resources/etc/hadoop/mapred-site.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/resources/etc/hadoop/mapred-site.xml.template" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/resources/etc/hadoop/slaves" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/resources/etc/hadoop/ssl-client.xml.example" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/resources/etc/hadoop/ssl-server.xml.example" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/resources/etc/hadoop/yarn-env.cmd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/resources/etc/hadoop/yarn-env.sh" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/resources/etc/hadoop/yarn-site.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/resources/full_user.avsc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/resources/hadoop-cluster.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/resources/hadoop-local.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/resources/hadoop-localhost.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/resources/kv1.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/resources/people.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/resources/people.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/resources/user.avsc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/resources/users.avro" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/resources/users.parquet" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/BroadcastTest.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/DFSReadWriteTest.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/DriverSubmissionTest.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ExceptionHandlingTest.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/GroupByTest.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/HdfsTest.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/LocalALS.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/LocalFileLR.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/LocalKMeans.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/LocalLR.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/LocalPi.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/LogQuery.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/MultiBroadcastTest.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/SimpleSkewedGroupByTest.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/SkewedGroupByTest.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/SparkALS.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/SparkHdfsLR.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/SparkKMeans.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/SparkLR.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/SparkPageRank.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/SparkPi.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/SparkTC.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/graphx/AggregateMessagesExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/graphx/Analytics.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/graphx/ComprehensiveExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/graphx/ConnectedComponentsExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/graphx/LiveJournalPageRank.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/graphx/PageRankExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/graphx/SSSPExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/graphx/SynthBenchmark.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/graphx/TriangleCountingExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/AFTSurvivalRegressionExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/ALSExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/BinarizerExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/BisectingKMeansExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/BucketizerExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/ChiSqSelectorExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/CountVectorizerExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/DCTExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/DataFrameExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/DecisionTreeClassificationExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/DecisionTreeExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/DecisionTreeRegressionExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/DeveloperApiExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/ElementwiseProductExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/EstimatorTransformerParamExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/GBTExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/GaussianMixtureExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/GeneralizedLinearRegressionExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/GradientBoostedTreeClassifierExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/GradientBoostedTreeRegressorExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/IndexToStringExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/IsotonicRegressionExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/KMeansExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/LDAExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/LinearRegressionExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/LinearRegressionWithElasticNetExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/LogisticRegressionExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/LogisticRegressionSummaryExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/LogisticRegressionWithElasticNetExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/MaxAbsScalerExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/MinMaxScalerExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/ModelSelectionViaCrossValidationExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/ModelSelectionViaTrainValidationSplitExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/MultilayerPerceptronClassifierExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/NGramExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/NaiveBayesExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/NormalizerExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/OneHotEncoderExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/OneVsRestExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/PCAExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/PipelineExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/PolynomialExpansionExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/QuantileDiscretizerExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/RFormulaExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/RandomForestClassifierExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/RandomForestExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/RandomForestRegressorExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/SQLTransformerExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/SimpleParamsExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/SimpleTextClassificationPipeline.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/StandardScalerExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/StopWordsRemoverExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/StringIndexerExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/TfIdfExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/TokenizerExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/UnaryTransformerExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/VectorAssemblerExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/VectorIndexerExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/VectorSlicerExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/ml/Word2VecExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/AbstractParams.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/AssociationRulesExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/BinaryClassification.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/BinaryClassificationMetricsExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/BisectingKMeansExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/ChiSqSelectorExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/Correlations.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/CorrelationsExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/CosineSimilarity.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/DecisionTreeClassificationExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/DecisionTreeRegressionExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/DecisionTreeRunner.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/DenseGaussianMixture.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/DenseKMeans.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/ElementwiseProductExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/FPGrowthExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/GaussianMixtureExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/GradientBoostedTreesRunner.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/GradientBoostingClassificationExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/GradientBoostingRegressionExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/HypothesisTestingExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/HypothesisTestingKolmogorovSmirnovTestExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/IsotonicRegressionExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/KMeansExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/KernelDensityEstimationExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/LBFGSExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/LDAExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/LatentDirichletAllocationExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/LinearRegression.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/LinearRegressionWithSGDExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/LogisticRegressionWithLBFGSExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/MovieLensALS.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/MultiLabelMetricsExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/MulticlassMetricsExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/MultivariateSummarizer.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/NaiveBayesExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/NormalizerExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/PCAExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/PCAOnRowMatrixExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/PCAOnSourceVectorExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/PMMLModelExportExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/PowerIterationClusteringExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/PrefixSpanExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/RandomForestClassificationExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/RandomForestRegressionExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/RandomRDDGeneration.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/RankingMetricsExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/RecommendationExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/RegressionMetricsExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/SVDExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/SVMWithSGDExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/SampledRDDs.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/SimpleFPGrowth.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/SparseNaiveBayes.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/StandardScalerExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/StratifiedSamplingExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/StreamingKMeansExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/StreamingLinearRegression.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/StreamingLinearRegressionExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/StreamingLogisticRegression.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/StreamingTestExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/SummaryStatisticsExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/TFIDFExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/TallSkinnyPCA.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/TallSkinnySVD.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/mllib/Word2VecExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/pythonconverters/AvroConverters.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/sql/RDDRelation.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/sql/SQLDataSourceExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/sql/SparkSQLExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/sql/hive/SparkHiveExample.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/sql/streaming/StructuredNetworkWordCount.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/sql/streaming/StructuredNetworkWordCountWindowed.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/streaming/CustomReceiver.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/streaming/DirectKafkaWordCount.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/streaming/FlumeEventCount.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/streaming/FlumePollingEventCount.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/streaming/HdfsWordCount.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/streaming/KafkaWordCount.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/streaming/NetworkWordCount.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/streaming/QueueStream.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/streaming/RawNetworkGrep.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/streaming/RecoverableNetworkWordCount.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/streaming/SqlNetworkWordCount.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/streaming/StatefulNetworkWordCount.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/streaming/StreamingExamples.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/streaming/clickstream/PageViewGenerator.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cloud-frameworks/src/main/scala/org/apache/spark/examples/streaming/clickstream/PageViewStream.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dubbo-demo/.gitignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dubbo-demo/.settings/.jsdtscope" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dubbo-demo/.settings/org.eclipse.core.resources.prefs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dubbo-demo/.settings/org.eclipse.jdt.core.prefs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dubbo-demo/.settings/org.eclipse.m2e.core.prefs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dubbo-demo/.settings/org.eclipse.wst.common.component" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dubbo-demo/.settings/org.eclipse.wst.common.project.facet.core.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dubbo-demo/.settings/org.eclipse.wst.jsdt.ui.superType.container" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dubbo-demo/.settings/org.eclipse.wst.jsdt.ui.superType.name" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dubbo-demo/.settings/org.eclipse.wst.validation.prefs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dubbo-demo/dubbo-demo.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dubbo-demo/pom.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dubbo-demo/src/main/java/com/dubbo/demo/Consumer.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dubbo-demo/src/main/java/com/dubbo/demo/Provider.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dubbo-demo/src/main/java/com/dubbo/demo/constants/ServerConstants.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dubbo-demo/src/main/java/com/dubbo/demo/service/DemoService.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dubbo-demo/src/main/java/com/dubbo/demo/service/impl/DemoServiceImpl.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dubbo-demo/src/main/java/com/dubbo/demo/zk/ZkDemoClient.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dubbo-demo/src/main/resources/consumer.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dubbo-demo/src/main/resources/log4j.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dubbo-demo/src/main/resources/provider.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dubbo-demo/src/main/webapp/WEB-INF/web.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/.classpath" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/.gitignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/.project" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/.settings/.jsdtscope" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/.settings/org.eclipse.core.resources.prefs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/.settings/org.eclipse.jdt.core.prefs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/.settings/org.eclipse.m2e.core.prefs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/.settings/org.eclipse.wst.common.component" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/.settings/org.eclipse.wst.common.project.facet.core.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/.settings/org.eclipse.wst.jsdt.ui.superType.container" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/.settings/org.eclipse.wst.jsdt.ui.superType.name" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/.settings/org.eclipse.wst.validation.prefs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/client.ks" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/client.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/example.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/pom.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/AMQConstants.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/ApplicationCtxTest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/Constants.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/ExecutorServiceTest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/Tester.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/activemq/ActiveMQRequest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/activemq/ActiveMQResponse.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/activemq/AdvisoryMessageTest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/activemq/EmbeddedBrokerUsingAMQStoreExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/activemq/Listener.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/activemq/Listener2.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/activemq/Listener3.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/activemq/Publisher.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/activemq/Publisher2.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/activemq/Publisher3.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/activemq/VirtualTopicTest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/activemq/activemq.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/activemq/persistence/PersistenceAdapterExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/activemq/security/MyMessageAuthorizationPolicy.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/algorithm/Queen.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/concurrent/SemaphoreTest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/entity/Classes.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/entity/CodeMaster.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/entity/Resource.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/entity/Role.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/entity/User.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/entity/UserLogin.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/entity/UserProfile.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/entity/UserRole.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/jdk8/Formula.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/jdk8/Lambda.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/jdk8/LambdaTest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/jdk8/OptionalTest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/mongodb/MongoDBTest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/nio/BufferTest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/nio/ChannelTransfer.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/nio/ChannelTransferTest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/nio/CharBufferTest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/nio/ConnectAsync.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/nio/FileChannelTest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/nio/PipesTest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/nio/SelectSockets.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/nio/SelectSocketsThreadPool.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/nio/SocketServerChannel.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/nio/netty/DiscardServer.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/nio/netty/DiscardServerHandler.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/nio/netty/DispacherServer.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/nio/netty/TimeServerHandler.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/redis/RedisTest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/springbatch/demo/FlatFileReader.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/springbatch/demo/vo/Person.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/zookeeper/DataMonitor.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/zookeeper/DistributedLock.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/zookeeper/Executor.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/zookeeper/SyncDistributeLockTest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/java/com/jiyun/example/zookeeper/ZkClient.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/resources/activemq.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/resources/application.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/resources/applicationContext-batch.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/resources/applicationContext.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/resources/jdbc.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/resources/log4j.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/resources/mongod.conf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/src/main/webapp/WEB-INF/web.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/learning-cloud-frameworks/learning-cloud-frameworks.iml" afterPath="$PROJECT_DIR$/learning-cloud-frameworks/learning-cloud-frameworks.iml" />
+      <change beforePath="$PROJECT_DIR$/learning-common/learning-common.iml" afterPath="$PROJECT_DIR$/learning-common/learning-common.iml" />
+      <change beforePath="$PROJECT_DIR$/learning-dubbo/learning-dubbo.iml" afterPath="$PROJECT_DIR$/learning-dubbo/learning-dubbo.iml" />
+      <change beforePath="$PROJECT_DIR$/learning-example/learning-example.iml" afterPath="$PROJECT_DIR$/learning-example/learning-example.iml" />
+      <change beforePath="$PROJECT_DIR$/learning-example/src/main/java/com/learning/example/mongodb/MongoDBTest.java" afterPath="$PROJECT_DIR$/learning-example/src/main/java/com/learning/example/mongodb/MongoDBTest.java" />
+      <change beforePath="$PROJECT_DIR$/learning-parent.iml" afterPath="$PROJECT_DIR$/learning-parent.iml" />
+      <change beforePath="$PROJECT_DIR$/learning-spring-frameworks/learning-spring-frameworks.iml" afterPath="$PROJECT_DIR$/learning-spring-frameworks/learning-spring-frameworks.iml" />
       <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/scala-example/.cache-main" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/scala-example/.classpath" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/scala-example/.gitignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/scala-example/.project" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/scala-example/.settings/org.eclipse.core.resources.prefs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/scala-example/.settings/org.eclipse.jdt.core.prefs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/scala-example/.settings/org.eclipse.m2e.core.prefs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/scala-example/META-INF/MANIFEST.MF" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/scala-example/build.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/scala-example/build.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/scala-example/pom.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/scala-example/scala-example.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/scala-example/src/main/java/com/scala/example/HelloWorld.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/scala-example/src/main/java/com/scala/example/Tester.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/scala-example/src/main/java/com/scala/example/io/FileOperator.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/scala-example/src/main/java/com/scala/example/io/FileTest.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/scala-example/src/main/java/com/scala/example/obj/Person.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/scala-example/src/main/java/com/scala/example/practice/ArrayElement.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/scala-example/src/main/java/com/scala/example/practice/Element.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/scala-example/src/main/java/com/scala/example/practice/MultiTest.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/scala-example/src/main/java/com/scala/example/practice/Rational.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/scala-example/src/main/java/com/scala/example/practice/RecursionTest.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/scala-example/src/main/java/com/scala/example/practice/Summer.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/scala-example/src/main/java/com/scala/example/practice/pck1/Test.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/scala-example/src/main/java/com/scala/example/practice/pck1/package.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/scala-example/src/main/resources/META-INF/MANIFEST.MF" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/.externalToolBuilders/Maven_Ant_Builder.launch" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/.gitignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/.project" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/.settings/org.eclipse.jdt.core.prefs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/.settings/org.eclipse.m2e.core.prefs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/maven-eclipse.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/pom.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/spring-boot-demo-static-web.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/src/main/java/com/example/springboot/Application.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/src/main/java/com/example/springboot/CsrfHeaderFilter.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/src/main/java/com/example/springboot/DBConfigurate.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/src/main/java/com/example/springboot/SecurityConfiguration.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/src/main/java/com/example/springboot/WebMvcConfig.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/src/main/java/com/example/springboot/controller/BaseController.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/src/main/java/com/example/springboot/controller/HomeController.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/src/main/java/com/example/springboot/controller/TestAngularController.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/src/main/java/com/example/springboot/controller/UserController.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/src/main/java/com/example/springboot/entity/User.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/src/main/java/com/example/springboot/jms/amq/JmsConfiguration.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/src/main/java/com/example/springboot/jms/amq/MessageConsumer.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/src/main/java/com/example/springboot/module/ConnectionSettings.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/src/main/java/com/example/springboot/repositories/jpa/UserCrudRepository.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/src/main/java/com/example/springboot/server/BootFilter.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/src/main/java/com/example/springboot/server/BootHttpSessionListener.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/src/main/java/com/example/springboot/server/BootServlet.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/src/main/java/com/example/springboot/server/ContainerCustomizer.onlyrun1.2xx.java.bk" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/src/main/java/com/example/springboot/service/UserService.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/src/main/java/com/example/springboot/service/impl/UserServiceImpl.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/src/main/java/com/example/springboot/vo/Address.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/src/main/java/com/example/springboot/vo/User.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/src/main/resources/application.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/src/main/resources/applicationContext.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/src/main/resources/log4j.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/.htaccess" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/css/bootstrap-theme.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/css/bootstrap-theme.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/css/bootstrap-theme.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/css/bootstrap-theme.min.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/css/bootstrap.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/css/bootstrap.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/css/bootstrap.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/css/bootstrap.min.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/favicon.ico" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/fonts/FontAwesome.otf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/fonts/fontawesome-webfont.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/html/error.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/html/home.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/html/ng/angular-clock.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/html/ng/angular-clock2.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/html/ng/angular-directive.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/html/ng/angular-form.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/html/ng/angular-form2.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/html/ng/angular-http-api.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/html/ng/angular-internal-directive.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/html/ng/angular-test.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/html/react/react-test.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/images/1.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/images/2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/images/3.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/images/4.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/images/5.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/images/flags/cn.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/images/flags/us.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/js/angular-v1.3.2.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/js/app.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/js/bootstrap.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/js/bootstrap.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/js/common.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/js/jquery.form.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/js/jquery.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/js/npm.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/js/react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/views/error.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo-static-web/static/dist/views/welcome.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-frameworks/.gitignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-frameworks/.project" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-frameworks/.settings/org.eclipse.core.resources.prefs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-frameworks/.settings/org.eclipse.jdt.core.prefs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-frameworks/.settings/org.eclipse.m2e.core.prefs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-frameworks/.settings/org.hibernate.eclipse.console.prefs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-frameworks/pom.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-frameworks/spring-frameworks.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-frameworks/src/main/resources/applicationContext-standlone.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-frameworks/src/main/resources/hibernate.cfg.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-frameworks/src/main/resources/jdbc.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-frameworks/src/main/resources/mybatis-config.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-frameworks/src/main/resources/mybatis-mapper.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-frameworks/src/main/resources/test-bean.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-frameworks/src/main/resources/test-spring-mvc.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-frameworks/src/test/java/mytest/dao/BaseDao.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-frameworks/src/test/java/mytest/dao/TestDao.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-frameworks/src/test/java/mytest/dao/TestDaoImpl.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-frameworks/src/test/java/mytest/hibernate/HibernateInterceptor.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-frameworks/src/test/java/mytest/mybatis/MybatisExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-frameworks/src/test/java/mytest/mybatis/mapper/Blog.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-frameworks/src/test/java/mytest/mybatis/mapper/BlogMapper.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-frameworks/src/test/java/mytest/mybatis/plugin/ExamplePlugin.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-frameworks/src/test/java/mytest/mybatis/typehandler/Integer2LongHandler.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-frameworks/src/test/java/mytest/service/TestService.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-frameworks/src/test/java/mytest/service/TestServiceImpl.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-frameworks/src/test/java/mytest/spring/MyBeanFactoryPostProcessor.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-frameworks/src/test/java/mytest/spring/MyBeanProcessor.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-frameworks/src/test/java/mytest/spring/StandloneSpringFactory.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-frameworks/src/test/java/mytest/spring/TestSpring.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-frameworks/src/test/java/mytest/spring/aop/Advisor.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-frameworks/src/test/java/mytest/spring/aop/Aspector.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-frameworks/src/test/java/mytest/spring/boot/Application.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-frameworks/src/test/java/mytest/spring/data/mongodb/Address.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-frameworks/src/test/java/mytest/spring/data/mongodb/Person.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-frameworks/src/test/java/mytest/spring/data/mongodb/SpringMongoDBTest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-frameworks/src/test/spring-framework-test.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-frameworks/src/test/test.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/.gitignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/.project" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/.settings/org.eclipse.core.resources.prefs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/.settings/org.eclipse.jdt.core.prefs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/.settings/org.eclipse.m2e.core.prefs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/.settings/org.eclipse.wst.common.component" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/.settings/org.eclipse.wst.common.project.facet.core.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/.settings/org.eclipse.wst.validation.prefs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/build.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/pom.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/common/entities/AuditLog.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/common/entities/Classes.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/common/entities/CodeMaster.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/common/entities/Groups.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/common/entities/MailQueue.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/common/entities/Resource.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/common/entities/Role.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/common/entities/User.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/common/entities/UserGroup.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/common/entities/UserLogin.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/common/entities/UserProfile.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/common/entities/UserRole.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/common/model/AuthUserDetails.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/common/model/GrantedAuthorityImpl.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/common/model/PageCriteria.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/common/model/PageResult.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/common/model/TableVO.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/common/model/UserVO.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/common/model/WebMessage.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/common/model/WebMessages.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/utils/constants/ErrorCodeConstants.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/utils/constants/GroupConstants.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/utils/constants/IConstants.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/utils/constants/MasterCodeConstants.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/utils/constants/PortalConstants.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/utils/constants/RoleConstants.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/utils/constants/ServerConstants.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/utils/constants/StatusConstants.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/utils/constants/TableDefConstants.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/utils/exception/AuthenticationException.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/utils/exception/RemoteServiceException.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/utils/exception/SystemException.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/utils/util/AWSConfigUtil.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/utils/util/AuthenticationUtil.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/utils/util/BankingConfiguration.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/utils/util/CodeGenerator.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/utils/util/DateUtil.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/utils/util/FileThumbnailer.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/utils/util/FileUtil.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/utils/util/FmTemplateUtil.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/utils/util/JsonUtil.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/utils/util/ParamUtil.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/utils/util/PasswordEncoder.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/utils/util/PasswordGeneratorUtil.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/utils/util/PortalContext.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/utils/util/PortalUtil.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/utils/util/PrimaryKeyUtil.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/utils/util/QueryUtil.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/utils/util/ResConfigUtil.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/utils/util/SpringAppContextHolder.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/utils/util/StringUtil.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/java/com/xxooframe/utils/util/UUIDGenerator.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/src/main/resources/config.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-common/xxooframe-common.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-service/pom.xml" afterPath="$PROJECT_DIR$/xxooframe-service/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/xxooframe/dao/AbstractBaseDao.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/xxooframe/dao/AuditLogDao.java" afterPath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/learning/dao/AuditLogDao.java" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/xxooframe/dao/ClassesDao.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/xxooframe/dao/CodeMasterDao.java" afterPath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/learning/dao/CodeMasterDao.java" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/xxooframe/dao/IBaseDao.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/xxooframe/dao/RoleDao.java" afterPath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/learning/dao/RoleDao.java" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/xxooframe/dao/UserDao.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/xxooframe/dao/UserProfileDao.java" afterPath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/learning/dao/UserProfileDao.java" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/xxooframe/dao/UserRoleDao.java" afterPath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/learning/dao/UserRoleDao.java" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/xxooframe/dao/impl/AuditLogDaoImpl.java" afterPath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/learning/dao/impl/AuditLogDaoImpl.java" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/xxooframe/dao/impl/ClassesDaoImpl.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/xxooframe/dao/impl/CodeMasterDaoImpl.java" afterPath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/learning/dao/impl/CodeMasterDaoImpl.java" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/xxooframe/dao/impl/RoleDaoImpl.java" afterPath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/learning/dao/impl/RoleDaoImpl.java" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/xxooframe/dao/impl/UserDaoImpl.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/xxooframe/dao/impl/UserProfileDaoImpl.java" afterPath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/learning/dao/impl/UserProfileDaoImpl.java" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/xxooframe/dao/impl/UserRoleDaoImpl.java" afterPath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/learning/dao/impl/UserRoleDaoImpl.java" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/xxooframe/service/AbstractBaseService.java" afterPath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/learning/service/AbstractBaseService.java" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/xxooframe/service/AssetEntryService.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/xxooframe/service/CodeService.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/xxooframe/service/DBMSService.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/xxooframe/service/IBaseService.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/xxooframe/service/RoleService.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/xxooframe/service/UserService.aegis.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/xxooframe/service/UserService.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/xxooframe/service/impl/AssetEntryServiceImpl.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/xxooframe/service/impl/CodeServiceImpl.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/xxooframe/service/impl/DBMSServiceImpl.java" afterPath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/learning/service/impl/DBMSServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/xxooframe/service/impl/RoleServiceImpl.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/xxooframe/service/impl/UserServiceImpl.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-service/src/main/resources/config/hibernate/PersonProfile.hbm.xml" afterPath="$PROJECT_DIR$/xxooframe-service/src/main/resources/config/hibernate/PersonProfile.hbm.xml" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-service/src/main/resources/config/hibernate/User.hbm.xml" afterPath="$PROJECT_DIR$/xxooframe-service/src/main/resources/config/hibernate/User.hbm.xml" />
+      <change beforePath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/learning/service/AbstractBaseService.java" afterPath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/learning/service/AbstractBaseService.java" />
+      <change beforePath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/learning/service/impl/DBMSServiceImpl.java" afterPath="$PROJECT_DIR$/xxooframe-service/src/main/java/com/learning/service/impl/DBMSServiceImpl.java" />
       <change beforePath="$PROJECT_DIR$/xxooframe-service/xxooframe-service.iml" afterPath="$PROJECT_DIR$/xxooframe-service/xxooframe-service.iml" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/.gitignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/.project" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/.settings/.jsdtscope" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/.settings/org.eclipse.core.resources.prefs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/.settings/org.eclipse.jdt.core.prefs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/.settings/org.eclipse.m2e.core.prefs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/.settings/org.eclipse.wst.common.component" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/.settings/org.eclipse.wst.common.project.facet.core.prefs.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/.settings/org.eclipse.wst.common.project.facet.core.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/.settings/org.eclipse.wst.jsdt.ui.superType.container" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/.settings/org.eclipse.wst.jsdt.ui.superType.name" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/.settings/org.eclipse.wst.validation.prefs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/pom.xml" afterPath="$PROJECT_DIR$/xxooframe-web/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/xxooframe/applet/Test.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/xxooframe/bootstart/.svn/all-wcprops" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/xxooframe/bootstart/.svn/dir-prop-base" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/xxooframe/bootstart/.svn/entries" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/xxooframe/bootstart/.svn/text-base/SystemInitializer.java.svn-base" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/xxooframe/bootstart/SystemInitializer.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/xxooframe/jms/activemq/ActiveMQServlet.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/xxooframe/web/action.zip" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/learning/webapp/web/action.zip" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/xxooframe/web/auth/SampleCallbackHandler.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/xxooframe/web/auth/SampleLoginModule.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/xxooframe/web/auth/SamplePrincipal.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/xxooframe/web/constant/IConstant.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/xxooframe/web/controller/AbstractPortalController.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/xxooframe/web/controller/LoginController.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/xxooframe/web/controller/PasswordController.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/xxooframe/web/controller/UserManageController.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/xxooframe/web/filter/SecurityFilter.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/xxooframe/web/interceptor/AnnotationAspectTest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/xxooframe/web/interceptor/BeforeUploadAdvisor.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/xxooframe/web/interceptor/PortalInterceptor.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/xxooframe/web/interceptor/TestAopAdvice.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/xxooframe/web/interceptor/TestAopAspect.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/xxooframe/web/interceptor/UploadInterceptor.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/xxooframe/web/servlet/TestServlet30.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/xxooframe/web/taglibs/CustomErrorsTag.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/xxooframe/web/taglibs/UIDTag.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/xxooframe/web/util/PublishExtUtil.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/xxooframe/web/util/ServiceGateUtil.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/xxooframe/web/util/SpringContextHolder.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/xxooframe/websocket/example/TextWebSocketHandler.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/xxooframe/websocket/example/WebSocketConfig.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/java/com/xxooframe/websocket/example/WebSocketHandshakeInterceptor.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/resources/applicationContext.xml" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/resources/applicationContext.xml" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/resources/config/struts/default.xml" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/resources/config/struts/default.xml" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/resources/jms.xml" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/resources/jms.xml" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/resources/spring-mvc-security.xml" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/resources/spring-mvc-security.xml" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/resources/struts-spring.xml" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/resources/struts-spring.xml" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/webapp/WEB-INF/faces-config.xml" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/webapp/WEB-INF/faces-config.xml" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/webapp/WEB-INF/services.xml" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/webapp/WEB-INF/services.xml" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/webapp/WEB-INF/sun-jaxws.xml.bk" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/webapp/WEB-INF/sun-jaxws.xml.bk" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/webapp/WEB-INF/tld/customer.tld" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/webapp/WEB-INF/tld/customer.tld" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/webapp/WEB-INF/tld/errors.tld" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/webapp/WEB-INF/tld/errors.tld" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/webapp/WEB-INF/web-services.xml" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/webapp/WEB-INF/web-services.xml" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/webapp/WEB-INF/web.xml" />
-      <change beforePath="$PROJECT_DIR$/xxooframe-web/src/main/webapp/WEB-INF/xfire-servlet.xml" afterPath="$PROJECT_DIR$/xxooframe-web/src/main/webapp/WEB-INF/xfire-servlet.xml" />
       <change beforePath="$PROJECT_DIR$/xxooframe-web/xxooframe-web.iml" afterPath="$PROJECT_DIR$/xxooframe-web/xxooframe-web.iml" />
-      <change beforePath="$PROJECT_DIR$/xxooframe.iml" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/example/target/" />
     <ignored path="$PROJECT_DIR$/xxooframe-service/target/" />
@@ -1234,12 +44,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="RedisTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/learning-example/src/main/java/com/learning/example/redis/RedisTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1923">
-              <caret line="334" column="38" lean-forward="true" selection-start-line="334" selection-start-column="38" selection-end-line="334" selection-end-column="38" />
-              <folding />
+            <state relative-caret-position="344">
+              <caret line="37" column="34" lean-forward="false" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MongoDBTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/learning-example/src/main/java/com/learning/example/mongodb/MongoDBTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="64" column="51" lean-forward="true" selection-start-line="64" selection-start-column="51" selection-end-line="64" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1734#1735#0" expanded="true" />
+                <element signature="e#1807#1808#0" expanded="true" />
+                <element signature="e#2951#2952#0" expanded="true" />
+                <element signature="e#3007#3008#0" expanded="true" />
+                <element signature="e#4014#4015#0" expanded="true" />
+                <element signature="e#4079#4080#0" expanded="true" />
+                <element signature="e#4558#4559#0" expanded="true" />
+                <element signature="e#4614#4615#0" expanded="true" />
+                <element signature="e#5335#5336#0" expanded="true" />
+                <element signature="e#5391#5392#0" expanded="true" />
+                <element signature="e#6504#6505#0" expanded="true" />
+                <element signature="e#6560#6561#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1289,14 +125,15 @@
         <option value="$PROJECT_DIR$/xxooframe-web/pom.xml" />
         <option value="$PROJECT_DIR$/learning-common/src/main/java/com/learning/common/model/UserVO.java" />
         <option value="$PROJECT_DIR$/learning-common/src/main/java/com/learning/utils/util/PasswordEncoder.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/learning-common/src/main/java/com/learning/common/entities/AuditLog.java" />
         <option value="$PROJECT_DIR$/xxooframe-web/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/learning-spring-frameworks/pom.xml" />
         <option value="$PROJECT_DIR$/xxooframe-web/src/main/java/com/learning/webapp/web/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/learning-example/pom.xml" />
-        <option value="$PROJECT_DIR$/learning-example/src/main/java/com/learning/example/redis/RedisTest.java" />
         <option value="$PROJECT_DIR$/xxooframe-web/src/main/java/com/learning/webapp/web/filter/SecurityFilter.java" />
+        <option value="$PROJECT_DIR$/learning-example/src/main/java/com/learning/example/redis/RedisTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/learning-example/src/main/java/com/learning/example/mongodb/MongoDBTest.java" />
       </list>
     </option>
   </component>
@@ -1381,13 +218,18 @@
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.68405795" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="RequestMappingsPanelOrder2" value="2" />
+  </component>
+  <component name="Push.Settings">
+    <force-push-targets>
+      <force-push-target remote-path="origin" branch="refs/heads/master" />
+    </force-push-targets>
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -1407,7 +249,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MongoDBTest (1)">
+  <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -1415,33 +257,14 @@
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
-    <configuration name="Application" type="Application" factoryName="Application" nameIsGenerated="true">
+    <configuration name="MongoDBTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.example.springboot.*" />
+          <option name="PATTERN" value="com.learning.example.mongodb.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.example.springboot.Application" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="spring-boot-demo-static-web" />
-      <envs />
-    </configuration>
-    <configuration name="MongoDBTest (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.jiyun.example.mongodb.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.jiyun.example.mongodb.MongoDBTest" />
+      <option name="MAIN_CLASS_NAME" value="com.learning.example.mongodb.MongoDBTest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1451,25 +274,6 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="learning-example" />
-      <envs />
-    </configuration>
-    <configuration name="MongoDBTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.jiyun.example.mongodb.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.jiyun.example.mongodb.MongoDBTest" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="example" />
       <envs />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1525,12 +329,6 @@
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
     </configuration>
-    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.springboot.Application" />
-      <module name="spring-boot-demo-static-web" />
-      <envs />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -1564,16 +362,9 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Application.Application" />
-      <item index="1" class="java.lang.String" itemvalue="Spring Boot.Application" />
-      <item index="2" class="java.lang.String" itemvalue="Application.MongoDBTest" />
-      <item index="3" class="java.lang.String" itemvalue="Application.MongoDBTest (1)" />
-    </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Application.MongoDBTest (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Application.MongoDBTest" />
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Application.MongoDBTest" />
       </list>
     </recent_temporary>
   </component>
@@ -1596,7 +387,7 @@
       <workItem from="1522893943379" duration="6859000" />
       <workItem from="1523018436020" duration="1995000" />
       <workItem from="1523021103616" duration="3833000" />
-      <workItem from="1523025208011" duration="49000" />
+      <workItem from="1523025208011" duration="4449000" />
     </task>
     <task id="LOCAL-00001" summary="properties as yml">
       <created>1522467477705</created>
@@ -1654,11 +445,25 @@
       <option name="project" value="LOCAL" />
       <updated>1522895496358</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="refator codes">
+      <created>1523025643013</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1523025643013</updated>
+    </task>
+    <task id="LOCAL-00010" summary="refator codes">
+      <created>1523025929436</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1523025929436</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27666000" />
+    <option name="totallyTimeSpent" value="32066000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -1675,26 +480,26 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39906833" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.4941435" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3726708" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3726708" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919255" sideWeight="0.4941435" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1704,30 +509,15 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="SHOW_UNVERSIONED_FILES_WHILE_COMMIT" value="false" />
     <MESSAGE value="properties as yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="properties as yml" />
+    <MESSAGE value="refator codes" />
+    <option name="LAST_COMMIT_MESSAGE" value="refator codes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spring-boot-demo-static-web/src/main/resources/application.yml" />
-    <entry file="file://$PROJECT_DIR$/spring-boot-demo-static-web/src/main/java/com/example/springboot/module/ConnectionSettings.java" />
-    <entry file="file://$PROJECT_DIR$/spring-boot-demo-static-web/src/main/java/com/example/springboot/server/BootFilter.java" />
-    <entry file="file://$PROJECT_DIR$/spring-boot-demo-static-web/src/main/java/com/example/springboot/server/ContainerCustomizer.onlyrun1.2xx.java.bk" />
-    <entry file="file://$PROJECT_DIR$/spring-boot-demo-static-web/src/main/java/com/example/springboot/vo/User.java" />
-    <entry file="file://$PROJECT_DIR$/spring-boot-demo-static-web/src/main/java/com/example/springboot/entity/User.java" />
-    <entry file="file://$PROJECT_DIR$/example/src/main/java/com/jiyun/example/ApplicationCtxTest.java" />
-    <entry file="file://$PROJECT_DIR$/example/src/main/java/com/jiyun/example/Tester.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver/3.2.2/mongodb-driver-3.2.2-sources.jar!/com/mongodb/MongoClientOptions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-579">
-          <caret line="728" column="24" lean-forward="false" selection-start-line="728" selection-start-column="24" selection-end-line="728" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/example/src/main/java/com/jiyun/example/Constants.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver-core/3.6.3/mongodb-driver-core-3.6.3-sources.jar!/com/mongodb/assertions/Assertions.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1832,6 +622,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1939,13 +730,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/learning-example/src/main/java/com/jiyun/example/springbatch/demo/FlatFileReader.java" />
-    <entry file="file://$PROJECT_DIR$/learning-example/src/main/java/com/learning/example/mongodb/MongoDBTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="47" column="58" lean-forward="false" selection-start-line="47" selection-start-column="58" selection-end-line="47" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xxooframe-web/src/main/java/com/learning/webapp/web/filter/SecurityFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="301">
@@ -1960,29 +744,123 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learning-example/pom.xml">
+    <entry file="file://$PROJECT_DIR$/learning-example/src/main/java/com/learning/example/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="50" column="20" lean-forward="true" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
+        <state relative-caret-position="444">
+          <caret line="34" column="31" lean-forward="false" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/learning-example/src/main/java/com/learning/example/redis/RedisTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        <state relative-caret-position="344">
+          <caret line="37" column="34" lean-forward="false" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/learning-example/src/main/java/com/learning/example/jdk8/Lambda.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/apps/Java/jdk1.8.0_77/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="110" column="25" lean-forward="false" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1923">
-          <caret line="334" column="38" lean-forward="true" selection-start-line="334" selection-start-column="38" selection-end-line="334" selection-end-column="38" />
+        <state relative-caret-position="99">
+          <caret line="313" column="47" lean-forward="false" selection-start-line="313" selection-start-column="47" selection-end-line="313" selection-end-column="47" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learning-example/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="35" column="20" lean-forward="false" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver/3.6.3/mongodb-driver-3.6.3-sources.jar!/com/mongodb/client/ListCollectionsIterable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-37">
+          <caret line="28" column="17" lean-forward="false" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/apps/Java/jdk1.8.0_77/src.zip!/java/lang/Iterable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="71" column="17" lean-forward="false" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver/3.6.3/mongodb-driver-3.6.3-sources.jar!/com/mongodb/client/MongoDatabase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="252" column="38" lean-forward="false" selection-start-line="252" selection-start-column="38" selection-end-line="252" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver/3.6.3/mongodb-driver-3.6.3-sources.jar!/com/mongodb/client/MongoIterable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="29" column="35" lean-forward="true" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver-core/3.6.3/mongodb-driver-core-3.6.3-sources.jar!/com/mongodb/Block.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/apps/Java/jdk1.8.0_77/src.zip!/java/util/function/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-160">
+          <caret line="41" column="17" lean-forward="false" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learning-example/src/main/java/com/learning/example/mongodb/MongoDBTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="64" column="51" lean-forward="true" selection-start-line="64" selection-start-column="51" selection-end-line="64" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1734#1735#0" expanded="true" />
+            <element signature="e#1807#1808#0" expanded="true" />
+            <element signature="e#2951#2952#0" expanded="true" />
+            <element signature="e#3007#3008#0" expanded="true" />
+            <element signature="e#4014#4015#0" expanded="true" />
+            <element signature="e#4079#4080#0" expanded="true" />
+            <element signature="e#4558#4559#0" expanded="true" />
+            <element signature="e#4614#4615#0" expanded="true" />
+            <element signature="e#5335#5336#0" expanded="true" />
+            <element signature="e#5391#5392#0" expanded="true" />
+            <element signature="e#6504#6505#0" expanded="true" />
+            <element signature="e#6560#6561#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

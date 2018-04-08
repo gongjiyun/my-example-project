@@ -91,7 +91,6 @@
           <element id="library" level="project" name="Maven: net.sf.ehcache:ehcache:2.10.0" />
           <element id="library" level="project" name="Maven: javax.websocket:javax.websocket-api:1.0" />
           <element id="library" level="project" name="Maven: javax.websocket:javax.websocket-client-api:1.0" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-websocket:4.2.0.RELEASE" />
         </element>
       </element>
       <element id="directory" name="META-INF">

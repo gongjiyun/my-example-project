@@ -1,7 +1,11 @@
 package com.learning.example.mongodb;
 
 import com.learning.example.Constants;
-import com.mongodb.*;
+import com.mongodb.Block;
+import com.mongodb.MongoClient;
+import com.mongodb.MongoClientOptions;
+import com.mongodb.ServerAddress;
+import com.mongodb.client.*;
 import org.bson.BsonDocument;
 import org.bson.BsonObjectId;
 import org.bson.BsonString;
@@ -10,94 +14,92 @@ import org.bson.codecs.configuration.CodecRegistry;
 import org.bson.conversions.Bson;
 import org.bson.types.ObjectId;
 
-import com.mongodb.client.FindIterable;
-import com.mongodb.client.MongoCollection;
-import com.mongodb.client.MongoDatabase;
-import com.mongodb.client.MongoIterable;
 import com.mongodb.client.result.DeleteResult;
+
+import java.util.function.Consumer;
 
 public class MongoDBTest {
 
-	public static void main(String[] args) {
-		MongoDBTest test = new MongoDBTest();
-		test.testConnection();
-	}
+    public static void main(String[] args) {
+        MongoDBTest test = new MongoDBTest();
+        test.testConnection();
+    }
 
-	public void testConnection() {
-		ServerAddress addr = new ServerAddress(Constants.LINUX_HOST, 27017);
-		MongoClientOptions.Builder builder = MongoClientOptions.builder();
-		builder.requiredReplicaSetName(null);
+    public void testConnection() {
+        ServerAddress addr = new ServerAddress("localhost", 27017);
+        MongoClientOptions.Builder builder = MongoClientOptions.builder();
+        builder.requiredReplicaSetName(null);
 
-		MongoClient client = new MongoClient(addr, builder.build());
+        MongoClient client = new MongoClient(addr, builder.build());
 
-		MongoDatabase db = client.getDatabase("local");
+        MongoDatabase db = client.getDatabase("local");
 
-		System.out.println(db.getName());
+        System.out.println(db.getName());
 
-		MongoIterable<String> collectionNames = db.listCollectionNames();
-		collectionNames.forEach(new Block<String>() {
+        ListCollectionsIterable<Document> collections = db.listCollections();
+        collections.forEach((Block<? super Document>) (Document block) -> {
+            System.out.println("collection :" + block.toString());
+        });
 
-			public void apply(String arg0) {
-				System.out.println(arg0);
-			}
+        MongoIterable<String> collectionNames = db.listCollectionNames();
+        collectionNames.forEach((Consumer<? super String>) (String name) -> {
+            MongoCollection<Document> collection = db.getCollection(name);
 
-		});
+            FindIterable<Document> result = collection.find();
 
-		MongoCollection<Document> collection = db.getCollection("startup_log");
+            result.forEach(new Block<Document>() {
+                public void apply(Document arg0) {
+                    System.out.println(arg0.toJson());
+                }
+            });
 
-		FindIterable<Document> result = collection.find();
+        });
 
-		result.forEach(new Block<Document>() {
-			public void apply(Document arg0) {
-				System.out.println(arg0.toJson());
-			}
 
-		});
+        client.close();
 
-		client.close();
+    }
 
-	}
-	
-	public void testRunCommand() {
-		ServerAddress addr = new ServerAddress(Constants.LINUX_HOST, 27017);
-		MongoClient client = new MongoClient(addr);
-		MongoDatabase db = client.getDatabase("test");
+    public void testRunCommand() {
+        ServerAddress addr = new ServerAddress(Constants.LINUX_HOST, 27017);
+        MongoClient client = new MongoClient(addr);
+        MongoDatabase db = client.getDatabase("test");
 
-		System.out.println(db.getName());
+        System.out.println(db.getName());
 
-		Document result = db.runCommand(new Bson() {
+        Document result = db.runCommand(new Bson() {
 
-			public <TDocument> BsonDocument toBsonDocument(Class<TDocument> arg0, CodecRegistry arg1) {
-				return new BsonDocument("distinct", new BsonString("restaurants")).append("key", new BsonString("grades.grade"));
-			}
-		});
-		
-		System.out.println(result);
-		
-		client.close();
+            public <TDocument> BsonDocument toBsonDocument(Class<TDocument> arg0, CodecRegistry arg1) {
+                return new BsonDocument("distinct", new BsonString("restaurants")).append("key", new BsonString("grades.grade"));
+            }
+        });
 
-	}
+        System.out.println(result);
 
-	public void testSearch() {
-		ServerAddress addr = new ServerAddress(Constants.LINUX_HOST, 27017);
-		
-		MongoClient client = new MongoClient(addr);
-		MongoDatabase db = client.getDatabase("test");
+        client.close();
 
-		System.out.println(db.getName());
+    }
 
-		MongoIterable<String> collectionNames = db.listCollectionNames();
-		collectionNames.forEach(new Block<String>() {
+    public void testSearch() {
+        ServerAddress addr = new ServerAddress(Constants.LINUX_HOST, 27017);
 
-			public void apply(String arg0) {
-				System.out.println(arg0);
-			}
+        MongoClient client = new MongoClient(addr);
+        MongoDatabase db = client.getDatabase("test");
 
-		});
+        System.out.println(db.getName());
 
-		MongoCollection<Document> collection = db.getCollection("restaurants");
+        MongoIterable<String> collectionNames = db.listCollectionNames();
+        collectionNames.forEach(new Block<String>() {
 
-		FindIterable<Document> result = null;
+            public void apply(String arg0) {
+                System.out.println(arg0);
+            }
+
+        });
+
+        MongoCollection<Document> collection = db.getCollection("restaurants");
+
+        FindIterable<Document> result = null;
 		
 		/*result = collection.find(new Document("restaurant_id", "50018406"));
 
@@ -107,112 +109,111 @@ public class MongoDBTest {
 			}
 
 		});*/
-		
-		//Document findCri = new Document("grades.0.grade", "A");
-		//Document findCri = new Document("grades.grade", "D");
-		//Document findCri = new Document("grades.grade", "D");
-		//Document findCri = new Document("grades", new Document("$size", 3));
-		//Document findCri = new Document("grades", new Document("$slice", new Integer[]{0,1}));
-		Document findCri = new Document("grades", new Document("$elemMatch", new Document("grade","A").append("score", new Document("$gt",15))));
-		result = collection.find(findCri);
-		
-		result.forEach(new Block<Document>() {
-			public void apply(Document arg0) {
-				System.out.println(arg0.toJson());
-			}
 
-		});
-		
-		
+        //Document findCri = new Document("grades.0.grade", "A");
+        //Document findCri = new Document("grades.grade", "D");
+        //Document findCri = new Document("grades.grade", "D");
+        //Document findCri = new Document("grades", new Document("$size", 3));
+        //Document findCri = new Document("grades", new Document("$slice", new Integer[]{0,1}));
+        Document findCri = new Document("grades", new Document("$elemMatch", new Document("grade", "A").append("score", new Document("$gt", 15))));
+        result = collection.find(findCri);
 
-		client.close();
-	}
+        result.forEach(new Block<Document>() {
+            public void apply(Document arg0) {
+                System.out.println(arg0.toJson());
+            }
 
-	public void testInsert() {
-		ServerAddress addr = new ServerAddress(Constants.LINUX_HOST, 27017);
-		MongoClient client = new MongoClient(addr);
-		MongoDatabase db = client.getDatabase("test");
+        });
 
-		System.out.println(db.getName());
 
-		MongoIterable<String> collectionNames = db.listCollectionNames();
-		collectionNames.forEach(new Block<String>() {
+        client.close();
+    }
 
-			public void apply(String arg0) {
-				System.out.println(arg0);
-			}
+    public void testInsert() {
+        ServerAddress addr = new ServerAddress(Constants.LINUX_HOST, 27017);
+        MongoClient client = new MongoClient(addr);
+        MongoDatabase db = client.getDatabase("test");
 
-		});
+        System.out.println(db.getName());
 
-		MongoCollection<Document> collection = db.getCollection("restaurants");
+        MongoIterable<String> collectionNames = db.listCollectionNames();
+        collectionNames.forEach(new Block<String>() {
 
-		collection.insertOne(new Document().append("number2", "1111").append("number3", "1112").append("adddress",
-				new Document("j", "test")));
+            public void apply(String arg0) {
+                System.out.println(arg0);
+            }
 
-		client.close();
+        });
 
-	}
+        MongoCollection<Document> collection = db.getCollection("restaurants");
 
-	public void testDelete() {
-		ServerAddress addr = new ServerAddress(Constants.LINUX_HOST, 27017);
-		MongoClient client = new MongoClient(addr);
-		MongoDatabase db = client.getDatabase("test");
+        collection.insertOne(new Document().append("number2", "1111").append("number3", "1112").append("adddress",
+                new Document("j", "test")));
 
-		System.out.println(db.getName());
+        client.close();
 
-		MongoIterable<String> collectionNames = db.listCollectionNames();
-		collectionNames.forEach(new Block<String>() {
+    }
 
-			public void apply(String arg0) {
-				System.out.println(arg0);
-			}
+    public void testDelete() {
+        ServerAddress addr = new ServerAddress(Constants.LINUX_HOST, 27017);
+        MongoClient client = new MongoClient(addr);
+        MongoDatabase db = client.getDatabase("test");
 
-		});
+        System.out.println(db.getName());
 
-		MongoCollection<Document> collection = db.getCollection("restaurants");
+        MongoIterable<String> collectionNames = db.listCollectionNames();
+        collectionNames.forEach(new Block<String>() {
 
-		collection.deleteOne(new Bson() {
+            public void apply(String arg0) {
+                System.out.println(arg0);
+            }
 
-			public <TDocument> BsonDocument toBsonDocument(Class<TDocument> arg0, CodecRegistry arg1) {
-				return new BsonDocument("_id", new BsonString("1"));
-			}
-		});
+        });
 
-		DeleteResult deleteResult = collection.deleteOne(new Bson() {
+        MongoCollection<Document> collection = db.getCollection("restaurants");
 
-			public <TDocument> BsonDocument toBsonDocument(Class<TDocument> arg0, CodecRegistry arg1) {
-				return new BsonDocument("_id", new BsonObjectId(new ObjectId("58106ca17b7ecb50a4445411")));
-			}
-		});
+        collection.deleteOne(new Bson() {
 
-		client.close();
+            public <TDocument> BsonDocument toBsonDocument(Class<TDocument> arg0, CodecRegistry arg1) {
+                return new BsonDocument("_id", new BsonString("1"));
+            }
+        });
 
-	}
+        DeleteResult deleteResult = collection.deleteOne(new Bson() {
 
-	public void testUpdate() {
-		ServerAddress addr = new ServerAddress(Constants.LINUX_HOST, 27017);
-		MongoClient client = new MongoClient(addr);
-		MongoDatabase db = client.getDatabase("test");
+            public <TDocument> BsonDocument toBsonDocument(Class<TDocument> arg0, CodecRegistry arg1) {
+                return new BsonDocument("_id", new BsonObjectId(new ObjectId("58106ca17b7ecb50a4445411")));
+            }
+        });
 
-		System.out.println(db.getName());
+        client.close();
 
-		MongoIterable<String> collectionNames = db.listCollectionNames();
-		collectionNames.forEach(new Block<String>() {
+    }
 
-			public void apply(String arg0) {
-				System.out.println(arg0);
-			}
+    public void testUpdate() {
+        ServerAddress addr = new ServerAddress(Constants.LINUX_HOST, 27017);
+        MongoClient client = new MongoClient(addr);
+        MongoDatabase db = client.getDatabase("test");
 
-		});
+        System.out.println(db.getName());
 
-		MongoCollection<Document> collection = db.getCollection("restaurants");
-		
-		Document result = collection.findOneAndUpdate(new Bson() {
+        MongoIterable<String> collectionNames = db.listCollectionNames();
+        collectionNames.forEach(new Block<String>() {
 
-			public <TDocument> BsonDocument toBsonDocument(Class<TDocument> arg0, CodecRegistry arg1) {
-				return new BsonDocument("_id", new BsonObjectId(new ObjectId("58106ca17b7ecb50a4445411")));
-			}
-		}, new Document("$set", new Document("number2", "10")));
+            public void apply(String arg0) {
+                System.out.println(arg0);
+            }
+
+        });
+
+        MongoCollection<Document> collection = db.getCollection("restaurants");
+
+        Document result = collection.findOneAndUpdate(new Bson() {
+
+            public <TDocument> BsonDocument toBsonDocument(Class<TDocument> arg0, CodecRegistry arg1) {
+                return new BsonDocument("_id", new BsonObjectId(new ObjectId("58106ca17b7ecb50a4445411")));
+            }
+        }, new Document("$set", new Document("number2", "10")));
 
 		/*collection.updateOne(new Bson() {
 
@@ -221,10 +222,10 @@ public class MongoDBTest {
 			}
 		}, new Document("$set", new Document("number2", "1111")).toBsonDocument(Document.class, CodecRegistry));*/
 
-		System.out.println(result);
+        System.out.println(result);
 
-		client.close();
+        client.close();
 
-	}
+    }
 
 }

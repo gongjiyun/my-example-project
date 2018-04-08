@@ -30,7 +30,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Maven: redis.clients:Jedis:2.8.0" level="project" />
     <orderEntry type="module" module-name="learning-common" />
     <orderEntry type="library" name="Maven: net.sourceforge.jexcelapi:jxl:2.6.12" level="project" />
     <orderEntry type="library" name="Maven: org.apache.pdfbox:pdfbox:1.8.10" level="project" />
@@ -125,6 +124,5 @@
     <orderEntry type="library" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
     <orderEntry type="library" name="Maven: javax.websocket:javax.websocket-api:1.0" level="project" />
     <orderEntry type="library" name="Maven: javax.websocket:javax.websocket-client-api:1.0" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-websocket:4.2.0.RELEASE" level="project" />
   </component>
 </module>

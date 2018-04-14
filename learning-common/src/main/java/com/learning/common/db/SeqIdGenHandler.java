@@ -4,7 +4,7 @@ import java.sql.Connection;
 
 public class SeqIdGenHandler implements  IdGenHandler {
     @Override
-    public String generate(Connection conn) throws Exception {
+    public String generate() throws Exception {
         return null;
     }
 }

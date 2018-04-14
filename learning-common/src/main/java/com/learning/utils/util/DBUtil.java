@@ -29,6 +29,7 @@ import java.util.jar.JarFile;
 import com.learning.common.annotation.Column;
 import com.learning.common.annotation.Id;
 import com.learning.common.annotation.Table;
+import com.learning.common.db.IdGenHandler;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import com.learning.utils.util.StringUtil;
@@ -436,27 +437,43 @@ public class DBUtil {
 					AnnoField annoField = en.getValue();
 
 					boolean generateID = false;
+                    boolean generateSeqID = false;
 
 					Id idAnno = annoField.getIdAnno();
 					if(idAnno!=null && "sequence".equals(idAnno.idGenStrage()) && StringUtil.isNotBlank(idAnno.sequence())){
 						sequenceName = idAnno.sequence();
 						generatedColumns = new String[]{annoField.getColumnName()};
-						generateID = true;
-					}else{
-						generateID = false;
+                        generateSeqID = true;
+                        generateID = false;
+					}else if(idAnno.idGenHandler()!= IdGenHandler.class){
+                        generateID = true;
+                        generateSeqID = false;
+                    }else{
+                        generateID = false;
+                        generateSeqID = false;
 					}
-					if(generateID){
+					if(generateSeqID){
 						columsStr.append(annoField.getColumnName() + ",");
 						valuesStr.append(sequenceName + ",");
-					}else{
+					}else if(generateID){
+                        columsStr.append(annoField.getColumnName() + ",");
+                        valuesStr.append("?,");
+                    }else{
 						columsStr.append(annoField.getColumnName() + ",");
 						valuesStr.append("?,");	
 					}
 					
-					if(!generateID){
+					if(generateSeqID){
+					    continue;
+                    }
+					if(generateID){
 						Object value = getMethodValue(to, annoField.getFiledGetMethodName());							
 						params.add(value);
-					}
+					}else{
+					    IdGenHandler idGHandler = (IdGenHandler)idAnno.idGenHandler().newInstance();
+                        Object value =idGHandler.generate();
+                        params.add(value);
+                    }
 				}
 			}
 			

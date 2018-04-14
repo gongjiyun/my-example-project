@@ -1,12 +1,8 @@
 package com.learning.common.annotation;
 
-import com.learning.common.db.SeqIdGenHandler;
+import com.learning.common.db.SampleIdGenHandler;
 
-import java.lang.annotation.Documented;
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import java.lang.annotation.*;
 
 @Target({ElementType.TYPE,ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)
@@ -19,5 +15,5 @@ public @interface Id {
 	
 	String idGenStrage() default "sequence";
 
-	Class<?> idGenHandler() default SeqIdGenHandler.class;
+	Class<?> idGenHandler() default SampleIdGenHandler.class;
 }

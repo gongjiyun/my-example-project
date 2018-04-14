@@ -1,5 +1,7 @@
 package com.learning.utils.util;
 
+import org.apache.commons.lang.StringUtils;
+
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.math.BigDecimal;
@@ -208,5 +210,9 @@ public class StringUtil {
 	
 	public static void main(String[] args) {
 		System.out.println(array2String(new Integer[]{1, 2}, ","));
+	}
+
+	public static boolean isNotBlank(String name) {
+		return StringUtils.isNotBlank(name);
 	}
 }

@@ -131,37 +131,6 @@ public class SystemInitializer implements ApplicationContextAware {
 			e.printStackTrace();
 		}
 	}
-	
-	private void initialCodes() {
-		try {
-			System.out.println("initial basic codes");
-			if (applicationContext == null) {
-				throw new IllegalStateException("Can not initialization context");
-			}
-
-			CodeService codeService = (CodeService) applicationContext.getBean("codeService");
-			
-			List<CodeMaster> codelist = listAllCode();
-			if(codelist!=null && codelist.size()>0){
-				for(CodeMaster code : codelist){
-					try {
-						CodeMaster dbcode = codeService.findCode(code.getCodeKey(), String.valueOf(code.getType()));
-						if(dbcode==null){
-							codeService.saveCode(code);
-						}else{
-							dbcode.setCodeValue(code.getCodeValue());
-							dbcode.setDescription(code.getDescription());
-							codeService.updateCode(dbcode);
-						}
-					} catch (Exception e) {
-						System.out.println("error on update/add code " + e.getMessage());
-					}
-				}
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
 
 	private void initialClasses() {
 		try {

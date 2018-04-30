@@ -1,24 +1,18 @@
 package com.learning.service.impl;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.annotation.Resource;
-import javax.sql.DataSource;
-
+import com.learning.common.model.TableVO;
+import com.learning.service.DBMSService;
+import com.learning.utils.util.SpringAppContextHolder;
 import org.hibernate.SQLQuery;
 import org.hibernate.SessionFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Service;
 
-import com.learning.common.model.TableVO;
-import com.learning.service.DBMSService;
-import com.learning.utils.util.SpringAppContextHolder;
+import javax.annotation.Resource;
+import javax.sql.DataSource;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Service("dbmsService")
 public class DBMSServiceImpl implements DBMSService {

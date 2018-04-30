@@ -1,4 +1,4 @@
-package com.scala.example.io
+package com.scala.example.io;
 
 import java.io.File
 import java.io.PrintWriter

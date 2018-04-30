@@ -1,4 +1,4 @@
-package com.scala.example.practice.pck1
+package com.scala.example.practice.pck1;
 
 object Test {
   

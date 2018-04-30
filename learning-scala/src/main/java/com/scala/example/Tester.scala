@@ -1,4 +1,4 @@
-package com.scala.example
+package com.scala.example;
 
 import com.scala.example.practice.Rational
 

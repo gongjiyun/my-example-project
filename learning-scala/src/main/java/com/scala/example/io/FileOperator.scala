@@ -1,4 +1,4 @@
-package com.scala.example.io
+package com.scala.example.io;
 
 import scala.io.Source
 import scala.reflect.io.File

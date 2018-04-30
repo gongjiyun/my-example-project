@@ -1,4 +1,4 @@
-package com.scala.example.practice
+package com.scala.example.practice;
 
 abstract class Element {
   

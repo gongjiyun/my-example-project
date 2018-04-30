@@ -1,4 +1,4 @@
-package com.scala.example.obj
+package com.scala.example.obj;
 
 /**
   * Created by Administrator on 2017-1-9.

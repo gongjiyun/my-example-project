@@ -32,14 +32,14 @@ import com.learning.common.annotation.Table;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-public class SQLUitl {
+public class SqlUtil {
 
-	protected static Log log = LogFactory.getLog(SQLUitl.class.getName());
+	protected static Log log = LogFactory.getLog(SqlUtil.class.getName());
 	private static Map<String, AnnoTable> tableMap = new ConcurrentHashMap<String, AnnoTable>();
 	
-	private static SQLUitl instance = new SQLUitl();
+	private static SqlUtil instance = new SqlUtil();
 	
-	public static SQLUitl getInstance(){
+	public static SqlUtil getInstance(){
 		return instance;
 	}
 	
@@ -1026,7 +1026,7 @@ public class SQLUitl {
 	}
 	
 	public static void main(String[] args) {
-		SQLUitl.getInstance();
+		SqlUtil.getInstance();
 	
 	}
 	

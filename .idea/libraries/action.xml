@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="action">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/xxooframe-web/src/main/java/com/learning/webapp/web/action.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

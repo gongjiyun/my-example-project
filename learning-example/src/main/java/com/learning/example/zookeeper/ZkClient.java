@@ -8,11 +8,12 @@ import org.apache.zookeeper.WatchedEvent;
 import org.apache.zookeeper.Watcher;
 import org.apache.zookeeper.ZooDefs;
 import org.apache.zookeeper.ZooKeeper;
+import org.apache.zookeeper.data.Stat;
 
 public class ZkClient implements Watcher {
 
 	public final static String LOCK = "lock-of-zk";
-	public final static String HOST = "192.168.56.110:2181";
+	public final static String HOST = "192.168.56.120:2181";
 	private ZooKeeper zk = null;
 	private CountDownLatch countdown = new CountDownLatch(1);
 	private CountDownLatch createcountdown = new CountDownLatch(1);
@@ -24,6 +25,10 @@ public class ZkClient implements Watcher {
 
 	public void connect() throws Exception {
 		zk = new ZooKeeper(HOST, 2000, this);
+
+		byte [] bt = zk.getData("/zk-test", false, null);
+		System.out.println(new String(bt));
+
 		countdown.await();
 	}
 
@@ -74,8 +79,9 @@ public class ZkClient implements Watcher {
 
 	}
 
-	public static void main(String[] args) throws InterruptedException, KeeperException {
-
+	public static void main(String[] args) throws Exception {
+		ZkClient test = new ZkClient();
+		test.connect();
 	}
 
 }

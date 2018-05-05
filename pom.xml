@@ -29,6 +29,7 @@
         <module>learning-spring-boot</module>
         <module>xxooframe-service</module>
         <module>xxooframe-web</module>
+        <module>spring-cloud-redis-config</module>
     </modules>
 
     <dependencies>

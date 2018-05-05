@@ -1,16 +1,11 @@
 package com.learning.example.redis;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.nio.ByteBuffer;
-import java.nio.channels.ByteChannel;
-
 import com.learning.example.Constants;
 import redis.clients.jedis.Jedis;
 
+import java.io.*;
+import java.nio.ByteBuffer;
+import java.nio.channels.ByteChannel;
 
 public class RedisTest {
 
@@ -64,5 +59,6 @@ public class RedisTest {
 		redis.close();
 		fout.close();
 	}
+
 
 }

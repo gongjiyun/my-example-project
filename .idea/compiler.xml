@@ -6,23 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="dubbo-demo" />
-        <module name="example" />
         <module name="learning-cloud-frameworks" />
         <module name="learning-common" />
         <module name="learning-dubbo" />
         <module name="learning-example" />
         <module name="learning-spring-boot" />
         <module name="learning-spring-frameworks" />
-        <module name="spring-frameworks" />
         <module name="xxooframe-service" />
         <module name="xxooframe-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="cloud-frameworks" target="1.8" />
-      <module name="dubbo-demo" target="1.7" />
-      <module name="example" target="1.8" />
       <module name="learning-cloud-frameworks" target="1.8" />
       <module name="learning-common" target="1.8" />
       <module name="learning-dubbo" target="1.8" />
@@ -30,10 +24,6 @@
       <module name="learning-parent" target="1.8" />
       <module name="learning-spring-boot" target="1.8" />
       <module name="learning-spring-frameworks" target="1.8" />
-      <module name="spring-boot-demo-static-web" target="1.8" />
-      <module name="spring-frameworks" target="1.8" />
-      <module name="xxooframe" target="1.8" />
-      <module name="xxooframe-common" target="1.8" />
       <module name="xxooframe-service" target="1.8" />
       <module name="xxooframe-web" target="1.8" />
     </bytecodeTargetLevel>

@@ -74,7 +74,7 @@ public class DBUtil {
             if ("file".equals(protocol)) {
                 String filePath = URLDecoder.decode(url.getFile(), "UTF-8");
                 findAndAddClassesInPackageByFile(packageName, filePath, recursive, classes);
-            } else if ("jar".equals(protocol)) {
+            } else if ("jar".equalsIgnoreCase(protocol) || "zip".equalsIgnoreCase(protocol)) {
                 JarFile jar = ((JarURLConnection) url.openConnection()).getJarFile();
                 Enumeration<JarEntry> entries = jar.entries();
                 while (entries.hasMoreElements()) {

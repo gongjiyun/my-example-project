@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: net.sf.jasperreports:jasperreports:3.7.6">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/net/sf/jasperreports/jasperreports/3.7.6/jasperreports-3.7.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/net/sf/jasperreports/jasperreports/3.7.6/jasperreports-3.7.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

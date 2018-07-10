@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="learning-cloud-frameworks_main" target="1.8" />
+      <module name="learning-cloud-frameworks_test" target="1.8" />
+      <module name="learning-common_main" target="1.8" />
+      <module name="learning-common_test" target="1.8" />
+      <module name="learning-dubbo_main" target="1.8" />
+      <module name="learning-dubbo_test" target="1.8" />
+      <module name="learning-example_main" target="1.8" />
+      <module name="learning-example_test" target="1.8" />
+      <module name="learning-spring-frameworks_main" target="1.8" />
+      <module name="learning-spring-frameworks_test" target="1.8" />
+      <module name="xxooframe-service_main" target="1.8" />
+      <module name="xxooframe-service_test" target="1.8" />
+      <module name="xxooframe-web_main" target="1.8" />
+      <module name="xxooframe-web_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

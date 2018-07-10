@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.xsocket:xSocket-multiplexed:2.1.7">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/xsocket/xSocket-multiplexed/2.1.7/xSocket-multiplexed-2.1.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/xsocket/xSocket-multiplexed/2.1.7/xSocket-multiplexed-2.1.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

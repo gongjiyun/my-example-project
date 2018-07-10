@@ -1,0 +1,16 @@
+rootProject.name = 'learning-parent'
+include ':learning-common'
+include ':learning-cloud-frameworks'
+include ':learning-spring-frameworks'
+include ':learning-example'
+include ':learning-dubbo'
+include ':xxooframe-service'
+include ':xxooframe-web'
+
+project(':learning-common').projectDir = "$rootDir/learning-common" as File
+project(':learning-cloud-frameworks').projectDir = "$rootDir/learning-cloud-frameworks" as File
+project(':learning-spring-frameworks').projectDir = "$rootDir/learning-spring-frameworks" as File
+project(':learning-example').projectDir = "$rootDir/learning-example" as File
+project(':learning-dubbo').projectDir = "$rootDir/learning-dubbo" as File
+project(':xxooframe-service').projectDir = "$rootDir/xxooframe-service" as File
+project(':xxooframe-web').projectDir = "$rootDir/xxooframe-web" as File

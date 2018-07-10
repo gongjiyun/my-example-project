@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.xhtmlrenderer:core-renderer:R8">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/xhtmlrenderer/core-renderer/R8/core-renderer-R8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/xhtmlrenderer/core-renderer/R8/core-renderer-R8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

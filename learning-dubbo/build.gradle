@@ -1,0 +1,10 @@
+
+apply plugin: 'war'
+
+description = ''
+dependencies {
+  compile project(':learning-common')
+    compile group: 'com.alibaba', name: 'dubbo', version:'2.5.3'
+    compile group: 'org.apache.zookeeper', name: 'zookeeper', version:'3.4.8'
+    compile group: 'com.github.sgroschupf', name: 'zkclient', version:'0.1'
+}

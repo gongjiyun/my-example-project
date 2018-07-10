@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: wss4j:wss4j:1.5.1">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/wss4j/wss4j/1.5.1/wss4j-1.5.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

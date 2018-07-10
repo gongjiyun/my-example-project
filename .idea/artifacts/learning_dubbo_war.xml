@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="learning-dubbo:war">
-    <output-path>$PROJECT_DIR$/learning-dubbo/target</output-path>
-    <root id="archive" name="learning-dubbo-1.0-SNAPSHOT.war">
-      <element id="artifact" artifact-name="learning-dubbo:war exploded" />
-    </root>
-  </artifact>
-</component>

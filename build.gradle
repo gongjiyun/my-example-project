@@ -1,8 +1,7 @@
 allprojects  {
-  apply plugin: 'maven'
-
-  group = 'com.learning'
-version = '1.0-SNAPSHOT'
+	apply plugin: 'maven'
+	group = 'com.learning'
+	version = '1.0-SNAPSHOT'
 }
 
 subprojects {
@@ -26,7 +25,7 @@ subprojects {
   
   dependencies {
     compile(group: 'org.springframework', name: 'spring-core', version:'4.2.0.RELEASE') {
-exclude(module: 'commons-logging')
+		exclude(module: 'commons-logging')
     }
     compile group: 'org.springframework', name: 'spring-context', version:'4.2.0.RELEASE'
     compile group: 'org.springframework', name: 'spring-tx', version:'4.2.0.RELEASE'
@@ -36,7 +35,7 @@ exclude(module: 'commons-logging')
     compile group: 'org.springframework', name: 'spring-aspects', version:'4.2.0.RELEASE'
     compile group: 'org.springframework', name: 'spring-orm', version:'4.2.0.RELEASE'
     compile(group: 'org.springframework.data', name: 'spring-data-jpa', version:'1.10.1.RELEASE') {
-exclude(module: 'jcl-over')
+		exclude(module: 'jcl-over')
     }
     compile group: 'org.springframework', name: 'spring-webmvc', version:'4.2.0.RELEASE'
     compile group: 'org.springframework', name: 'spring-web', version:'4.2.0.RELEASE'
@@ -65,7 +64,7 @@ exclude(module: 'jcl-over')
     compile group: 'org.hibernate', name: 'hibernate-core', version:'5.1.0.Final'
     compile group: 'org.hibernate', name: 'hibernate-entitymanager', version:'5.1.0.Final'
     compile(group: 'org.hibernate', name: 'hibernate-ehcache', version:'5.1.0.Final') {
-exclude(module: 'ehcache-core')
+		exclude(module: 'ehcache-core')
     }
     compile group: 'org.hibernate', name: 'hibernate-validator', version:'5.1.0.Final'
     compile group: 'javax.jms', name: 'jms-api', version:'1.1-rev-1'
@@ -83,7 +82,16 @@ exclude(module: 'ehcache-core')
        This behavior is not yet supported by Gradle, so this dependency has been converted to a compile dependency.
        Please review and delete this closure when resolved. */
     }
+  }
 }
 
-  
+task deleteBin(type: Delete) {
+    delete 'learning-cloud-frameworks/bin'
+	delete 'learning-common/bin'
+	delete 'learning-dubbo/bin'
+	delete 'learning-example/bin'
+	delete 'learning-spring-frameworks/bin'
+	delete 'xxooframe-service/bin'
+	delete 'xxooframe-web/bin'
+	delete 'learning-spring-boot/target'
 }

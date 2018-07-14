@@ -3,6 +3,6 @@ description = ''
 dependencies {
     compile group: 'net.sourceforge.jexcelapi', name: 'jxl', version:'2.6.12'
     compile(group: 'org.apache.pdfbox', name: 'pdfbox', version:'1.8.10') {
-exclude(module: 'commons-logging')
+		exclude(module: 'commons-logging')
     }
 }

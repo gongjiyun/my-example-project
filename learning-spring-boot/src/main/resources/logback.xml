@@ -118,7 +118,7 @@
 	<!-- SQL相关日志输出 -->
 	<logger name="org.apache.ibatis" level="DEBUG" additivity="false" />
 	<logger name="org.mybatis.spring" level="DEBUG" additivity="false" />
-	<logger name="com.jiyun" level="DEBUG" additivity="true" />
+	<logger name="com.learning" level="DEBUG" additivity="true" />
 
 	<!-- Logger 根目录 -->
 	<root level="DEBUG">

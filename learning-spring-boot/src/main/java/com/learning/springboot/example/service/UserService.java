@@ -2,7 +2,7 @@ package com.learning.springboot.example.service;
 
 import java.util.List;
 
-import com.learning.springboot.example.entity.User;
+import com.learning.common.entities.User;
 
 
 public interface UserService {

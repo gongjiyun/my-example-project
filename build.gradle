@@ -12,6 +12,9 @@ subprojects {
   
   repositories {
     mavenLocal()
+	jcenter {
+        url "http://jcenter.bintray.com"
+    }
     
     maven { url "http://mvnrepository.com" }
     maven { url "http://repo.maven.apache.org/maven2" }
@@ -19,7 +22,7 @@ subprojects {
     maven { url "https://repo.spring.io/milestone" }
     maven { url "https://repo.spring.io/snapshot" }
 	maven { url "http://maven.oschina.net/content/groups/public/"}
-    maven { url "https://dl.bintray.com/rabbitmq/maven-milestones" }
+    maven { url "https://dl.bintray.com/rabbitmq/maven-milestones" }	
   }
 
   
@@ -93,5 +96,23 @@ task deleteBin(type: Delete) {
 	delete 'learning-spring-frameworks/bin'
 	delete 'xxooframe-service/bin'
 	delete 'xxooframe-web/bin'
+	delete 'learning-spring-boot/bin'
+	delete 'learning-cloud-frameworks/target'
+	delete 'learning-common/target'
+	delete 'learning-dubbo/target'
+	delete 'learning-example/target'
+	delete 'learning-spring-frameworks/target'
+	delete 'xxooframe-service/target'
+	delete 'xxooframe-web/target'
 	delete 'learning-spring-boot/target'
+	delete 'learning-cloud-frameworks/build'
+	delete 'learning-common/build'
+	delete 'learning-dubbo/build'
+	delete 'learning-example/build'
+	delete 'learning-spring-frameworks/build'
+	delete 'xxooframe-service/build'
+	delete 'xxooframe-web/build'
+	delete 'learning-spring-boot/build'
+	
+	delete 'gradle'
 }

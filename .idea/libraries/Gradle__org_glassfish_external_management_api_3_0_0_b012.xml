@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Gradle: org.glassfish.external:management-api:3.0.0-b012">
-    <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/glassfish/external/management-api/3.0.0-b012/management-api-3.0.0-b012.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

@@ -1,3 +1,5 @@
-/target/
-/build/
 /bin/
+/setting/
+/.project
+/.cleass
+/target

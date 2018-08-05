@@ -3,13 +3,12 @@ package com.learning.webapp.web.controller;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import net.sf.json.JSONArray;
-import net.sf.json.JSONObject;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,6 +18,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.support.WebApplicationContextUtils;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.learning.common.entities.Role;
 import com.learning.common.entities.User;
 import com.learning.common.model.AuthUserDetails;
@@ -31,25 +31,25 @@ import com.learning.utils.exception.SystemException;
 import com.learning.webapp.web.util.ServiceGateUtil;
 
 /**
- **Digital Banking Trends �C Banks�� Goal and NCS Presence
+ ** Digital Banking Trends �C Banks�� Goal and NCS Presence
  **/
 public abstract class AbstractPortalController {
 	private final static Logger logger = LoggerFactory.getLogger(AbstractPortalController.class);
-	
-	protected User getCurrentUser(HttpServletRequest request){
+
+	protected User getCurrentUser(HttpServletRequest request) {
 		try {
 			User user = (User) request.getSession().getAttribute(PortalConstants.WEB_KEY_USER);
-			if(user!=null){
+			if (user != null) {
 				return user;
 			}
-			
+
 			Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
 			String username = "";
 			if (principal instanceof AuthUserDetails) {
-				username = ((UserDetails)principal).getUsername();
-			} else if(principal instanceof UserDetails) {
-				username = ((UserDetails)principal).getUsername();
-			}else {
+				username = ((UserDetails) principal).getUsername();
+			} else if (principal instanceof UserDetails) {
+				username = ((UserDetails) principal).getUsername();
+			} else {
 				username = principal.toString();
 			}
 			return ServiceGateUtil.getUserService().findUserByName(username);
@@ -58,21 +58,21 @@ public abstract class AbstractPortalController {
 		}
 		return null;
 	}
-	
-	protected long getCurrentUID(HttpServletRequest request){
+
+	protected long getCurrentUID(HttpServletRequest request) {
 		try {
 			User user = (User) request.getSession().getAttribute(PortalConstants.WEB_KEY_USER);
-			if(user!=null){
+			if (user != null) {
 				return user.getUid();
 			}
-			
+
 			Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
 			String username = "";
 			if (principal instanceof AuthUserDetails) {
-				username = ((UserDetails)principal).getUsername();
-			} else if(principal instanceof UserDetails) {
-				username = ((UserDetails)principal).getUsername();
-			}else {
+				username = ((UserDetails) principal).getUsername();
+			} else if (principal instanceof UserDetails) {
+				username = ((UserDetails) principal).getUsername();
+			} else {
 				username = principal.toString();
 			}
 			return ServiceGateUtil.getUserService().findUserByName(username).getUid();
@@ -81,13 +81,13 @@ public abstract class AbstractPortalController {
 		}
 		return 0;
 	}
-	
-	protected UserDetails getCurrentUserDetails(HttpServletRequest request){
-		try {			
+
+	protected UserDetails getCurrentUserDetails(HttpServletRequest request) {
+		try {
 			Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
 			if (principal instanceof AuthUserDetails) {
 				return (UserDetails) principal;
-			} else if(principal instanceof UserDetails) {
+			} else if (principal instanceof UserDetails) {
 				return (UserDetails) principal;
 			}
 		} catch (Exception e) {
@@ -95,20 +95,21 @@ public abstract class AbstractPortalController {
 		}
 		return null;
 	}
-	
+
 	@SuppressWarnings("unchecked")
-	protected List<String> getCurrentUserRoles(HttpServletRequest request){
+	protected List<String> getCurrentUserRoles(HttpServletRequest request) {
 		List<String> roles = new ArrayList<String>();
 		try {
-			List<String> rolestrs = (List<String>) request.getSession().getAttribute(PortalConstants.WEB_KEY_USER_ROLES);
-			if(rolestrs!=null && rolestrs.size()>0){
+			List<String> rolestrs = (List<String>) request.getSession()
+					.getAttribute(PortalConstants.WEB_KEY_USER_ROLES);
+			if (rolestrs != null && rolestrs.size() > 0) {
 				return rolestrs;
 			}
-			
+
 			long uid = getCurrentUID(request);
 			List<Role> rolelist = ServiceGateUtil.getUserService().findRolesByUID(uid);
-			if(rolelist!=null && rolelist.size()>0){
-				for(Role r : rolelist){
+			if (rolelist != null && rolelist.size() > 0) {
+				for (Role r : rolelist) {
 					roles.add(r.getName());
 				}
 			}
@@ -117,11 +118,11 @@ public abstract class AbstractPortalController {
 		}
 		return roles;
 	}
-	
+
 	protected boolean isAdmin(HttpServletRequest request) throws Exception {
 		try {
 			List<String> roles = getCurrentUserRoles(request);
-			if(roles!=null && roles.contains(RoleConstants.ROLE_SYS_ADMIN)){
+			if (roles != null && roles.contains(RoleConstants.ROLE_SYS_ADMIN)) {
 				return true;
 			}
 		} catch (Exception e) {
@@ -129,72 +130,51 @@ public abstract class AbstractPortalController {
 		}
 		return false;
 	}
-	
+
 	protected ApplicationContext getApplicationContext(HttpServletRequest request) throws Exception {
-		return WebApplicationContextUtils.getWebApplicationContext(request.getSession().getServletContext());	
+		return WebApplicationContextUtils.getWebApplicationContext(request.getSession().getServletContext());
 	}
-	
-	protected void renderJson(JSONObject result, HttpServletRequest request, HttpServletResponse response) throws Exception {
-		try {
-			response.setContentType("text/plain;charset=utf-8");
-			response.getWriter().write(result.toString());
-			response.getWriter().flush();
-			response.getWriter().close();
-		} catch (Exception e) {
-			logger.error("Error on write json string", e);
-		}
-	}
-	
+
 	protected void renderSuccess(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		try {
 			response.setContentType("text/plain;charset=utf-8");
 			
-			JSONObject result = new JSONObject();
+			ObjectMapper mapper = new ObjectMapper();
+			Map<String, Object> result = new HashMap<>();
 			result.put("code", "200");
 			result.put("message", "OK");
-			response.getWriter().write(result.toString());
+			response.getWriter().write(mapper.writeValueAsString(result.toString()));
 			response.getWriter().flush();
 			response.getWriter().close();
 		} catch (Exception e) {
 			logger.error("Error on write json string", e);
 		}
 	}
-	
+
 	protected void renderFailure(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		try {
 			response.setContentType("text/plain;charset=utf-8");
 			
-			JSONObject result = new JSONObject();
+			ObjectMapper mapper = new ObjectMapper();
+			Map<String, Object> result = new HashMap<>();
 			result.put("code", "500");
 			result.put("message", "Fail");
-			response.getWriter().write(result.toString());
+			response.getWriter().write(mapper.writeValueAsString(result.toString()));
 			response.getWriter().flush();
 			response.getWriter().close();
 		} catch (Exception e) {
 			logger.error("Error on write json string", e);
 		}
 	}
-	
-	protected void renderJson(JSONArray result, HttpServletRequest request, HttpServletResponse response) throws Exception {
-		try {
-			response.setContentType("text/plain;charset=utf-8");
-			response.getWriter().write(result.toString());
-			response.getWriter().flush();
-			response.getWriter().close();
-		} catch (Exception e) {
-			logger.error("Error on write json string", e);
-		}
 
-	}
-	
-	protected void addError(HttpServletRequest request, String errorKey, String[] args, String defaultMessage){
+	protected void addError(HttpServletRequest request, String errorKey, String[] args, String defaultMessage) {
 		try {
-			WebMessages webErrors = (WebMessages)request.getAttribute(PortalConstants.WEB_ERROR_KEY);
-			if(webErrors==null){
+			WebMessages webErrors = (WebMessages) request.getAttribute(PortalConstants.WEB_ERROR_KEY);
+			if (webErrors == null) {
 				request.setAttribute(PortalConstants.WEB_ERROR_KEY, new WebMessages());
 			}
-			webErrors = (WebMessages)request.getAttribute(PortalConstants.WEB_ERROR_KEY);
-			
+			webErrors = (WebMessages) request.getAttribute(PortalConstants.WEB_ERROR_KEY);
+
 			WebMessage error = new WebMessage();
 			error.setMsgKey(errorKey);
 			error.setError(true);
@@ -205,15 +185,15 @@ public abstract class AbstractPortalController {
 			logger.error("Error in add error message");
 		}
 	}
-	
-	protected void addMessage(HttpServletRequest request, String errorKey, String[] args, String defaultMessage){
+
+	protected void addMessage(HttpServletRequest request, String errorKey, String[] args, String defaultMessage) {
 		try {
-			WebMessages webErrors = (WebMessages)request.getAttribute(PortalConstants.WEB_ERROR_KEY);
-			if(webErrors==null){
+			WebMessages webErrors = (WebMessages) request.getAttribute(PortalConstants.WEB_ERROR_KEY);
+			if (webErrors == null) {
 				request.setAttribute(PortalConstants.WEB_ERROR_KEY, new WebMessages());
 			}
-			webErrors = (WebMessages)request.getAttribute(PortalConstants.WEB_ERROR_KEY);
-			
+			webErrors = (WebMessages) request.getAttribute(PortalConstants.WEB_ERROR_KEY);
+
 			WebMessage error = new WebMessage();
 			error.setMsgKey(errorKey);
 			error.setError(false);
@@ -225,22 +205,21 @@ public abstract class AbstractPortalController {
 		}
 	}
 
-	
-	@ExceptionHandler(value={Exception.class, SystemException.class})  
-	protected String exceptionHandler(Exception ex, HttpServletRequest request, HttpServletResponse response) {  
+	@ExceptionHandler(value = { Exception.class, SystemException.class })
+	protected String exceptionHandler(Exception ex, HttpServletRequest request, HttpServletResponse response) {
 		try {
 			String errCode = ErrorCodeConstants.ERR_CODE_SERVER;
 			String message = ex.getMessage();
-			if(ex instanceof SystemException){
-				SystemException sysec = (SystemException)ex;
-				if(sysec.getErrorCode()!=null){
+			if (ex instanceof SystemException) {
+				SystemException sysec = (SystemException) ex;
+				if (sysec.getErrorCode() != null) {
 					errCode = sysec.getErrorCode();
 				}
-				if(sysec.getMessage()!=null){
+				if (sysec.getMessage() != null) {
 					message = sysec.getMessage();
 				}
 				logger.error("code : " + sysec.getErrorCode() + ", error : " + sysec.getMessage());
-			}else{
+			} else {
 				logger.error("Handler error " + ex.getMessage());
 			}
 
@@ -252,6 +231,6 @@ public abstract class AbstractPortalController {
 			e.printStackTrace();
 		}
 		return "error";
-    }
-	
+	}
+
 }

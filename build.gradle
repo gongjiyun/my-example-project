@@ -21,7 +21,6 @@ subprojects {
     maven { url "http://code.alibabatech.com/mvn/releases" }
     maven { url "https://repo.spring.io/milestone" }
     maven { url "https://repo.spring.io/snapshot" }
-	maven { url "http://maven.oschina.net/content/groups/public/"}
     maven { url "https://dl.bintray.com/rabbitmq/maven-milestones" }	
   }
 

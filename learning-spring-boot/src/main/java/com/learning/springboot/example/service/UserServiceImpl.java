@@ -8,11 +8,8 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.fasterxml.jackson.core.JsonFactory;
-import com.fasterxml.jackson.databind.ser.std.JsonValueSerializer;
 import com.learning.common.entities.User;
 import com.learning.springboot.example.repositories.jpa.UserCrudRepository;
-import com.learning.utils.util.JsonUtil;
 
 @Service("userService")
 public class UserServiceImpl implements UserService {
@@ -52,7 +49,6 @@ public class UserServiceImpl implements UserService {
 	}
 	
 	public User create(User user) throws Exception{
-		logger.debug(JsonFactory.);
 		return userCrudRepository.save(user);
 	}
 	

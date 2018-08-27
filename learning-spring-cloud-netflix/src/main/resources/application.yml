@@ -1,0 +1,31 @@
+server:
+  address: localhost
+  port: 8080
+  tomcat:
+    uri-encoding: UTF-8
+
+debug:
+    true
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: root
+    url: "jdbc:mysql://localhost/test"
+    username: root
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: true
+  mvc:
+    static-path-pattern: "classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/"
+  resources:
+    static-locations: /WEB-INF/classes/static

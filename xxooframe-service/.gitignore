@@ -1,5 +1,7 @@
 /bin/
 /setting/
 /.project
-/.cleass
+/.class
+/.classpath
 /target
+/build

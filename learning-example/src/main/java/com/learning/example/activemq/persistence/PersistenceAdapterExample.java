@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.Set;
 
 import org.apache.activemq.broker.ConnectionContext;
+import org.apache.activemq.broker.scheduler.JobSchedulerStore;
 import org.apache.activemq.command.ActiveMQDestination;
 import org.apache.activemq.command.ActiveMQQueue;
 import org.apache.activemq.command.ActiveMQTopic;
@@ -105,6 +106,24 @@ public class PersistenceAdapterExample implements PersistenceAdapter {
 	@Override
 	public long size() {
 		return 0;
+	}
+
+	@Override
+	public JobSchedulerStore createJobSchedulerStore() throws IOException, UnsupportedOperationException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public File getDirectory() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void allowIOResumption() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

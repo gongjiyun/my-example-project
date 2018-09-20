@@ -12,16 +12,17 @@ subprojects {
   
   repositories {
     mavenLocal()
-	jcenter {
-        url "http://jcenter.bintray.com"
-    }
     
     maven { url "http://mvnrepository.com" }
     maven { url "http://repo.maven.apache.org/maven2" }
     maven { url "http://code.alibabatech.com/mvn/releases" }
     maven { url "https://repo.spring.io/milestone" }
     maven { url "https://repo.spring.io/snapshot" }
-    maven { url "https://dl.bintray.com/rabbitmq/maven-milestones" }	
+    maven { url "https://dl.bintray.com/rabbitmq/maven-milestones" }
+
+	jcenter {
+        url "http://jcenter.bintray.com"
+    }	
   }
 
   

@@ -82,6 +82,7 @@ subprojects {
   }
 }
 
+
 task deleteBin(type: Delete) {
     delete 'learning-cloud-frameworks/bin'
 	delete 'learning-common/bin'
